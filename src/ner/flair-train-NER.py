@@ -39,11 +39,11 @@ embedding_types = [
 embeddings = StackedEmbeddings(embeddings=embedding_types)
 
 # 5. initialize sequence tagger
-tagger = SequenceTagger(hidden_size=256,
+tagger = SequenceTagger(hidden_size=512,
                         embeddings=embeddings,
                         tag_dictionary=label_dict,
                         tag_type=label_type,
-                        use_crf=False)
+                        use_crf=True)
 
 # 6. initialize trainer
 trainer = ModelTrainer(tagger, corpus)
