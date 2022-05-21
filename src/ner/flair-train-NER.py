@@ -39,7 +39,7 @@ embedding_types = [
 embeddings = StackedEmbeddings(embeddings=embedding_types)
 
 # 5. initialize sequence tagger
-tagger = SequenceTagger(hidden_size=512,
+tagger = SequenceTagger(hidden_size=1024,
                         embeddings=embeddings,
                         tag_dictionary=label_dict,
                         tag_type=label_type,
@@ -53,7 +53,7 @@ gc.collect()
 
 
 # 7. start training
-trainer.train(data_folder + 'model',
+trainer.train(data_folder + 'model2',
               mini_batch_size=4,
             #   mini_batch_chunk_size = 1,
               max_epochs=50,
