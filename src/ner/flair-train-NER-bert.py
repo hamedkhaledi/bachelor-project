@@ -41,13 +41,13 @@ embeddings = TransformerWordEmbeddings(model='HooshvareLab/bert-base-parsbert-un
                                        )
 
 # 5. initialize bare-bones sequence tagger (no CRF, no RNN, no reprojection)
-tagger = SequenceTagger(hidden_size=1024,
+tagger = SequenceTagger(hidden_size=512,
                         embeddings=embeddings,
                         tag_dictionary=label_dict,
                         tag_type='ner',
-                        use_crf=True,
-                        use_rnn=True,
-                        reproject_embeddings=True,
+                        use_crf=False,
+                        use_rnn=False,
+                        reproject_embeddings=False,
                         )
 
 # 6. initialize trainer
@@ -59,5 +59,5 @@ trainer.fine_tune(data_folder + 'model',
                   mini_batch_size=4,
                   mini_batch_chunk_size=1,  # remove this parameter to speed up computation if you have a big GPU7
                   embeddings_storage_mode='cpu',
-                  max_epochs=30,
+                  max_epochs=100,
                   )
