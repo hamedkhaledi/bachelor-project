@@ -4,11 +4,10 @@ from flair.models import SequenceTagger
 from flair.data import Corpus
 from flair.datasets import ColumnCorpus
 
-data_folder = "./data/upos/"
 # define columns
 columns = {0: 'text', 1: 'upos'}
-data_folder = "./data/upos/"
-res_text = "./result/upos/res(1).txt"
+data_folder = "./data/upos-(UD-PERSIAN)/"
+res_text = "./result/upos-(UD-PERSIAN)/res(3).txt"
 corpus = flair.datasets.UD_PERSIAN()
 # load the model you trained
 model = SequenceTagger.load(data_folder + 'model2/final-model.pt')

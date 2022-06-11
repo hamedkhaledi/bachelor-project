@@ -75,7 +75,7 @@
 
 نشانههایی B-NOUN B-NOUN
 که B-SCONJ B-SCONJ
-نظامی B-NOUN B-ADJ
+نظامی B-NOUN B-NOUN
 عروضی B-NOUN B-ADJ
 از B-ADP B-ADP
 جاهایی B-NOUN B-NOUN
@@ -206,7 +206,7 @@
 خروشیدم B-VERB B-VERB
 و B-CCONJ B-CCONJ
 خواستم B-VERB B-VERB
-ز B-ADP B-VERB
+ز B-ADP B-ADP
 و B-PRON B-CCONJ
 چراغ B-NOUN B-NOUN
 بیاورد B-VERB B-VERB
@@ -217,7 +217,7 @@
 باغ B-NOUN B-NOUN
 ، B-PUNCT B-PUNCT
 آیا B-SCONJ B-SCONJ
-این B-PRON B-PRON
+این B-PRON B-DET
 همان B-DET B-DET
 باغ B-NOUN B-NOUN
 است B-AUX B-AUX
@@ -238,7 +238,7 @@
 این B-PRON B-PRON
 که B-SCONJ B-CCONJ
 نظامی B-NOUN B-NOUN
-عروضی B-NOUN B-ADJ
+عروضی B-NOUN B-NOUN
 دربارهٔٔ B-ADP B-ADP
 او B-PRON B-PRON
 میگوید B-VERB B-VERB
@@ -370,7 +370,7 @@
 ، B-PUNCT B-PUNCT
 که B-SCONJ B-SCONJ
 می B-NOUN B-NOUN
-بوی B-NOUN B-VERB
+بوی B-NOUN B-NOUN
 مشک B-NOUN B-ADJ
 آید B-VERB B-VERB
 از B-ADP B-ADP
@@ -426,7 +426,7 @@
 . B-PUNCT B-PUNCT
 
 شب B-NOUN B-NOUN
-تیره B-ADJ B-NOUN
+تیره B-ADJ B-ADJ
 بلبل B-NOUN B-NOUN
 نخسبد B-VERB B-ADJ
 همی B-ADV B-NOUN
@@ -445,7 +445,7 @@
 عاشق B-ADJ B-NOUN
 گل B-NOUN B-NOUN
 آمد B-VERB B-VERB
-گر B-SCONJ B-NOUN
+گر B-SCONJ B-INTJ
 ابر B-NOUN B-NOUN
 ، B-PUNCT B-PUNCT
 چو B-ADV B-ADV
@@ -576,7 +576,7 @@
 است B-VERB B-VERB
 . B-PUNCT B-PUNCT
 
-همهٔ B-DET B-DET
+همهٔ B-DET B-PRON
 مظاهر B-NOUN B-NOUN
 خوش B-ADJ B-ADJ
 طبیعت B-NOUN B-NOUN
@@ -691,7 +691,7 @@
 . B-PUNCT B-PUNCT
 
 نوازنده B-NOUN B-NOUN
-بلبل B-NOUN B-NOUN
+بلبل B-NOUN B-ADJ
 به B-ADP B-ADP
 باغ B-NOUN B-NOUN
 اندرون B-NOUN B-NOUN
@@ -711,7 +711,7 @@
 ش B-PRON B-PRON
 روان B-ADJ B-ADJ
 ، B-PUNCT B-PUNCT
-همی B-ADV B-SCONJ
+همی B-ADV B-CCONJ
 شاد B-ADJ B-ADJ
 گردد B-AUX B-AUX
 ز B-ADP B-ADP
@@ -738,8 +738,8 @@
 
 ) B-PUNCT B-PUNCT
 نامهٔ B-NOUN B-NOUN
-نامور B-NOUN B-NOUN
-گزیدهٔ B-NOUN B-ADJ
+نامور B-NOUN B-ADJ
+گزیدهٔ B-NOUN B-NOUN
 شاهنامه B-NOUN B-NOUN
 ، B-PUNCT B-PUNCT
 ص B-NOUN B-NOUN
@@ -825,7 +825,7 @@
 از B-ADP B-ADP
 دور B-ADV B-ADV
 و B-CCONJ B-CCONJ
-نزدیک B-ADV B-ADV
+نزدیک B-ADV B-ADJ
 ، B-PUNCT B-PUNCT
 این B-DET B-DET
 سرای B-NOUN B-NOUN
@@ -960,7 +960,7 @@
 روی B-ADP B-ADP
 درآمد B-NOUN B-NOUN
 نفت B-NOUN B-NOUN
-است B-AUX B-VERB
+است B-AUX B-AUX
 . B-PUNCT B-PUNCT
 
 این B-DET B-DET
@@ -1578,7 +1578,7 @@
 خاص B-NOUN B-NOUN
 در B-ADP B-ADP
 کشورهای B-NOUN B-NOUN
-تولیدکننده B-ADJ B-NOUN
+تولیدکننده B-ADJ B-ADJ
 نفت B-NOUN B-NOUN
 بستگی B-NOUN B-NOUN
 به B-ADP B-ADP
@@ -1632,7 +1632,7 @@
 و B-CCONJ B-CCONJ
 لوکس B-ADJ B-ADJ
 و B-CCONJ B-CCONJ
-فانتزی B-ADJ B-NOUN
+فانتزی B-ADJ B-ADJ
 شود B-AUX B-AUX
 ، B-PUNCT B-PUNCT
 مصرفی B-ADJ B-ADJ
@@ -1703,9 +1703,9 @@
 مثلاً B-SCONJ B-SCONJ
 صرف B-NOUN B-NOUN
 سرمایهگذاریهای B-NOUN B-NOUN
-مولد B-ADJ B-ADJ
+مولد B-ADJ B-NOUN
 شود B-AUX B-AUX
-روند B-NOUN B-NOUN
+روند B-NOUN B-VERB
 افزایش B-NOUN B-NOUN
 قیمتها B-NOUN B-NOUN
 میتواند B-VERB B-VERB
@@ -1715,7 +1715,7 @@
 باشد B-AUX B-AUX
 . B-PUNCT B-PUNCT
 
-درمجموع B-ADV B-SCONJ
+درمجموع B-ADV B-ADV
 از B-ADP B-ADP
 بعد B-ADV B-ADV
 برنامهریزی B-NOUN B-NOUN
@@ -1748,7 +1748,7 @@
 بلندمدت B-ADJ B-ADJ
 و B-CCONJ B-CCONJ
 یا B-CCONJ B-CCONJ
-کوتاهمدت B-ADJ B-NOUN
+کوتاهمدت B-ADJ B-ADJ
 دارد B-VERB B-VERB
 ممکن B-ADJ B-ADJ
 است B-AUX B-AUX
@@ -1787,7 +1787,7 @@
 ، B-PUNCT B-PUNCT
 کوتاهمدت B-ADJ B-ADJ
 و B-CCONJ B-CCONJ
-میانمدت B-ADJ B-ADJ
+میانمدت B-ADJ B-NOUN
 است B-AUX B-AUX
 . B-PUNCT B-PUNCT
 
@@ -1856,7 +1856,7 @@
 اقتصادی B-ADJ B-ADJ
 به B-ADP B-ADP
 کشورهای B-NOUN B-NOUN
-تولیدکننده B-ADJ B-NOUN
+تولیدکننده B-ADJ B-ADJ
 نفت B-NOUN B-NOUN
 میدهد B-VERB B-VERB
 . B-PUNCT B-PUNCT
@@ -2155,7 +2155,7 @@
 ایوب B-NOUN B-NOUN
 کردهام B-VERB B-VERB
 ، B-PUNCT B-PUNCT
-گر B-SCONJ B-ADV
+گر B-SCONJ B-INTJ
 زیر B-ADP B-ADP
 بار B-NOUN B-NOUN
 غم B-NOUN B-NOUN
@@ -2290,7 +2290,7 @@
 خلاصه B-NOUN B-ADJ
 کلام B-NOUN B-NOUN
 این B-PRON B-PRON
-که B-SCONJ B-SCONJ
+که B-SCONJ B-CCONJ
 آیا B-SCONJ B-SCONJ
 مصر B-NOUN B-NOUN
 نیز B-SCONJ B-SCONJ
@@ -2359,7 +2359,7 @@
 رییسجمهور B-NOUN B-NOUN
 به B-ADP B-ADP
 قدری B-NOUN B-NOUN
-ست B-VERB B-VERB
+ست B-VERB B-AUX
 که B-SCONJ B-SCONJ
 حتی B-ADV B-ADV
 سلاطین B-NOUN B-NOUN
@@ -2452,7 +2452,7 @@
 مصر B-NOUN B-NOUN
 بهرغم B-ADP B-ADP
 سرکوبی B-NOUN B-NOUN
-قاطع B-ADJ B-NOUN
+قاطع B-ADJ B-ADJ
 اسلامگرایان B-NOUN B-NOUN
 این B-DET B-DET
 کشور B-NOUN B-NOUN
@@ -2520,7 +2520,7 @@
 بخشی B-NOUN B-NOUN
 از B-ADP B-ADP
 لبه B-NOUN B-NOUN
-تیز B-ADJ B-ADJ
+تیز B-ADJ B-NOUN
 کنترلهای B-NOUN B-NOUN
 دولتی B-ADJ B-ADJ
 در B-ADP B-ADP
@@ -2764,7 +2764,7 @@
 پیچیدهتر B-ADJ B-ADJ
 میسازد B-VERB B-VERB
 عملکرد B-NOUN B-NOUN
-ضد B-ADJ B-ADP
+ضد B-ADJ B-NOUN
 و B-CCONJ B-CCONJ
 نقیض B-ADJ B-NOUN
 دولت B-NOUN B-NOUN
@@ -2861,7 +2861,7 @@
 گردونه B-NOUN B-NOUN
 رقابت B-NOUN B-NOUN
 انتخاباتی B-ADJ B-ADJ
-بود B-VERB B-VERB
+بود B-VERB B-AUX
 . B-PUNCT B-PUNCT
 
 اکثر B-ADJ B-ADJ
@@ -3155,7 +3155,7 @@
 این B-PRON B-PRON
 ، B-PUNCT B-PUNCT
 سیاستهای B-NOUN B-NOUN
-ضد B-ADJ B-ADP
+ضد B-ADJ B-NOUN
 و B-CCONJ B-CCONJ
 نقیض B-ADJ B-NOUN
 دولت B-NOUN B-NOUN
@@ -3356,7 +3356,7 @@
 است B-VERB B-VERB
 . B-PUNCT B-PUNCT
 
-همچنین B-CCONJ B-CCONJ
+همچنین B-CCONJ B-SCONJ
 در B-ADP B-ADP
 مسیر B-NOUN B-NOUN
 ۸۵۰۰ B-NUM B-NUM
@@ -3411,7 +3411,7 @@
 پس B-ADV B-ADV
 از B-ADP B-ADP
 تکمیل B-NOUN B-NOUN
-زیرگذر B-NOUN B-ADJ
+زیرگذر B-NOUN B-NOUN
 بزرگراه B-NOUN B-NOUN
 اشرفی B-NOUN B-NOUN
 اصفهانی B-NOUN B-NOUN
@@ -3934,7 +3934,7 @@
 با B-ADP B-ADP
 وجود B-NOUN B-NOUN
 سیر B-ADJ B-NOUN
-تجربهای B-NOUN B-ADJ
+تجربهای B-NOUN B-NOUN
 که B-SCONJ B-SCONJ
 در B-ADP B-ADP
 بخشهای B-NOUN B-NOUN
@@ -4157,7 +4157,7 @@
 ، B-PUNCT B-PUNCT
 اقتصادی B-ADJ B-ADJ
 و B-CCONJ B-CCONJ
-بویژه B-ADV B-ADJ
+بویژه B-ADV B-ADV
 پارلمانی B-ADJ B-ADJ
 میان B-ADP B-ADP
 دو B-NUM B-NUM
@@ -4531,7 +4531,7 @@
 توأم B-ADJ B-ADJ
 با B-ADP B-ADP
 دقت B-NOUN B-NOUN
-نبوده B-AUX B-VERB
+نبوده B-AUX B-AUX
 ، B-PUNCT B-PUNCT
 یعنی B-SCONJ B-SCONJ
 انتخابات B-NOUN B-NOUN
@@ -4606,7 +4606,7 @@
 کار B-NOUN B-NOUN
 هیئت B-NOUN B-NOUN
 نظارت B-NOUN B-NOUN
-بوده B-VERB B-AUX
+بوده B-VERB B-VERB
 است B-VERB B-VERB
 بعضی B-DET B-DET
 جاها B-NOUN B-NOUN
@@ -5086,7 +5086,7 @@
 گزارش B-NOUN B-NOUN
 دادگستری B-NOUN B-NOUN
 ، B-PUNCT B-PUNCT
-حسب B-NOUN B-ADP
+حسب B-NOUN B-NOUN
 نظر B-NOUN B-NOUN
 قاضی B-NOUN B-NOUN
 دادگاه B-NOUN B-NOUN
@@ -5226,7 +5226,7 @@
 درباره B-ADP B-ADP
 مسایل B-NOUN B-NOUN
 مختلف B-ADJ B-ADJ
-منطقهای B-ADJ B-ADJ
+منطقهای B-ADJ B-NOUN
 و B-CCONJ B-CCONJ
 بینالمللی B-ADJ B-ADJ
 گفت B-VERB B-VERB
@@ -5428,7 +5428,7 @@
 
 وی B-PRON B-PRON
 روابط B-NOUN B-NOUN
-بازرگانی B-NOUN B-NOUN
+بازرگانی B-NOUN B-ADJ
 هند B-NOUN B-NOUN
 و B-CCONJ B-CCONJ
 ایران B-NOUN B-NOUN
@@ -5828,7 +5828,7 @@
 هیچ B-ADV B-ADV
 نظامی B-NOUN B-NOUN
 بدون B-ADP B-ADP
-نو B-ADJ B-ADJ
+نو B-ADJ B-NOUN
 شدن B-NOUN B-NOUN
 بقا B-NOUN B-NOUN
 پیدا B-ADJ B-ADJ
@@ -5892,7 +5892,7 @@
 چالشها B-NOUN B-NOUN
 در B-ADP B-ADP
 دو B-NUM B-NUM
-بعد B-ADV B-ADV
+بعد B-ADV B-NOUN
 راست B-ADJ B-ADJ
 و B-CCONJ B-CCONJ
 چپ B-ADJ B-ADJ
@@ -5978,7 +5978,7 @@
 مشروط B-ADJ B-ADJ
 بر B-ADP B-ADP
 این B-PRON B-PRON
-که B-CCONJ B-CCONJ
+که B-CCONJ B-SCONJ
 بهجای B-ADP B-ADP
 چالشهای B-NOUN B-NOUN
 ادبی B-ADJ B-ADJ
@@ -6189,7 +6189,7 @@
 البته B-ADV B-ADV
 هنوز B-ADV B-ADV
 هم B-SCONJ B-SCONJ
-دیر B-ADJ B-ADV
+دیر B-ADJ B-ADJ
 نشده B-AUX B-AUX
 است B-VERB B-VERB
 و B-CCONJ B-CCONJ
@@ -6417,12 +6417,12 @@
 اعتقاد B-NOUN B-NOUN
 دارند B-VERB B-VERB
 و B-CCONJ B-CCONJ
-این B-PRON B-PRON
+این B-PRON B-DET
 حرف B-NOUN B-NOUN
 دل B-NOUN B-NOUN
 آنها B-PRON B-PRON
 هم B-SCONJ B-SCONJ
-هست B-AUX B-VERB
+هست B-AUX B-AUX
 ، B-PUNCT B-PUNCT
 اما B-CCONJ B-CCONJ
 نکتهٔ B-NOUN B-NOUN
@@ -6571,7 +6571,7 @@
 پیگیری B-NOUN B-NOUN
 صادقانه B-ADJ B-ADJ
 و B-CCONJ B-CCONJ
-مساولانه B-ADJ B-ADV
+مساولانه B-ADJ B-NOUN
 نسبت B-ADP B-ADP
 به B-ADP B-ADP
 تمامی B-DET B-DET
@@ -6665,7 +6665,7 @@
 از B-ADP B-ADP
 نگاه B-NOUN B-NOUN
 هر B-DET B-DET
-یک B-PRON B-PRON
+یک B-PRON B-NUM
 از B-ADP B-ADP
 گروههای B-NOUN B-NOUN
 سیاسی B-ADJ B-ADJ
@@ -6722,7 +6722,7 @@
 استقبال B-NOUN B-NOUN
 مردم B-NOUN B-NOUN
 میتوان B-AUX B-AUX
-دریافت B-VERB B-VERB
+دریافت B-VERB B-NOUN
 . B-PUNCT B-PUNCT
 
 روزنامه B-NOUN B-NOUN
@@ -6963,7 +6963,7 @@
 تنگناها B-NOUN B-NOUN
 و B-CCONJ B-CCONJ
 کمبودها B-NOUN B-NOUN
-ست B-VERB B-VERB
+ست B-VERB B-AUX
 . B-PUNCT B-PUNCT
 
 با B-ADP B-ADP
@@ -7465,7 +7465,7 @@
 را B-PART B-PART
 به B-ADP B-ADP
 اهداف B-NOUN B-NOUN
-مورد B-ADP B-NOUN
+مورد B-ADP B-ADP
 ادعای B-NOUN B-NOUN
 مان B-PRON B-PRON
 نرسانده B-VERB B-VERB
@@ -7625,7 +7625,7 @@
 نوسانات B-NOUN B-NOUN
 قیمت B-NOUN B-NOUN
 نفت B-NOUN B-NOUN
-بوده B-VERB B-VERB
+بوده B-VERB B-AUX
 و B-CCONJ B-CCONJ
 خشنودکنندهترین B-ADJ B-ADJ
 بخش B-NOUN B-NOUN
@@ -7772,7 +7772,7 @@
 اجدادی B-ADJ B-ADJ
 خود B-PRON B-PRON
 باز B-ADP B-ADJ
-میگردند B-VERB B-AUX
+میگردند B-VERB B-VERB
 . B-PUNCT B-PUNCT
 
 پیترسون B-NOUN B-NOUN
@@ -7924,7 +7924,7 @@
 اینترنتی B-ADJ B-ADJ
 - B-PUNCT B-PUNCT
 را B-PART B-PART
-دائر B-ADJ B-NOUN
+دائر B-ADJ B-ADJ
 کرد B-VERB B-VERB
 که B-SCONJ B-SCONJ
 اکنون B-ADV B-ADV
@@ -7934,7 +7934,7 @@
 از B-ADP B-ADP
 صد B-NUM B-NUM
 شرکتی B-NOUN B-NOUN
-ست B-VERB B-AUX
+ست B-VERB B-VERB
 که B-SCONJ B-SCONJ
 در B-ADP B-ADP
 ایران B-NOUN B-NOUN
@@ -8293,7 +8293,7 @@
 سفر B-NOUN B-NOUN
 به B-ADP B-ADP
 سرزمین B-NOUN B-NOUN
-اجدادی B-ADJ B-ADJ
+اجدادی B-ADJ B-NOUN
 ، B-PUNCT B-PUNCT
 هم B-SCONJ B-SCONJ
 طولانی B-ADJ B-ADJ
@@ -8393,7 +8393,7 @@
 اسلام B-NOUN B-NOUN
 و B-CCONJ B-CCONJ
 امپراطوری B-NOUN B-NOUN
-عثمانی B-ADJ B-ADJ
+عثمانی B-ADJ B-NOUN
 داشت B-VERB B-VERB
 . B-PUNCT B-PUNCT
 
@@ -8435,7 +8435,7 @@
 دیدن B-NOUN B-NOUN
 هواپیماهای B-NOUN B-NOUN
 ایران B-NOUN B-NOUN
-ایر B-NOUN B-ADJ
+ایر B-NOUN B-NOUN
 در B-ADP B-ADP
 فرودگاه B-NOUN B-NOUN
 ، B-PUNCT B-PUNCT
@@ -8735,7 +8735,7 @@
 معاویه B-NOUN B-NOUN
 که B-SCONJ B-SCONJ
 اطاعت B-NOUN B-NOUN
-محض B-ADJ B-NOUN
+محض B-ADJ B-ADJ
 از B-ADP B-ADP
 سلطان B-NOUN B-NOUN
 بود B-AUX B-AUX
@@ -8843,7 +8843,7 @@
 از B-ADP B-ADP
 این B-DET B-DET
 مردم B-NOUN B-NOUN
-نیستی B-VERB B-VERB
+نیستی B-VERB B-AUX
 . B-PUNCT B-PUNCT
 
 عبداللهبنعباس B-NOUN B-NOUN
@@ -8877,7 +8877,7 @@
 به B-ADP B-ADP
 خداوند B-NOUN B-NOUN
 سوگند B-NOUN B-NOUN
-ای B-INTJ B-AUX
+ای B-INTJ B-INTJ
 معاویه B-NOUN B-NOUN
 من B-PRON B-PRON
 هیچگاه B-ADV B-ADV
@@ -9015,7 +9015,7 @@
 میکنی B-AUX B-VERB
 . B-PUNCT B-PUNCT
 
-تا B-SCONJ B-ADP
+تا B-SCONJ B-SCONJ
 زنده B-ADJ B-ADJ
 ام B-AUX B-AUX
 و B-CCONJ B-CCONJ
@@ -9302,7 +9302,7 @@
 بوی B-NOUN B-NOUN
 عطر B-NOUN B-NOUN
 و B-CCONJ B-CCONJ
-مشک B-NOUN B-NOUN
+مشک B-NOUN B-ADJ
 بود B-AUX B-AUX
 . B-PUNCT B-PUNCT
 
@@ -9535,7 +9535,7 @@
 ست B-AUX B-AUX
 . B-PUNCT B-PUNCT
 
-تدین B-NOUN B-ADJ
+تدین B-NOUN B-NOUN
 او B-PRON B-PRON
 و B-CCONJ B-CCONJ
 سابقه B-NOUN B-NOUN
@@ -9604,7 +9604,7 @@
 دنیا B-NOUN B-NOUN
 را B-PART B-PART
 بر B-ADP B-ADP
-آخرت B-NOUN B-PRON
+آخرت B-NOUN B-NOUN
 ترجیح B-NOUN B-NOUN
 دادهای B-VERB B-VERB
 . B-PUNCT B-PUNCT
@@ -9921,7 +9921,7 @@
 بغض B-NOUN B-NOUN
 و B-CCONJ B-CCONJ
 غضب B-NOUN B-NOUN
-بود B-AUX B-AUX
+بود B-AUX B-VERB
 . B-PUNCT B-PUNCT
 
 دستور B-NOUN B-NOUN
@@ -10773,7 +10773,7 @@
 وسعت B-NOUN B-NOUN
 ، B-PUNCT B-PUNCT
 پنج B-NUM B-NUM
-میلیارد B-NUM B-NUM
+میلیارد B-NUM B-NOUN
 ریال B-NOUN B-NOUN
 اعتبار B-NOUN B-NOUN
 در B-ADP B-ADP
@@ -10853,7 +10853,7 @@
 بخش B-NOUN B-NOUN
 ورزش B-NOUN B-NOUN
 استان B-NOUN B-NOUN
-ظرف B-ADP B-ADP
+ظرف B-ADP B-NOUN
 هشت B-NUM B-NUM
 سال B-NOUN B-NOUN
 گذشته B-ADJ B-ADJ
@@ -11202,7 +11202,7 @@
 
 در B-ADP B-ADP
 سال B-NOUN B-NOUN
-زراعی B-NOUN B-ADJ
+زراعی B-NOUN B-NOUN
 جاری B-ADJ B-ADJ
 ۹۰ B-NUM B-NUM
 هزار B-NUM B-NUM
@@ -11363,7 +11363,7 @@
 به B-ADP B-ADP
 ۷۲ B-NUM B-NUM
 روستای B-NOUN B-NOUN
-آقچشمه B-NOUN B-ADJ
+آقچشمه B-NOUN B-NOUN
 و B-CCONJ B-CCONJ
 هشت B-NUM B-NUM
 روستای B-NOUN B-NOUN
@@ -11456,7 +11456,7 @@
 برگزاری B-NOUN B-NOUN
 این B-DET B-DET
 همایش B-NOUN B-NOUN
-یکروزه B-ADJ B-ADV
+یکروزه B-ADJ B-ADJ
 آشنایی B-NOUN B-NOUN
 مدیران B-NOUN B-NOUN
 شرکتهای B-NOUN B-NOUN
@@ -11585,7 +11585,7 @@
 تن B-NOUN B-NOUN
 بذر B-NOUN B-NOUN
 الیت B-ADJ B-NOUN
-مادری B-ADJ B-NOUN
+مادری B-ADJ B-ADJ
 از B-ADP B-ADP
 ارقام B-NOUN B-NOUN
 اگریا B-NOUN B-NOUN
@@ -12091,7 +12091,7 @@
 
 جام B-NOUN B-NOUN
 موزاییک B-NOUN B-NOUN
-شیشهای B-ADJ B-NOUN
+شیشهای B-ADJ B-ADJ
 از B-ADP B-ADP
 جمله B-NOUN B-NOUN
 آثار B-NOUN B-NOUN
@@ -12125,7 +12125,7 @@
 . B-PUNCT B-PUNCT
 
 اقوام B-NOUN B-NOUN
-ساکن B-NOUN B-NOUN
+ساکن B-NOUN B-ADJ
 مارلیک B-NOUN B-NOUN
 از B-ADP B-ADP
 گروه B-NOUN B-NOUN
@@ -12230,7 +12230,7 @@
 پیشکسوت B-ADJ B-ADJ
 و B-CCONJ B-CCONJ
 استاد B-NOUN B-NOUN
-صاحبنام B-ADJ B-NOUN
+صاحبنام B-ADJ B-ADJ
 تاریخ B-NOUN B-NOUN
 و B-CCONJ B-CCONJ
 اخلاق B-NOUN B-NOUN
@@ -12267,8 +12267,8 @@
 عالمان B-NOUN B-NOUN
 بزرگ B-ADJ B-ADJ
 دوره B-NOUN B-NOUN
-ناصری B-NOUN B-NOUN
-بود B-AUX B-VERB
+ناصری B-NOUN B-ADJ
+بود B-AUX B-AUX
 . B-PUNCT B-PUNCT
 
 استاد B-NOUN B-NOUN
@@ -12301,7 +12301,7 @@
 از B-ADP B-ADP
 طی B-ADP B-NOUN
 تحصیلات B-NOUN B-NOUN
-پزشکی B-NOUN B-ADJ
+پزشکی B-NOUN B-NOUN
 در B-ADP B-ADP
 دانشگاه B-NOUN B-NOUN
 تهران B-NOUN B-NOUN
@@ -12381,7 +12381,7 @@
 خدمت B-NOUN B-NOUN
 در B-ADP B-ADP
 وزارت B-NOUN B-NOUN
-بهداری B-NOUN B-ADJ
+بهداری B-NOUN B-NOUN
 وقت B-NOUN B-NOUN
 بازنشسته B-ADJ B-ADJ
 شد B-AUX B-AUX
@@ -12467,7 +12467,7 @@
 ، B-PUNCT B-PUNCT
 یک B-NUM B-NUM
 قطعه B-NOUN B-NOUN
-سنگنگاره B-NOUN B-ADJ
+سنگنگاره B-NOUN B-NOUN
 که B-SCONJ B-SCONJ
 از B-ADP B-ADP
 تخت B-NOUN B-NOUN
@@ -12569,7 +12569,7 @@
 قسمتی B-NOUN B-NOUN
 از B-ADP B-ADP
 کنگرههای B-NOUN B-NOUN
-پلکان B-NOUN B-NOUN
+پلکان B-NOUN B-ADJ
 کاخ B-NOUN B-NOUN
 نیز B-SCONJ B-SCONJ
 روی B-ADP B-ADP
@@ -12715,7 +12715,7 @@
 فیلم B-NOUN B-NOUN
 جدید B-ADJ B-ADJ
 خود B-PRON B-PRON
-است B-VERB B-VERB
+است B-VERB B-AUX
 از B-ADP B-ADP
 سمیرا B-NOUN B-NOUN
 مخملباف B-NOUN B-NOUN
@@ -12846,7 +12846,7 @@
 صورت B-NOUN B-NOUN
 موافقت B-NOUN B-NOUN
 سمیرا B-NOUN B-NOUN
-مخملباف B-NOUN B-ADJ
+مخملباف B-NOUN B-NOUN
 ، B-PUNCT B-PUNCT
 یک B-NUM B-NUM
 روز B-NOUN B-NOUN
@@ -12976,7 +12976,7 @@
 که B-SCONJ B-SCONJ
 در B-ADP B-ADP
 شهر B-NOUN B-NOUN
-بخارست B-NOUN B-NOUN
+بخارست B-NOUN B-ADJ
 پایتخت B-NOUN B-NOUN
 رومانی B-NOUN B-NOUN
 برگزار B-ADJ B-ADJ
@@ -13279,7 +13279,7 @@
 ۱ B-NUM B-NUM
 / B-PUNCT B-PUNCT
 ۲ B-NUM B-NUM
-برابر B-NOUN B-NOUN
+برابر B-NOUN B-ADP
 نیویورک B-NOUN B-NOUN
 است B-AUX B-AUX
 و B-CCONJ B-CCONJ
@@ -13949,13 +13949,13 @@
 سانتیمتری B-ADJ B-NOUN
 پاهای B-NOUN B-NOUN
 ۶۱ B-NUM B-NUM
-سانتیمتری B-ADJ B-NOUN
+سانتیمتری B-ADJ B-ADJ
 دارند B-VERB B-VERB
 و B-CCONJ B-CCONJ
 با B-ADP B-ADP
 دندانهای B-NOUN B-NOUN
 یک B-NUM B-NUM
-سانتیمتری B-ADJ B-ADJ
+سانتیمتری B-ADJ B-NOUN
 خود B-PRON B-PRON
 که B-SCONJ B-SCONJ
 وسیله B-NOUN B-NOUN
@@ -14417,7 +14417,7 @@
 گفته B-NOUN B-NOUN
 نیروهای B-NOUN B-NOUN
 امدادگر B-ADJ B-ADJ
-تایوانی B-ADJ B-NOUN
+تایوانی B-ADJ B-ADJ
 و B-CCONJ B-CCONJ
 تیمهای B-NOUN B-NOUN
 نجات B-NOUN B-NOUN
@@ -14882,7 +14882,7 @@
 ششم B-ADJ B-ADJ
 به B-ADP B-ADP
 صورت B-NOUN B-NOUN
-شورایی B-ADJ B-NOUN
+شورایی B-ADJ B-ADJ
 رهبری B-NOUN B-NOUN
 میشود B-AUX B-AUX
 که B-SCONJ B-SCONJ
@@ -15120,7 +15120,7 @@
 را B-PART B-PART
 به B-ADP B-ADP
 وی B-PRON B-PRON
-تبریک B-NOUN B-ADJ
+تبریک B-NOUN B-NOUN
 گفت B-VERB B-VERB
 و B-CCONJ B-CCONJ
 افزود B-VERB B-VERB
@@ -15615,7 +15615,7 @@
 و B-CCONJ B-CCONJ
 به B-ADP B-ADP
 همراه B-NOUN B-NOUN
-نظامی B-NOUN B-NOUN
+نظامی B-NOUN B-ADJ
 عروضی B-NOUN B-NOUN
 سمرقندی B-NOUN B-ADJ
 به B-ADP B-ADP
@@ -15658,7 +15658,7 @@
 این B-PRON B-PRON
 یک B-NUM B-NUM
 سلیقه B-NOUN B-NOUN
-شخصی B-ADJ B-NOUN
+شخصی B-ADJ B-ADJ
 است B-AUX B-AUX
 که B-SCONJ B-SCONJ
 از B-ADP B-ADP
@@ -15680,7 +15680,7 @@
 طور B-NOUN B-NOUN
 مینویسد B-VERB B-VERB
 : B-PUNCT B-PUNCT
-روبروی B-ADP B-ADP
+روبروی B-ADP B-NOUN
 مقبره B-NOUN B-NOUN
 امامزاده B-NOUN B-NOUN
 محروق B-NOUN B-ADJ
@@ -15727,7 +15727,7 @@
 ولی B-CCONJ B-CCONJ
 چند B-ADJ B-ADJ
 عدد B-NOUN B-NOUN
-حقه B-NOUN B-ADJ
+حقه B-NOUN B-NOUN
 گل B-NOUN B-NOUN
 سرخ B-ADJ B-ADJ
 بر B-ADP B-ADP
@@ -15842,7 +15842,7 @@
 و B-CCONJ B-CCONJ
 به B-ADP B-ADP
 باغ B-NOUN B-NOUN
-مزار B-NOUN B-NOUN
+مزار B-NOUN B-ADJ
 خیام B-NOUN B-NOUN
 باز B-ADP B-ADJ
 گردانیم B-VERB B-VERB
@@ -15874,7 +15874,7 @@
 بعضی B-PRON B-PRON
 ارباب B-NOUN B-NOUN
 جراید B-NOUN B-NOUN
-بودند B-AUX B-VERB
+بودند B-AUX B-AUX
 . B-PUNCT B-PUNCT
 
 در B-ADP B-ADP
@@ -15893,7 +15893,7 @@
 گل B-NOUN B-NOUN
 سرخ B-ADJ B-ADJ
 بر B-ADP B-ADP
-سر B-NOUN B-ADP
+سر B-NOUN B-NOUN
 قبر B-NOUN B-NOUN
 فیتزجرالد B-NOUN B-NOUN
 ، B-PUNCT B-PUNCT
@@ -16194,7 +16194,7 @@
 این B-DET B-DET
 نظریه B-NOUN B-NOUN
 که B-SCONJ B-SCONJ
-نادرستی B-NOUN B-ADJ
+نادرستی B-NOUN B-NOUN
 آن B-PRON B-PRON
 دستکم B-ADV B-ADV
 در B-ADP B-ADP
@@ -16537,7 +16537,7 @@
 ، B-PUNCT B-PUNCT
 دانسته B-ADV B-VERB
 یا B-CCONJ B-CCONJ
-ندانسته B-ADV B-NOUN
+ندانسته B-ADV B-ADJ
 تاریخ B-NOUN B-NOUN
 تمدن B-NOUN B-NOUN
 و B-CCONJ B-CCONJ
@@ -16611,7 +16611,7 @@
 تمدن B-NOUN B-NOUN
 و B-CCONJ B-CCONJ
 فرهنگی B-NOUN B-NOUN
-است B-AUX B-AUX
+است B-AUX B-VERB
 که B-SCONJ B-SCONJ
 او B-PRON B-PRON
 را B-PART B-PART

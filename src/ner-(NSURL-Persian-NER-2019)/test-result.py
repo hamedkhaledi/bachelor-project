@@ -2,11 +2,11 @@ from flair.data import Sentence
 from flair.models import SequenceTagger
 from flair.data import Corpus
 from flair.datasets import ColumnCorpus
-data_folder = "./data/ner/"
+
 # define columns
 columns = {0: 'text', 1: 'ner'}
-data_folder = "./data/ner/"
-res_text = "./result/ner/res(12).txt"
+data_folder = "./data/ner-(NSURL-Persian-NER-2019)/"
+res_text = "./result/ner-(NSURL-Persian-NER-2019)/res(12).txt"
 corpus: Corpus = ColumnCorpus(data_folder, columns,
                               train_file='train.txt',
                               test_file='test.txt',
