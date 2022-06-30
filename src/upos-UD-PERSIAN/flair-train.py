@@ -5,7 +5,7 @@ from flair.trainers import ModelTrainer
 import os
 corpus = flair.datasets.UD_PERSIAN()
 
-data_folder = "./data/upos-(UD-PERSIAN)/"
+data_folder = "./data/upos-UD-PERSIAN/"
 
 
 # 2. what label do we want to predict?
@@ -43,4 +43,4 @@ trainer.train(data_folder + 'model2',
               embeddings_storage_mode='gpu',
               checkpoint=True,)
 
-os.system('cp ./data/upos-(UD-PERSIAN)/model2/training.log ./result/upos-(UD-PERSIAN)/training3.log') 
+os.system('cp ./data/upos-UD-PERSIAN/model2/training.log ./result/upos-UD-PERSIAN/training3.log') 

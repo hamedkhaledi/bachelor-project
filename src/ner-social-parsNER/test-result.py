@@ -5,8 +5,8 @@ from flair.datasets import ColumnCorpus
 
 # define columns
 columns = {0: 'text', 1: 'ner'}
-data_folder = "./data/ner-(news-parsNER)/"
-res_text = "./result/ner-(news-parsNER)/res1.txt"
+data_folder = "./data/ner-news-parsNER/"
+res_text = "./result/ner-news-parsNER/res1.txt"
 corpus: Corpus = ColumnCorpus(data_folder, columns,
                               train_file='train',
                               test_file='test')

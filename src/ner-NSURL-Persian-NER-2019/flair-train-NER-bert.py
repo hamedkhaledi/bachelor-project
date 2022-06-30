@@ -8,18 +8,18 @@ from flair.models import SequenceTagger
 from flair.embeddings import TransformerWordEmbeddings
 from torch.optim.lr_scheduler import OneCycleLR
 
-import os
 import torch
 import gc
 torch.cuda.empty_cache()
 gc.collect()
 
 # define columns
-columns = {0: 'text', 1:'pos' , 2: 'ner'}
-data_folder = "./data/ner-(news-parsNER)/"
+columns = {0: 'text', 1: 'ner'}
+data_folder = "./data/ner-NSURL-Persian-NER-2019/"
 corpus: Corpus = ColumnCorpus(data_folder, columns,
-                              train_file='train',
-                              test_file='test')
+                              train_file='train.txt',
+                              test_file='test.txt',
+                              dev_file='valid.txt')
 
 # 2. what label do we want to predict?
 label_type = 'ner'
@@ -27,6 +27,7 @@ label_type = 'ner'
 # 3. make the label dictionary from the corpus
 label_dict = corpus.make_label_dictionary(label_type=label_type)
 label_dict.add_unk = True
+label_dict.remove_item('در')
 print(label_dict)
 print(label_dict.add_unk)
 
@@ -37,7 +38,8 @@ embeddings = TransformerWordEmbeddings(model='HooshvareLab/bert-base-parsbert-un
                                        subtoken_pooling="first",
                                        fine_tune=True,
                                        use_context=True,
-                                       local_files_only=True)
+                                       local_files_only=True
+                                       )
 
 # 5. initialize bare-bones sequence tagger (no CRF, no RNN, no reprojection)
 tagger = SequenceTagger(hidden_size=512,
@@ -60,6 +62,3 @@ trainer.fine_tune(data_folder + 'model',
                   embeddings_storage_mode='cpu',
                   max_epochs=100,
                   )
-
-
-os.system('cp ./data/ner-(news-parsNER)/model/training.log ./result/ner-(news-parsNER)/training1.log') 

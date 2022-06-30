@@ -6,8 +6,8 @@ from flair.datasets import ColumnCorpus
 
 # define columns
 columns = {0: 'text', 1: 'upos'}
-data_folder = "./data/upos-(UD-PERSIAN)/"
-res_text = "./result/upos-(UD-PERSIAN)/res(3).txt"
+data_folder = "./data/upos-UD-PERSIAN/"
+res_text = "./result/upos-UD-PERSIAN/res(3).txt"
 corpus = flair.datasets.UD_PERSIAN()
 # load the model you trained
 model = SequenceTagger.load(data_folder + 'model2/final-model.pt')

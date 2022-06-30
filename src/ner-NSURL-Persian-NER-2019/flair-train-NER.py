@@ -13,7 +13,7 @@ gc.collect()
 
 # define columns
 columns = {0: 'text', 1: 'ner'}
-data_folder = "./data/ner-(NSURL-Persian-NER-2019)/"
+data_folder = "./data/ner-NSURL-Persian-NER-2019/"
 corpus: Corpus = ColumnCorpus(data_folder, columns,
                               train_file='train.txt',
                               test_file='test.txt',

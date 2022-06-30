@@ -5,14 +5,13 @@ from flair.datasets import ColumnCorpus
 
 # define columns
 columns = {0: 'text', 1: 'ner'}
-data_folder = "./data/ner-(NSURL-Persian-NER-2019)/"
-res_text = "./result/ner-(NSURL-Persian-NER-2019)/res(12).txt"
+data_folder = "./data/ner-news-parsNER/"
+res_text = "./result/ner-news-parsNER/res1.txt"
 corpus: Corpus = ColumnCorpus(data_folder, columns,
-                              train_file='train.txt',
-                              test_file='test.txt',
-                              dev_file='valid.txt')
+                              train_file='train',
+                              test_file='test')
 # load the model you trained
-model = SequenceTagger.load(data_folder + 'model2/final-model.pt')
+model = SequenceTagger.load(data_folder + 'model1/final-model.pt')
 
 # create example sentence
 sentence = Sentence(' من  نیویورک رو دوست دارم')
