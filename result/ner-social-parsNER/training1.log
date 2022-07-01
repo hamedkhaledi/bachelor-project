@@ -1,0 +1,1859 @@
+2022-06-12 20:29:54,198 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:29:54,200 Model: "SequenceTagger(
+  (embeddings): TransformerWordEmbeddings(
+    (model): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(100000, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (1): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (2): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (3): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (4): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (5): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (6): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (7): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (8): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (9): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (10): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (11): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+  )
+  (word_dropout): WordDropout(p=0.05)
+  (locked_dropout): LockedDropout(p=0.5)
+  (embedding2nn): Linear(in_features=768, out_features=768, bias=True)
+  (rnn): LSTM(768, 512, batch_first=True, bidirectional=True)
+  (linear): Linear(in_features=1024, out_features=10, bias=True)
+  (beta): 1.0
+  (weights): None
+  (weight_tensor) None
+)"
+2022-06-12 20:29:54,200 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:29:54,200 Corpus: "Corpus: 12017 train + 4004 dev + 4004 test sentences"
+2022-06-12 20:29:54,200 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:29:54,200 Parameters:
+2022-06-12 20:29:54,200  - learning_rate: "5e-06"
+2022-06-12 20:29:54,200  - mini_batch_size: "32"
+2022-06-12 20:29:54,200  - patience: "3"
+2022-06-12 20:29:54,200  - anneal_factor: "0.5"
+2022-06-12 20:29:54,201  - max_epochs: "100"
+2022-06-12 20:29:54,201  - shuffle: "True"
+2022-06-12 20:29:54,201  - train_with_dev: "False"
+2022-06-12 20:29:54,201  - batch_growth_annealing: "False"
+2022-06-12 20:29:54,201 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:29:54,201 Model training base path: "data/ner-social-parsNER/model"
+2022-06-12 20:29:54,201 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:29:54,201 Device: cuda:0
+2022-06-12 20:29:54,201 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:29:54,201 Embeddings storage mode: cpu
+2022-06-12 20:29:54,202 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:30:06,410 epoch 1 - iter 37/376 - loss 2.29849821 - samples/sec: 97.02 - lr: 0.000000
+2022-06-12 20:30:17,739 epoch 1 - iter 74/376 - loss 2.29271502 - samples/sec: 104.54 - lr: 0.000000
+2022-06-12 20:30:28,413 epoch 1 - iter 111/376 - loss 2.29096235 - samples/sec: 110.97 - lr: 0.000000
+2022-06-12 20:30:40,014 epoch 1 - iter 148/376 - loss 2.28944150 - samples/sec: 102.10 - lr: 0.000000
+2022-06-12 20:30:51,173 epoch 1 - iter 185/376 - loss 2.28712682 - samples/sec: 106.14 - lr: 0.000000
+2022-06-12 20:31:02,372 epoch 1 - iter 222/376 - loss 2.28418679 - samples/sec: 105.76 - lr: 0.000000
+2022-06-12 20:31:13,832 epoch 1 - iter 259/376 - loss 2.28171865 - samples/sec: 103.35 - lr: 0.000000
+2022-06-12 20:31:25,402 epoch 1 - iter 296/376 - loss 2.27842920 - samples/sec: 102.37 - lr: 0.000000
+2022-06-12 20:31:37,838 epoch 1 - iter 333/376 - loss 2.27161581 - samples/sec: 95.24 - lr: 0.000000
+2022-06-12 20:31:49,996 epoch 1 - iter 370/376 - loss 2.26670192 - samples/sec: 97.42 - lr: 0.000000
+2022-06-12 20:31:51,631 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:31:51,631 EPOCH 1 done: loss 2.2661 - lr 0.0000005
+2022-06-12 20:33:02,714 DEV : loss 2.1807596683502197 - f1-score (micro avg)  0.0234
+2022-06-12 20:33:02,827 BAD EPOCHS (no improvement): 4
+2022-06-12 20:33:02,828 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:33:04,141 epoch 2 - iter 37/376 - loss 2.19591949 - samples/sec: 906.97 - lr: 0.000001
+2022-06-12 20:33:05,459 epoch 2 - iter 74/376 - loss 2.19041421 - samples/sec: 902.63 - lr: 0.000001
+2022-06-12 20:33:06,800 epoch 2 - iter 111/376 - loss 2.18004344 - samples/sec: 887.39 - lr: 0.000001
+2022-06-12 20:33:08,084 epoch 2 - iter 148/376 - loss 2.16733679 - samples/sec: 926.89 - lr: 0.000001
+2022-06-12 20:33:09,372 epoch 2 - iter 185/376 - loss 2.15687845 - samples/sec: 924.25 - lr: 0.000001
+2022-06-12 20:33:10,752 epoch 2 - iter 222/376 - loss 2.14565339 - samples/sec: 862.09 - lr: 0.000001
+2022-06-12 20:33:12,120 epoch 2 - iter 259/376 - loss 2.13258068 - samples/sec: 869.90 - lr: 0.000001
+2022-06-12 20:33:13,439 epoch 2 - iter 296/376 - loss 2.11836619 - samples/sec: 901.77 - lr: 0.000001
+2022-06-12 20:33:14,741 epoch 2 - iter 333/376 - loss 2.10398130 - samples/sec: 913.68 - lr: 0.000001
+2022-06-12 20:33:16,016 epoch 2 - iter 370/376 - loss 2.08942637 - samples/sec: 933.01 - lr: 0.000001
+2022-06-12 20:33:16,212 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:33:16,212 EPOCH 2 done: loss 2.0877 - lr 0.0000010
+2022-06-12 20:33:24,672 DEV : loss 1.8540077209472656 - f1-score (micro avg)  0.0
+2022-06-12 20:33:24,776 BAD EPOCHS (no improvement): 4
+2022-06-12 20:33:24,776 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:33:25,886 epoch 3 - iter 37/376 - loss 1.91766899 - samples/sec: 1073.79 - lr: 0.000001
+2022-06-12 20:33:26,814 epoch 3 - iter 74/376 - loss 1.90419637 - samples/sec: 1280.07 - lr: 0.000001
+2022-06-12 20:33:27,904 epoch 3 - iter 111/376 - loss 1.88181887 - samples/sec: 1091.67 - lr: 0.000001
+2022-06-12 20:33:29,123 epoch 3 - iter 148/376 - loss 1.85888761 - samples/sec: 975.57 - lr: 0.000001
+2022-06-12 20:33:30,432 epoch 3 - iter 185/376 - loss 1.83843257 - samples/sec: 909.06 - lr: 0.000001
+2022-06-12 20:33:31,691 epoch 3 - iter 222/376 - loss 1.81376944 - samples/sec: 944.76 - lr: 0.000001
+2022-06-12 20:33:33,018 epoch 3 - iter 259/376 - loss 1.79058421 - samples/sec: 895.93 - lr: 0.000001
+2022-06-12 20:33:34,328 epoch 3 - iter 296/376 - loss 1.76536232 - samples/sec: 908.15 - lr: 0.000001
+2022-06-12 20:33:35,650 epoch 3 - iter 333/376 - loss 1.73754506 - samples/sec: 899.91 - lr: 0.000001
+2022-06-12 20:33:36,973 epoch 3 - iter 370/376 - loss 1.71023704 - samples/sec: 899.75 - lr: 0.000001
+2022-06-12 20:33:37,182 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:33:37,182 EPOCH 3 done: loss 1.7057 - lr 0.0000015
+2022-06-12 20:33:44,672 DEV : loss 1.2457365989685059 - f1-score (micro avg)  0.0
+2022-06-12 20:33:44,782 BAD EPOCHS (no improvement): 4
+2022-06-12 20:33:44,783 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:33:46,055 epoch 4 - iter 37/376 - loss 1.40219867 - samples/sec: 936.96 - lr: 0.000002
+2022-06-12 20:33:47,328 epoch 4 - iter 74/376 - loss 1.35682878 - samples/sec: 934.39 - lr: 0.000002
+2022-06-12 20:33:48,661 epoch 4 - iter 111/376 - loss 1.31496000 - samples/sec: 892.57 - lr: 0.000002
+2022-06-12 20:33:49,985 epoch 4 - iter 148/376 - loss 1.29062758 - samples/sec: 898.71 - lr: 0.000002
+2022-06-12 20:33:51,282 epoch 4 - iter 185/376 - loss 1.25730264 - samples/sec: 916.89 - lr: 0.000002
+2022-06-12 20:33:52,678 epoch 4 - iter 222/376 - loss 1.22757696 - samples/sec: 852.22 - lr: 0.000002
+2022-06-12 20:33:54,048 epoch 4 - iter 259/376 - loss 1.20324874 - samples/sec: 868.79 - lr: 0.000002
+2022-06-12 20:33:55,442 epoch 4 - iter 296/376 - loss 1.17675353 - samples/sec: 852.92 - lr: 0.000002
+2022-06-12 20:33:56,810 epoch 4 - iter 333/376 - loss 1.15181716 - samples/sec: 869.83 - lr: 0.000002
+2022-06-12 20:33:58,178 epoch 4 - iter 370/376 - loss 1.13471613 - samples/sec: 869.39 - lr: 0.000002
+2022-06-12 20:33:58,408 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:33:58,408 EPOCH 4 done: loss 1.1318 - lr 0.0000020
+2022-06-12 20:34:06,912 DEV : loss 0.9296245574951172 - f1-score (micro avg)  0.0
+2022-06-12 20:34:07,022 BAD EPOCHS (no improvement): 4
+2022-06-12 20:34:07,023 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:34:08,331 epoch 5 - iter 37/376 - loss 0.94127521 - samples/sec: 910.41 - lr: 0.000002
+2022-06-12 20:34:09,607 epoch 5 - iter 74/376 - loss 0.95210630 - samples/sec: 932.63 - lr: 0.000002
+2022-06-12 20:34:10,918 epoch 5 - iter 111/376 - loss 0.95199227 - samples/sec: 907.02 - lr: 0.000002
+2022-06-12 20:34:12,252 epoch 5 - iter 148/376 - loss 0.93972661 - samples/sec: 891.83 - lr: 0.000002
+2022-06-12 20:34:13,622 epoch 5 - iter 185/376 - loss 0.93314574 - samples/sec: 868.40 - lr: 0.000002
+2022-06-12 20:34:14,927 epoch 5 - iter 222/376 - loss 0.92561319 - samples/sec: 911.84 - lr: 0.000002
+2022-06-12 20:34:16,270 epoch 5 - iter 259/376 - loss 0.92487322 - samples/sec: 885.88 - lr: 0.000002
+2022-06-12 20:34:17,587 epoch 5 - iter 296/376 - loss 0.92107658 - samples/sec: 903.34 - lr: 0.000002
+2022-06-12 20:34:18,831 epoch 5 - iter 333/376 - loss 0.91938597 - samples/sec: 955.55 - lr: 0.000002
+2022-06-12 20:34:20,082 epoch 5 - iter 370/376 - loss 0.91370312 - samples/sec: 951.13 - lr: 0.000002
+2022-06-12 20:34:20,301 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:34:20,302 EPOCH 5 done: loss 0.9145 - lr 0.0000025
+2022-06-12 20:34:27,647 DEV : loss 0.8811066150665283 - f1-score (micro avg)  0.0
+2022-06-12 20:34:27,749 BAD EPOCHS (no improvement): 4
+2022-06-12 20:34:27,749 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:34:29,055 epoch 6 - iter 37/376 - loss 0.85144613 - samples/sec: 912.81 - lr: 0.000003
+2022-06-12 20:34:30,173 epoch 6 - iter 74/376 - loss 0.85879832 - samples/sec: 1061.98 - lr: 0.000003
+2022-06-12 20:34:31,578 epoch 6 - iter 111/376 - loss 0.86231397 - samples/sec: 846.96 - lr: 0.000003
+2022-06-12 20:34:32,804 epoch 6 - iter 148/376 - loss 0.86984651 - samples/sec: 968.82 - lr: 0.000003
+2022-06-12 20:34:34,025 epoch 6 - iter 185/376 - loss 0.86099964 - samples/sec: 973.76 - lr: 0.000003
+2022-06-12 20:34:35,362 epoch 6 - iter 222/376 - loss 0.86047407 - samples/sec: 889.76 - lr: 0.000003
+2022-06-12 20:34:36,734 epoch 6 - iter 259/376 - loss 0.85894743 - samples/sec: 866.70 - lr: 0.000003
+2022-06-12 20:34:37,956 epoch 6 - iter 296/376 - loss 0.85810992 - samples/sec: 972.52 - lr: 0.000003
+2022-06-12 20:34:39,063 epoch 6 - iter 333/376 - loss 0.85431172 - samples/sec: 1072.20 - lr: 0.000003
+2022-06-12 20:34:40,398 epoch 6 - iter 370/376 - loss 0.85336523 - samples/sec: 891.14 - lr: 0.000003
+2022-06-12 20:34:40,616 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:34:40,616 EPOCH 6 done: loss 0.8535 - lr 0.0000030
+2022-06-12 20:34:49,220 DEV : loss 0.8105392456054688 - f1-score (micro avg)  0.0
+2022-06-12 20:34:49,324 BAD EPOCHS (no improvement): 4
+2022-06-12 20:34:49,325 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:34:50,455 epoch 7 - iter 37/376 - loss 0.83566158 - samples/sec: 1054.75 - lr: 0.000003
+2022-06-12 20:34:51,560 epoch 7 - iter 74/376 - loss 0.82029004 - samples/sec: 1076.82 - lr: 0.000003
+2022-06-12 20:34:52,863 epoch 7 - iter 111/376 - loss 0.81866278 - samples/sec: 913.26 - lr: 0.000003
+2022-06-12 20:34:54,177 epoch 7 - iter 148/376 - loss 0.80513361 - samples/sec: 905.24 - lr: 0.000003
+2022-06-12 20:34:55,466 epoch 7 - iter 185/376 - loss 0.80182899 - samples/sec: 922.62 - lr: 0.000003
+2022-06-12 20:34:56,756 epoch 7 - iter 222/376 - loss 0.80410104 - samples/sec: 922.45 - lr: 0.000003
+2022-06-12 20:34:58,063 epoch 7 - iter 259/376 - loss 0.80334815 - samples/sec: 910.22 - lr: 0.000003
+2022-06-12 20:34:59,342 epoch 7 - iter 296/376 - loss 0.80207878 - samples/sec: 929.38 - lr: 0.000003
+2022-06-12 20:35:00,663 epoch 7 - iter 333/376 - loss 0.80069480 - samples/sec: 900.28 - lr: 0.000003
+2022-06-12 20:35:01,910 epoch 7 - iter 370/376 - loss 0.79946844 - samples/sec: 953.04 - lr: 0.000003
+2022-06-12 20:35:02,114 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:35:02,114 EPOCH 7 done: loss 0.7985 - lr 0.0000035
+2022-06-12 20:35:09,469 DEV : loss 0.736393392086029 - f1-score (micro avg)  0.0
+2022-06-12 20:35:09,582 BAD EPOCHS (no improvement): 4
+2022-06-12 20:35:09,583 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:35:10,833 epoch 8 - iter 37/376 - loss 0.76813559 - samples/sec: 953.33 - lr: 0.000004
+2022-06-12 20:35:12,092 epoch 8 - iter 74/376 - loss 0.77320773 - samples/sec: 944.77 - lr: 0.000004
+2022-06-12 20:35:13,476 epoch 8 - iter 111/376 - loss 0.76531061 - samples/sec: 859.35 - lr: 0.000004
+2022-06-12 20:35:14,800 epoch 8 - iter 148/376 - loss 0.76017474 - samples/sec: 898.71 - lr: 0.000004
+2022-06-12 20:35:16,111 epoch 8 - iter 185/376 - loss 0.75738634 - samples/sec: 907.04 - lr: 0.000004
+2022-06-12 20:35:17,306 epoch 8 - iter 222/376 - loss 0.75006102 - samples/sec: 994.77 - lr: 0.000004
+2022-06-12 20:35:18,410 epoch 8 - iter 259/376 - loss 0.75165005 - samples/sec: 1076.33 - lr: 0.000004
+2022-06-12 20:35:19,597 epoch 8 - iter 296/376 - loss 0.74914817 - samples/sec: 1001.10 - lr: 0.000004
+2022-06-12 20:35:20,928 epoch 8 - iter 333/376 - loss 0.74640643 - samples/sec: 893.22 - lr: 0.000004
+2022-06-12 20:35:22,243 epoch 8 - iter 370/376 - loss 0.74167254 - samples/sec: 904.76 - lr: 0.000004
+2022-06-12 20:35:22,437 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:35:22,437 EPOCH 8 done: loss 0.7416 - lr 0.0000040
+2022-06-12 20:35:30,753 DEV : loss 0.6701135635375977 - f1-score (micro avg)  0.0
+2022-06-12 20:35:30,863 BAD EPOCHS (no improvement): 4
+2022-06-12 20:35:30,864 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:35:32,216 epoch 9 - iter 37/376 - loss 0.72226499 - samples/sec: 880.91 - lr: 0.000004
+2022-06-12 20:35:33,549 epoch 9 - iter 74/376 - loss 0.71544361 - samples/sec: 893.13 - lr: 0.000004
+2022-06-12 20:35:34,894 epoch 9 - iter 111/376 - loss 0.70631436 - samples/sec: 884.58 - lr: 0.000004
+2022-06-12 20:35:36,211 epoch 9 - iter 148/376 - loss 0.70661819 - samples/sec: 903.37 - lr: 0.000004
+2022-06-12 20:35:37,336 epoch 9 - iter 185/376 - loss 0.69750291 - samples/sec: 1055.21 - lr: 0.000004
+2022-06-12 20:35:38,394 epoch 9 - iter 222/376 - loss 0.69880565 - samples/sec: 1122.71 - lr: 0.000004
+2022-06-12 20:35:39,724 epoch 9 - iter 259/376 - loss 0.69897896 - samples/sec: 894.42 - lr: 0.000004
+2022-06-12 20:35:41,063 epoch 9 - iter 296/376 - loss 0.69179856 - samples/sec: 888.55 - lr: 0.000004
+2022-06-12 20:35:42,369 epoch 9 - iter 333/376 - loss 0.69079554 - samples/sec: 911.13 - lr: 0.000004
+2022-06-12 20:35:43,658 epoch 9 - iter 370/376 - loss 0.68533464 - samples/sec: 922.88 - lr: 0.000004
+2022-06-12 20:35:43,851 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:35:43,851 EPOCH 9 done: loss 0.6852 - lr 0.0000045
+2022-06-12 20:35:52,337 DEV : loss 0.5962893962860107 - f1-score (micro avg)  0.0101
+2022-06-12 20:35:52,439 BAD EPOCHS (no improvement): 4
+2022-06-12 20:35:52,440 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:35:53,537 epoch 10 - iter 37/376 - loss 0.67986823 - samples/sec: 1084.41 - lr: 0.000005
+2022-06-12 20:35:54,778 epoch 10 - iter 74/376 - loss 0.65129806 - samples/sec: 958.76 - lr: 0.000005
+2022-06-12 20:35:56,046 epoch 10 - iter 111/376 - loss 0.65229961 - samples/sec: 937.85 - lr: 0.000005
+2022-06-12 20:35:57,334 epoch 10 - iter 148/376 - loss 0.64647573 - samples/sec: 924.35 - lr: 0.000005
+2022-06-12 20:35:58,615 epoch 10 - iter 185/376 - loss 0.64420731 - samples/sec: 928.35 - lr: 0.000005
+2022-06-12 20:35:59,894 epoch 10 - iter 222/376 - loss 0.63748744 - samples/sec: 930.34 - lr: 0.000005
+2022-06-12 20:36:01,195 epoch 10 - iter 259/376 - loss 0.63492080 - samples/sec: 913.75 - lr: 0.000005
+2022-06-12 20:36:02,501 epoch 10 - iter 296/376 - loss 0.63372940 - samples/sec: 910.89 - lr: 0.000005
+2022-06-12 20:36:03,816 epoch 10 - iter 333/376 - loss 0.63082140 - samples/sec: 905.43 - lr: 0.000005
+2022-06-12 20:36:05,087 epoch 10 - iter 370/376 - loss 0.63219343 - samples/sec: 935.76 - lr: 0.000005
+2022-06-12 20:36:05,287 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:36:05,287 EPOCH 10 done: loss 0.6323 - lr 0.0000050
+2022-06-12 20:36:12,842 DEV : loss 0.5288897752761841 - f1-score (micro avg)  0.0743
+2022-06-12 20:36:12,948 BAD EPOCHS (no improvement): 4
+2022-06-12 20:36:12,949 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:36:14,256 epoch 11 - iter 37/376 - loss 0.60387598 - samples/sec: 911.72 - lr: 0.000005
+2022-06-12 20:36:15,573 epoch 11 - iter 74/376 - loss 0.59061242 - samples/sec: 903.54 - lr: 0.000005
+2022-06-12 20:36:16,918 epoch 11 - iter 111/376 - loss 0.59579886 - samples/sec: 884.80 - lr: 0.000005
+2022-06-12 20:36:18,282 epoch 11 - iter 148/376 - loss 0.58705363 - samples/sec: 872.02 - lr: 0.000005
+2022-06-12 20:36:19,562 epoch 11 - iter 185/376 - loss 0.58723931 - samples/sec: 930.10 - lr: 0.000005
+2022-06-12 20:36:20,879 epoch 11 - iter 222/376 - loss 0.58926398 - samples/sec: 903.25 - lr: 0.000005
+2022-06-12 20:36:22,237 epoch 11 - iter 259/376 - loss 0.59068721 - samples/sec: 875.78 - lr: 0.000005
+2022-06-12 20:36:23,582 epoch 11 - iter 296/376 - loss 0.58944339 - samples/sec: 885.10 - lr: 0.000005
+2022-06-12 20:36:24,941 epoch 11 - iter 333/376 - loss 0.58603444 - samples/sec: 875.17 - lr: 0.000005
+2022-06-12 20:36:26,301 epoch 11 - iter 370/376 - loss 0.58347481 - samples/sec: 875.05 - lr: 0.000005
+2022-06-12 20:36:26,519 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:36:26,520 EPOCH 11 done: loss 0.5830 - lr 0.0000049
+2022-06-12 20:36:35,129 DEV : loss 0.4714600443840027 - f1-score (micro avg)  0.147
+2022-06-12 20:36:35,240 BAD EPOCHS (no improvement): 4
+2022-06-12 20:36:35,241 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:36:36,267 epoch 12 - iter 37/376 - loss 0.54367042 - samples/sec: 1160.17 - lr: 0.000005
+2022-06-12 20:36:37,468 epoch 12 - iter 74/376 - loss 0.55309430 - samples/sec: 989.50 - lr: 0.000005
+2022-06-12 20:36:38,600 epoch 12 - iter 111/376 - loss 0.55290650 - samples/sec: 1048.68 - lr: 0.000005
+2022-06-12 20:36:39,719 epoch 12 - iter 148/376 - loss 0.55318556 - samples/sec: 1061.71 - lr: 0.000005
+2022-06-12 20:36:40,905 epoch 12 - iter 185/376 - loss 0.54942299 - samples/sec: 1002.29 - lr: 0.000005
+2022-06-12 20:36:42,304 epoch 12 - iter 222/376 - loss 0.54879308 - samples/sec: 850.50 - lr: 0.000005
+2022-06-12 20:36:43,707 epoch 12 - iter 259/376 - loss 0.54590077 - samples/sec: 847.86 - lr: 0.000005
+2022-06-12 20:36:45,138 epoch 12 - iter 296/376 - loss 0.53986603 - samples/sec: 831.27 - lr: 0.000005
+2022-06-12 20:36:46,438 epoch 12 - iter 333/376 - loss 0.53821782 - samples/sec: 914.80 - lr: 0.000005
+2022-06-12 20:36:47,742 epoch 12 - iter 370/376 - loss 0.53845579 - samples/sec: 912.74 - lr: 0.000005
+2022-06-12 20:36:47,946 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:36:47,946 EPOCH 12 done: loss 0.5378 - lr 0.0000049
+2022-06-12 20:36:55,703 DEV : loss 0.42566975951194763 - f1-score (micro avg)  0.2373
+2022-06-12 20:36:55,812 BAD EPOCHS (no improvement): 4
+2022-06-12 20:36:55,812 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:36:56,876 epoch 13 - iter 37/376 - loss 0.52516894 - samples/sec: 1121.77 - lr: 0.000005
+2022-06-12 20:36:58,084 epoch 13 - iter 74/376 - loss 0.51531666 - samples/sec: 984.20 - lr: 0.000005
+2022-06-12 20:36:59,325 epoch 13 - iter 111/376 - loss 0.51433637 - samples/sec: 958.39 - lr: 0.000005
+2022-06-12 20:37:00,622 epoch 13 - iter 148/376 - loss 0.51592393 - samples/sec: 917.81 - lr: 0.000005
+2022-06-12 20:37:01,917 epoch 13 - iter 185/376 - loss 0.51781538 - samples/sec: 918.31 - lr: 0.000005
+2022-06-12 20:37:03,206 epoch 13 - iter 222/376 - loss 0.51593569 - samples/sec: 922.61 - lr: 0.000005
+2022-06-12 20:37:04,489 epoch 13 - iter 259/376 - loss 0.51577006 - samples/sec: 927.49 - lr: 0.000005
+2022-06-12 20:37:05,846 epoch 13 - iter 296/376 - loss 0.51122138 - samples/sec: 876.62 - lr: 0.000005
+2022-06-12 20:37:07,162 epoch 13 - iter 333/376 - loss 0.50550244 - samples/sec: 903.83 - lr: 0.000005
+2022-06-12 20:37:08,451 epoch 13 - iter 370/376 - loss 0.50273806 - samples/sec: 922.62 - lr: 0.000005
+2022-06-12 20:37:08,665 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:37:08,665 EPOCH 13 done: loss 0.5017 - lr 0.0000048
+2022-06-12 20:37:17,325 DEV : loss 0.3929576575756073 - f1-score (micro avg)  0.3133
+2022-06-12 20:37:17,437 BAD EPOCHS (no improvement): 4
+2022-06-12 20:37:17,437 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:37:18,741 epoch 14 - iter 37/376 - loss 0.48984674 - samples/sec: 914.45 - lr: 0.000005
+2022-06-12 20:37:20,038 epoch 14 - iter 74/376 - loss 0.48096260 - samples/sec: 917.35 - lr: 0.000005
+2022-06-12 20:37:21,261 epoch 14 - iter 111/376 - loss 0.47948030 - samples/sec: 971.52 - lr: 0.000005
+2022-06-12 20:37:22,346 epoch 14 - iter 148/376 - loss 0.48055196 - samples/sec: 1094.86 - lr: 0.000005
+2022-06-12 20:37:23,525 epoch 14 - iter 185/376 - loss 0.47782003 - samples/sec: 1007.61 - lr: 0.000005
+2022-06-12 20:37:24,832 epoch 14 - iter 222/376 - loss 0.47843894 - samples/sec: 910.32 - lr: 0.000005
+2022-06-12 20:37:26,142 epoch 14 - iter 259/376 - loss 0.47722980 - samples/sec: 908.40 - lr: 0.000005
+2022-06-12 20:37:27,410 epoch 14 - iter 296/376 - loss 0.47464776 - samples/sec: 937.35 - lr: 0.000005
+2022-06-12 20:37:28,715 epoch 14 - iter 333/376 - loss 0.47401241 - samples/sec: 911.42 - lr: 0.000005
+2022-06-12 20:37:29,985 epoch 14 - iter 370/376 - loss 0.47412554 - samples/sec: 936.53 - lr: 0.000005
+2022-06-12 20:37:30,200 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:37:30,201 EPOCH 14 done: loss 0.4736 - lr 0.0000048
+2022-06-12 20:37:39,089 DEV : loss 0.36699265241622925 - f1-score (micro avg)  0.3742
+2022-06-12 20:37:39,195 BAD EPOCHS (no improvement): 4
+2022-06-12 20:37:39,196 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:37:40,308 epoch 15 - iter 37/376 - loss 0.46713026 - samples/sec: 1070.30 - lr: 0.000005
+2022-06-12 20:37:41,485 epoch 15 - iter 74/376 - loss 0.46287934 - samples/sec: 1009.51 - lr: 0.000005
+2022-06-12 20:37:42,814 epoch 15 - iter 111/376 - loss 0.46423423 - samples/sec: 894.54 - lr: 0.000005
+2022-06-12 20:37:44,129 epoch 15 - iter 148/376 - loss 0.46304388 - samples/sec: 905.26 - lr: 0.000005
+2022-06-12 20:37:45,478 epoch 15 - iter 185/376 - loss 0.45968120 - samples/sec: 881.52 - lr: 0.000005
+2022-06-12 20:37:46,739 epoch 15 - iter 222/376 - loss 0.45691069 - samples/sec: 943.25 - lr: 0.000005
+2022-06-12 20:37:47,911 epoch 15 - iter 259/376 - loss 0.45525108 - samples/sec: 1013.64 - lr: 0.000005
+2022-06-12 20:37:49,280 epoch 15 - iter 296/376 - loss 0.45280492 - samples/sec: 869.13 - lr: 0.000005
+2022-06-12 20:37:50,615 epoch 15 - iter 333/376 - loss 0.45204890 - samples/sec: 890.98 - lr: 0.000005
+2022-06-12 20:37:51,956 epoch 15 - iter 370/376 - loss 0.44935376 - samples/sec: 886.78 - lr: 0.000005
+2022-06-12 20:37:52,154 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:37:52,155 EPOCH 15 done: loss 0.4490 - lr 0.0000047
+2022-06-12 20:37:59,979 DEV : loss 0.3465830385684967 - f1-score (micro avg)  0.4139
+2022-06-12 20:38:00,114 BAD EPOCHS (no improvement): 4
+2022-06-12 20:38:00,114 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:38:01,581 epoch 16 - iter 37/376 - loss 0.43102971 - samples/sec: 813.05 - lr: 0.000005
+2022-06-12 20:38:02,897 epoch 16 - iter 74/376 - loss 0.43505571 - samples/sec: 903.15 - lr: 0.000005
+2022-06-12 20:38:04,300 epoch 16 - iter 111/376 - loss 0.43545200 - samples/sec: 848.72 - lr: 0.000005
+2022-06-12 20:38:05,649 epoch 16 - iter 148/376 - loss 0.43081378 - samples/sec: 881.69 - lr: 0.000005
+2022-06-12 20:38:06,993 epoch 16 - iter 185/376 - loss 0.43181095 - samples/sec: 885.17 - lr: 0.000005
+2022-06-12 20:38:08,392 epoch 16 - iter 222/376 - loss 0.43393182 - samples/sec: 850.42 - lr: 0.000005
+2022-06-12 20:38:09,768 epoch 16 - iter 259/376 - loss 0.43383777 - samples/sec: 864.11 - lr: 0.000005
+2022-06-12 20:38:10,931 epoch 16 - iter 296/376 - loss 0.43444364 - samples/sec: 1021.42 - lr: 0.000005
+2022-06-12 20:38:12,068 epoch 16 - iter 333/376 - loss 0.43230738 - samples/sec: 1044.72 - lr: 0.000005
+2022-06-12 20:38:13,212 epoch 16 - iter 370/376 - loss 0.43189826 - samples/sec: 1038.62 - lr: 0.000005
+2022-06-12 20:38:13,377 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:38:13,377 EPOCH 16 done: loss 0.4314 - lr 0.0000047
+2022-06-12 20:38:22,353 DEV : loss 0.32897213101387024 - f1-score (micro avg)  0.4667
+2022-06-12 20:38:22,472 BAD EPOCHS (no improvement): 4
+2022-06-12 20:38:22,473 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:38:23,845 epoch 17 - iter 37/376 - loss 0.41850343 - samples/sec: 868.40 - lr: 0.000005
+2022-06-12 20:38:25,216 epoch 17 - iter 74/376 - loss 0.41923445 - samples/sec: 868.02 - lr: 0.000005
+2022-06-12 20:38:26,593 epoch 17 - iter 111/376 - loss 0.41868905 - samples/sec: 864.12 - lr: 0.000005
+2022-06-12 20:38:27,949 epoch 17 - iter 148/376 - loss 0.41727843 - samples/sec: 876.85 - lr: 0.000005
+2022-06-12 20:38:29,294 epoch 17 - iter 185/376 - loss 0.41591682 - samples/sec: 884.58 - lr: 0.000005
+2022-06-12 20:38:30,497 epoch 17 - iter 222/376 - loss 0.41828779 - samples/sec: 987.81 - lr: 0.000005
+2022-06-12 20:38:31,758 epoch 17 - iter 259/376 - loss 0.41743259 - samples/sec: 943.67 - lr: 0.000005
+2022-06-12 20:38:33,049 epoch 17 - iter 296/376 - loss 0.41640845 - samples/sec: 921.25 - lr: 0.000005
+2022-06-12 20:38:34,323 epoch 17 - iter 333/376 - loss 0.41827337 - samples/sec: 933.23 - lr: 0.000005
+2022-06-12 20:38:35,532 epoch 17 - iter 370/376 - loss 0.41748376 - samples/sec: 983.34 - lr: 0.000005
+2022-06-12 20:38:35,732 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:38:35,733 EPOCH 17 done: loss 0.4179 - lr 0.0000046
+2022-06-12 20:38:43,647 DEV : loss 0.3160077631473541 - f1-score (micro avg)  0.4883
+2022-06-12 20:38:43,753 BAD EPOCHS (no improvement): 4
+2022-06-12 20:38:43,753 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:38:45,008 epoch 18 - iter 37/376 - loss 0.39938431 - samples/sec: 949.50 - lr: 0.000005
+2022-06-12 20:38:46,300 epoch 18 - iter 74/376 - loss 0.40541593 - samples/sec: 920.71 - lr: 0.000005
+2022-06-12 20:38:47,639 epoch 18 - iter 111/376 - loss 0.39848953 - samples/sec: 888.90 - lr: 0.000005
+2022-06-12 20:38:48,953 epoch 18 - iter 148/376 - loss 0.39799406 - samples/sec: 904.63 - lr: 0.000005
+2022-06-12 20:38:50,249 epoch 18 - iter 185/376 - loss 0.39986983 - samples/sec: 917.92 - lr: 0.000005
+2022-06-12 20:38:51,546 epoch 18 - iter 222/376 - loss 0.40114946 - samples/sec: 917.27 - lr: 0.000005
+2022-06-12 20:38:52,842 epoch 18 - iter 259/376 - loss 0.40340999 - samples/sec: 917.52 - lr: 0.000005
+2022-06-12 20:38:54,109 epoch 18 - iter 296/376 - loss 0.39898588 - samples/sec: 938.75 - lr: 0.000005
+2022-06-12 20:38:55,430 epoch 18 - iter 333/376 - loss 0.40025559 - samples/sec: 900.46 - lr: 0.000005
+2022-06-12 20:38:56,725 epoch 18 - iter 370/376 - loss 0.40114670 - samples/sec: 918.15 - lr: 0.000005
+2022-06-12 20:38:56,925 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:38:56,925 EPOCH 18 done: loss 0.4006 - lr 0.0000046
+2022-06-12 20:39:06,015 DEV : loss 0.30615854263305664 - f1-score (micro avg)  0.5184
+2022-06-12 20:39:06,122 BAD EPOCHS (no improvement): 4
+2022-06-12 20:39:06,122 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:39:07,263 epoch 19 - iter 37/376 - loss 0.37449983 - samples/sec: 1045.88 - lr: 0.000005
+2022-06-12 20:39:08,570 epoch 19 - iter 74/376 - loss 0.38901709 - samples/sec: 910.14 - lr: 0.000005
+2022-06-12 20:39:09,872 epoch 19 - iter 111/376 - loss 0.39253919 - samples/sec: 912.99 - lr: 0.000005
+2022-06-12 20:39:11,161 epoch 19 - iter 148/376 - loss 0.39304795 - samples/sec: 923.18 - lr: 0.000005
+2022-06-12 20:39:12,450 epoch 19 - iter 185/376 - loss 0.39493407 - samples/sec: 922.39 - lr: 0.000005
+2022-06-12 20:39:13,757 epoch 19 - iter 222/376 - loss 0.39480922 - samples/sec: 909.74 - lr: 0.000005
+2022-06-12 20:39:15,064 epoch 19 - iter 259/376 - loss 0.39402186 - samples/sec: 909.98 - lr: 0.000005
+2022-06-12 20:39:16,320 epoch 19 - iter 296/376 - loss 0.39202759 - samples/sec: 946.92 - lr: 0.000005
+2022-06-12 20:39:17,598 epoch 19 - iter 333/376 - loss 0.39234115 - samples/sec: 930.00 - lr: 0.000005
+2022-06-12 20:39:18,914 epoch 19 - iter 370/376 - loss 0.39042200 - samples/sec: 903.75 - lr: 0.000005
+2022-06-12 20:39:19,135 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:39:19,136 EPOCH 19 done: loss 0.3902 - lr 0.0000045
+2022-06-12 20:39:28,395 DEV : loss 0.2964334487915039 - f1-score (micro avg)  0.5339
+2022-06-12 20:39:28,504 BAD EPOCHS (no improvement): 4
+2022-06-12 20:39:28,504 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:39:29,660 epoch 20 - iter 37/376 - loss 0.36533251 - samples/sec: 1029.62 - lr: 0.000004
+2022-06-12 20:39:30,908 epoch 20 - iter 74/376 - loss 0.38047452 - samples/sec: 952.61 - lr: 0.000004
+2022-06-12 20:39:32,241 epoch 20 - iter 111/376 - loss 0.38203587 - samples/sec: 892.59 - lr: 0.000004
+2022-06-12 20:39:33,545 epoch 20 - iter 148/376 - loss 0.37150821 - samples/sec: 911.91 - lr: 0.000004
+2022-06-12 20:39:34,718 epoch 20 - iter 185/376 - loss 0.37510354 - samples/sec: 1013.79 - lr: 0.000004
+2022-06-12 20:39:36,045 epoch 20 - iter 222/376 - loss 0.37781275 - samples/sec: 896.20 - lr: 0.000004
+2022-06-12 20:39:37,392 epoch 20 - iter 259/376 - loss 0.37907116 - samples/sec: 883.30 - lr: 0.000004
+2022-06-12 20:39:38,569 epoch 20 - iter 296/376 - loss 0.37885006 - samples/sec: 1010.03 - lr: 0.000004
+2022-06-12 20:39:39,666 epoch 20 - iter 333/376 - loss 0.37831250 - samples/sec: 1082.39 - lr: 0.000004
+2022-06-12 20:39:40,988 epoch 20 - iter 370/376 - loss 0.38033153 - samples/sec: 900.17 - lr: 0.000004
+2022-06-12 20:39:41,208 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:39:41,208 EPOCH 20 done: loss 0.3802 - lr 0.0000044
+2022-06-12 20:39:49,213 DEV : loss 0.28824159502983093 - f1-score (micro avg)  0.546
+2022-06-12 20:39:49,322 BAD EPOCHS (no improvement): 4
+2022-06-12 20:39:49,322 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:39:50,629 epoch 21 - iter 37/376 - loss 0.38993950 - samples/sec: 911.74 - lr: 0.000004
+2022-06-12 20:39:51,955 epoch 21 - iter 74/376 - loss 0.37392309 - samples/sec: 897.69 - lr: 0.000004
+2022-06-12 20:39:53,243 epoch 21 - iter 111/376 - loss 0.36605491 - samples/sec: 923.09 - lr: 0.000004
+2022-06-12 20:39:54,378 epoch 21 - iter 148/376 - loss 0.37065578 - samples/sec: 1046.48 - lr: 0.000004
+2022-06-12 20:39:55,495 epoch 21 - iter 185/376 - loss 0.36942162 - samples/sec: 1063.45 - lr: 0.000004
+2022-06-12 20:39:56,677 epoch 21 - iter 222/376 - loss 0.37051727 - samples/sec: 1005.31 - lr: 0.000004
+2022-06-12 20:39:58,009 epoch 21 - iter 259/376 - loss 0.37222907 - samples/sec: 892.95 - lr: 0.000004
+2022-06-12 20:39:59,386 epoch 21 - iter 296/376 - loss 0.37148844 - samples/sec: 864.12 - lr: 0.000004
+2022-06-12 20:40:00,760 epoch 21 - iter 333/376 - loss 0.37154916 - samples/sec: 866.07 - lr: 0.000004
+2022-06-12 20:40:02,117 epoch 21 - iter 370/376 - loss 0.37148106 - samples/sec: 876.31 - lr: 0.000004
+2022-06-12 20:40:02,325 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:40:02,326 EPOCH 21 done: loss 0.3709 - lr 0.0000044
+2022-06-12 20:40:11,474 DEV : loss 0.2822285592556 - f1-score (micro avg)  0.5607
+2022-06-12 20:40:11,608 BAD EPOCHS (no improvement): 4
+2022-06-12 20:40:11,608 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:40:12,997 epoch 22 - iter 37/376 - loss 0.35988801 - samples/sec: 857.66 - lr: 0.000004
+2022-06-12 20:40:14,361 epoch 22 - iter 74/376 - loss 0.35249338 - samples/sec: 872.06 - lr: 0.000004
+2022-06-12 20:40:15,665 epoch 22 - iter 111/376 - loss 0.35941454 - samples/sec: 913.39 - lr: 0.000004
+2022-06-12 20:40:17,037 epoch 22 - iter 148/376 - loss 0.36202829 - samples/sec: 866.97 - lr: 0.000004
+2022-06-12 20:40:18,362 epoch 22 - iter 185/376 - loss 0.36281978 - samples/sec: 898.04 - lr: 0.000004
+2022-06-12 20:40:19,661 epoch 22 - iter 222/376 - loss 0.36016063 - samples/sec: 914.68 - lr: 0.000004
+2022-06-12 20:40:20,990 epoch 22 - iter 259/376 - loss 0.36156320 - samples/sec: 895.04 - lr: 0.000004
+2022-06-12 20:40:22,294 epoch 22 - iter 296/376 - loss 0.36481387 - samples/sec: 912.25 - lr: 0.000004
+2022-06-12 20:40:23,618 epoch 22 - iter 333/376 - loss 0.36386857 - samples/sec: 898.67 - lr: 0.000004
+2022-06-12 20:40:24,918 epoch 22 - iter 370/376 - loss 0.36337132 - samples/sec: 914.18 - lr: 0.000004
+2022-06-12 20:40:25,134 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:40:25,135 EPOCH 22 done: loss 0.3634 - lr 0.0000043
+2022-06-12 20:40:34,044 DEV : loss 0.2777074873447418 - f1-score (micro avg)  0.5734
+2022-06-12 20:40:34,158 BAD EPOCHS (no improvement): 4
+2022-06-12 20:40:34,159 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:40:35,289 epoch 23 - iter 37/376 - loss 0.38284163 - samples/sec: 1053.72 - lr: 0.000004
+2022-06-12 20:40:36,594 epoch 23 - iter 74/376 - loss 0.37773789 - samples/sec: 911.45 - lr: 0.000004
+2022-06-12 20:40:37,899 epoch 23 - iter 111/376 - loss 0.36411848 - samples/sec: 912.08 - lr: 0.000004
+2022-06-12 20:40:39,165 epoch 23 - iter 148/376 - loss 0.36352748 - samples/sec: 939.34 - lr: 0.000004
+2022-06-12 20:40:40,362 epoch 23 - iter 185/376 - loss 0.36477648 - samples/sec: 993.08 - lr: 0.000004
+2022-06-12 20:40:41,511 epoch 23 - iter 222/376 - loss 0.36403683 - samples/sec: 1034.61 - lr: 0.000004
+2022-06-12 20:40:42,742 epoch 23 - iter 259/376 - loss 0.36097058 - samples/sec: 965.07 - lr: 0.000004
+2022-06-12 20:40:44,008 epoch 23 - iter 296/376 - loss 0.35856134 - samples/sec: 938.63 - lr: 0.000004
+2022-06-12 20:40:45,287 epoch 23 - iter 333/376 - loss 0.35832883 - samples/sec: 930.67 - lr: 0.000004
+2022-06-12 20:40:46,591 epoch 23 - iter 370/376 - loss 0.35767405 - samples/sec: 911.95 - lr: 0.000004
+2022-06-12 20:40:46,822 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:40:46,822 EPOCH 23 done: loss 0.3570 - lr 0.0000043
+2022-06-12 20:40:54,785 DEV : loss 0.27256178855895996 - f1-score (micro avg)  0.5802
+2022-06-12 20:40:54,896 BAD EPOCHS (no improvement): 4
+2022-06-12 20:40:54,897 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:40:56,094 epoch 24 - iter 37/376 - loss 0.36248866 - samples/sec: 995.25 - lr: 0.000004
+2022-06-12 20:40:57,409 epoch 24 - iter 74/376 - loss 0.36964194 - samples/sec: 904.57 - lr: 0.000004
+2022-06-12 20:40:58,721 epoch 24 - iter 111/376 - loss 0.36237280 - samples/sec: 906.77 - lr: 0.000004
+2022-06-12 20:40:59,997 epoch 24 - iter 148/376 - loss 0.35804772 - samples/sec: 932.65 - lr: 0.000004
+2022-06-12 20:41:01,347 epoch 24 - iter 185/376 - loss 0.35398870 - samples/sec: 880.57 - lr: 0.000004
+2022-06-12 20:41:02,677 epoch 24 - iter 222/376 - loss 0.35324879 - samples/sec: 894.36 - lr: 0.000004
+2022-06-12 20:41:03,979 epoch 24 - iter 259/376 - loss 0.34959552 - samples/sec: 913.49 - lr: 0.000004
+2022-06-12 20:41:05,290 epoch 24 - iter 296/376 - loss 0.34963794 - samples/sec: 907.38 - lr: 0.000004
+2022-06-12 20:41:06,636 epoch 24 - iter 333/376 - loss 0.34914419 - samples/sec: 883.96 - lr: 0.000004
+2022-06-12 20:41:07,909 epoch 24 - iter 370/376 - loss 0.35101314 - samples/sec: 934.06 - lr: 0.000004
+2022-06-12 20:41:08,103 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:41:08,103 EPOCH 24 done: loss 0.3505 - lr 0.0000042
+2022-06-12 20:41:17,031 DEV : loss 0.2674546241760254 - f1-score (micro avg)  0.5861
+2022-06-12 20:41:17,140 BAD EPOCHS (no improvement): 4
+2022-06-12 20:41:17,140 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:41:18,506 epoch 25 - iter 37/376 - loss 0.34645543 - samples/sec: 872.49 - lr: 0.000004
+2022-06-12 20:41:19,860 epoch 25 - iter 74/376 - loss 0.35059354 - samples/sec: 878.73 - lr: 0.000004
+2022-06-12 20:41:21,249 epoch 25 - iter 111/376 - loss 0.34968771 - samples/sec: 856.29 - lr: 0.000004
+2022-06-12 20:41:22,505 epoch 25 - iter 148/376 - loss 0.35059924 - samples/sec: 947.26 - lr: 0.000004
+2022-06-12 20:41:23,813 epoch 25 - iter 185/376 - loss 0.34878087 - samples/sec: 909.36 - lr: 0.000004
+2022-06-12 20:41:25,089 epoch 25 - iter 222/376 - loss 0.35149322 - samples/sec: 931.44 - lr: 0.000004
+2022-06-12 20:41:26,366 epoch 25 - iter 259/376 - loss 0.34866519 - samples/sec: 931.26 - lr: 0.000004
+2022-06-12 20:41:27,651 epoch 25 - iter 296/376 - loss 0.34649119 - samples/sec: 926.06 - lr: 0.000004
+2022-06-12 20:41:28,916 epoch 25 - iter 333/376 - loss 0.34513785 - samples/sec: 939.90 - lr: 0.000004
+2022-06-12 20:41:30,178 epoch 25 - iter 370/376 - loss 0.34445977 - samples/sec: 943.12 - lr: 0.000004
+2022-06-12 20:41:30,376 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:41:30,376 EPOCH 25 done: loss 0.3443 - lr 0.0000042
+2022-06-12 20:41:38,218 DEV : loss 0.264369934797287 - f1-score (micro avg)  0.5922
+2022-06-12 20:41:38,327 BAD EPOCHS (no improvement): 4
+2022-06-12 20:41:38,327 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:41:39,529 epoch 26 - iter 37/376 - loss 0.34937462 - samples/sec: 991.07 - lr: 0.000004
+2022-06-12 20:41:40,834 epoch 26 - iter 74/376 - loss 0.34731100 - samples/sec: 911.47 - lr: 0.000004
+2022-06-12 20:41:42,119 epoch 26 - iter 111/376 - loss 0.34429642 - samples/sec: 926.36 - lr: 0.000004
+2022-06-12 20:41:43,414 epoch 26 - iter 148/376 - loss 0.34128924 - samples/sec: 920.08 - lr: 0.000004
+2022-06-12 20:41:44,718 epoch 26 - iter 185/376 - loss 0.34276653 - samples/sec: 912.65 - lr: 0.000004
+2022-06-12 20:41:45,995 epoch 26 - iter 222/376 - loss 0.34345066 - samples/sec: 931.69 - lr: 0.000004
+2022-06-12 20:41:47,241 epoch 26 - iter 259/376 - loss 0.34200718 - samples/sec: 954.39 - lr: 0.000004
+2022-06-12 20:41:48,569 epoch 26 - iter 296/376 - loss 0.34174612 - samples/sec: 896.27 - lr: 0.000004
+2022-06-12 20:41:49,892 epoch 26 - iter 333/376 - loss 0.34214432 - samples/sec: 899.26 - lr: 0.000004
+2022-06-12 20:41:51,193 epoch 26 - iter 370/376 - loss 0.34084445 - samples/sec: 914.24 - lr: 0.000004
+2022-06-12 20:41:51,378 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:41:51,378 EPOCH 26 done: loss 0.3416 - lr 0.0000041
+2022-06-12 20:42:00,313 DEV : loss 0.26017770171165466 - f1-score (micro avg)  0.5914
+2022-06-12 20:42:00,464 BAD EPOCHS (no improvement): 4
+2022-06-12 20:42:00,464 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:42:01,803 epoch 27 - iter 37/376 - loss 0.36071629 - samples/sec: 889.76 - lr: 0.000004
+2022-06-12 20:42:03,106 epoch 27 - iter 74/376 - loss 0.34505717 - samples/sec: 913.30 - lr: 0.000004
+2022-06-12 20:42:04,376 epoch 27 - iter 111/376 - loss 0.34071295 - samples/sec: 937.75 - lr: 0.000004
+2022-06-12 20:42:05,633 epoch 27 - iter 148/376 - loss 0.33811680 - samples/sec: 946.06 - lr: 0.000004
+2022-06-12 20:42:06,930 epoch 27 - iter 185/376 - loss 0.33868400 - samples/sec: 917.02 - lr: 0.000004
+2022-06-12 20:42:08,081 epoch 27 - iter 222/376 - loss 0.33777719 - samples/sec: 1032.32 - lr: 0.000004
+2022-06-12 20:42:09,180 epoch 27 - iter 259/376 - loss 0.33616860 - samples/sec: 1081.61 - lr: 0.000004
+2022-06-12 20:42:10,329 epoch 27 - iter 296/376 - loss 0.33667253 - samples/sec: 1033.58 - lr: 0.000004
+2022-06-12 20:42:11,509 epoch 27 - iter 333/376 - loss 0.33594514 - samples/sec: 1007.63 - lr: 0.000004
+2022-06-12 20:42:12,833 epoch 27 - iter 370/376 - loss 0.33673991 - samples/sec: 898.47 - lr: 0.000004
+2022-06-12 20:42:13,052 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:42:13,052 EPOCH 27 done: loss 0.3362 - lr 0.0000041
+2022-06-12 20:42:22,098 DEV : loss 0.2590942978858948 - f1-score (micro avg)  0.6046
+2022-06-12 20:42:22,202 BAD EPOCHS (no improvement): 4
+2022-06-12 20:42:22,203 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:42:23,366 epoch 28 - iter 37/376 - loss 0.36467670 - samples/sec: 1023.57 - lr: 0.000004
+2022-06-12 20:42:24,634 epoch 28 - iter 74/376 - loss 0.34547417 - samples/sec: 937.64 - lr: 0.000004
+2022-06-12 20:42:25,992 epoch 28 - iter 111/376 - loss 0.34072092 - samples/sec: 875.14 - lr: 0.000004
+2022-06-12 20:42:27,186 epoch 28 - iter 148/376 - loss 0.33445611 - samples/sec: 994.42 - lr: 0.000004
+2022-06-12 20:42:28,356 epoch 28 - iter 185/376 - loss 0.33278492 - samples/sec: 1015.74 - lr: 0.000004
+2022-06-12 20:42:29,628 epoch 28 - iter 222/376 - loss 0.33136892 - samples/sec: 934.34 - lr: 0.000004
+2022-06-12 20:42:30,955 epoch 28 - iter 259/376 - loss 0.33332538 - samples/sec: 895.93 - lr: 0.000004
+2022-06-12 20:42:32,145 epoch 28 - iter 296/376 - loss 0.33419368 - samples/sec: 999.35 - lr: 0.000004
+2022-06-12 20:42:33,382 epoch 28 - iter 333/376 - loss 0.33559159 - samples/sec: 962.16 - lr: 0.000004
+2022-06-12 20:42:34,694 epoch 28 - iter 370/376 - loss 0.33423287 - samples/sec: 906.60 - lr: 0.000004
+2022-06-12 20:42:34,893 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:42:34,893 EPOCH 28 done: loss 0.3342 - lr 0.0000040
+2022-06-12 20:42:42,652 DEV : loss 0.25454017519950867 - f1-score (micro avg)  0.6018
+2022-06-12 20:42:42,763 BAD EPOCHS (no improvement): 4
+2022-06-12 20:42:42,764 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:42:44,038 epoch 29 - iter 37/376 - loss 0.33984588 - samples/sec: 935.22 - lr: 0.000004
+2022-06-12 20:42:45,333 epoch 29 - iter 74/376 - loss 0.33467611 - samples/sec: 918.65 - lr: 0.000004
+2022-06-12 20:42:46,605 epoch 29 - iter 111/376 - loss 0.33577946 - samples/sec: 935.18 - lr: 0.000004
+2022-06-12 20:42:47,921 epoch 29 - iter 148/376 - loss 0.33119023 - samples/sec: 903.78 - lr: 0.000004
+2022-06-12 20:42:49,193 epoch 29 - iter 185/376 - loss 0.33129027 - samples/sec: 935.01 - lr: 0.000004
+2022-06-12 20:42:50,421 epoch 29 - iter 222/376 - loss 0.33254140 - samples/sec: 968.93 - lr: 0.000004
+2022-06-12 20:42:51,681 epoch 29 - iter 259/376 - loss 0.32961269 - samples/sec: 942.99 - lr: 0.000004
+2022-06-12 20:42:52,963 epoch 29 - iter 296/376 - loss 0.33058655 - samples/sec: 927.98 - lr: 0.000004
+2022-06-12 20:42:54,223 epoch 29 - iter 333/376 - loss 0.33044914 - samples/sec: 944.26 - lr: 0.000004
+2022-06-12 20:42:55,501 epoch 29 - iter 370/376 - loss 0.33008266 - samples/sec: 930.59 - lr: 0.000004
+2022-06-12 20:42:55,694 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:42:55,695 EPOCH 29 done: loss 0.3297 - lr 0.0000039
+2022-06-12 20:43:04,695 DEV : loss 0.2539784610271454 - f1-score (micro avg)  0.6118
+2022-06-12 20:43:04,798 BAD EPOCHS (no improvement): 4
+2022-06-12 20:43:04,798 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:43:06,093 epoch 30 - iter 37/376 - loss 0.31003129 - samples/sec: 920.48 - lr: 0.000004
+2022-06-12 20:43:07,153 epoch 30 - iter 74/376 - loss 0.31300197 - samples/sec: 1121.88 - lr: 0.000004
+2022-06-12 20:43:08,223 epoch 30 - iter 111/376 - loss 0.31426066 - samples/sec: 1109.98 - lr: 0.000004
+2022-06-12 20:43:09,569 epoch 30 - iter 148/376 - loss 0.31900196 - samples/sec: 883.72 - lr: 0.000004
+2022-06-12 20:43:10,867 epoch 30 - iter 185/376 - loss 0.32573753 - samples/sec: 916.60 - lr: 0.000004
+2022-06-12 20:43:11,944 epoch 30 - iter 222/376 - loss 0.32438804 - samples/sec: 1103.01 - lr: 0.000004
+2022-06-12 20:43:12,997 epoch 30 - iter 259/376 - loss 0.32609782 - samples/sec: 1128.36 - lr: 0.000004
+2022-06-12 20:43:14,120 epoch 30 - iter 296/376 - loss 0.32507413 - samples/sec: 1057.52 - lr: 0.000004
+2022-06-12 20:43:15,228 epoch 30 - iter 333/376 - loss 0.32516806 - samples/sec: 1071.49 - lr: 0.000004
+2022-06-12 20:43:16,296 epoch 30 - iter 370/376 - loss 0.32555358 - samples/sec: 1111.61 - lr: 0.000004
+2022-06-12 20:43:16,458 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:43:16,458 EPOCH 30 done: loss 0.3251 - lr 0.0000039
+2022-06-12 20:43:25,460 DEV : loss 0.2510443925857544 - f1-score (micro avg)  0.6129
+2022-06-12 20:43:25,564 BAD EPOCHS (no improvement): 4
+2022-06-12 20:43:25,565 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:43:26,540 epoch 31 - iter 37/376 - loss 0.31506049 - samples/sec: 1221.15 - lr: 0.000004
+2022-06-12 20:43:27,663 epoch 31 - iter 74/376 - loss 0.32049060 - samples/sec: 1058.89 - lr: 0.000004
+2022-06-12 20:43:28,945 epoch 31 - iter 111/376 - loss 0.32592076 - samples/sec: 927.86 - lr: 0.000004
+2022-06-12 20:43:30,295 epoch 31 - iter 148/376 - loss 0.32776546 - samples/sec: 881.41 - lr: 0.000004
+2022-06-12 20:43:31,624 epoch 31 - iter 185/376 - loss 0.32634923 - samples/sec: 895.01 - lr: 0.000004
+2022-06-12 20:43:32,909 epoch 31 - iter 222/376 - loss 0.32528020 - samples/sec: 926.74 - lr: 0.000004
+2022-06-12 20:43:34,160 epoch 31 - iter 259/376 - loss 0.32560103 - samples/sec: 950.89 - lr: 0.000004
+2022-06-12 20:43:35,455 epoch 31 - iter 296/376 - loss 0.32383721 - samples/sec: 918.26 - lr: 0.000004
+2022-06-12 20:43:36,750 epoch 31 - iter 333/376 - loss 0.32492063 - samples/sec: 918.97 - lr: 0.000004
+2022-06-12 20:43:38,084 epoch 31 - iter 370/376 - loss 0.32474482 - samples/sec: 892.41 - lr: 0.000004
+2022-06-12 20:43:38,290 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:43:38,291 EPOCH 31 done: loss 0.3250 - lr 0.0000038
+2022-06-12 20:43:46,267 DEV : loss 0.2509904205799103 - f1-score (micro avg)  0.6191
+2022-06-12 20:43:46,370 BAD EPOCHS (no improvement): 4
+2022-06-12 20:43:46,371 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:43:47,492 epoch 32 - iter 37/376 - loss 0.30665838 - samples/sec: 1062.88 - lr: 0.000004
+2022-06-12 20:43:48,761 epoch 32 - iter 74/376 - loss 0.32232071 - samples/sec: 937.61 - lr: 0.000004
+2022-06-12 20:43:50,064 epoch 32 - iter 111/376 - loss 0.32711581 - samples/sec: 912.98 - lr: 0.000004
+2022-06-12 20:43:51,157 epoch 32 - iter 148/376 - loss 0.32713873 - samples/sec: 1088.02 - lr: 0.000004
+2022-06-12 20:43:52,166 epoch 32 - iter 185/376 - loss 0.32484576 - samples/sec: 1178.01 - lr: 0.000004
+2022-06-12 20:43:53,259 epoch 32 - iter 222/376 - loss 0.32451682 - samples/sec: 1086.91 - lr: 0.000004
+2022-06-12 20:43:54,322 epoch 32 - iter 259/376 - loss 0.32646178 - samples/sec: 1116.91 - lr: 0.000004
+2022-06-12 20:43:55,554 epoch 32 - iter 296/376 - loss 0.32399004 - samples/sec: 964.81 - lr: 0.000004
+2022-06-12 20:43:56,842 epoch 32 - iter 333/376 - loss 0.32319326 - samples/sec: 923.97 - lr: 0.000004
+2022-06-12 20:43:58,146 epoch 32 - iter 370/376 - loss 0.32020978 - samples/sec: 912.20 - lr: 0.000004
+2022-06-12 20:43:58,352 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:43:58,353 EPOCH 32 done: loss 0.3202 - lr 0.0000038
+2022-06-12 20:44:07,356 DEV : loss 0.24724815785884857 - f1-score (micro avg)  0.6175
+2022-06-12 20:44:07,459 BAD EPOCHS (no improvement): 4
+2022-06-12 20:44:07,459 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:44:08,570 epoch 33 - iter 37/376 - loss 0.30777073 - samples/sec: 1071.26 - lr: 0.000004
+2022-06-12 20:44:09,723 epoch 33 - iter 74/376 - loss 0.31441639 - samples/sec: 1030.74 - lr: 0.000004
+2022-06-12 20:44:11,123 epoch 33 - iter 111/376 - loss 0.31578801 - samples/sec: 849.77 - lr: 0.000004
+2022-06-12 20:44:12,503 epoch 33 - iter 148/376 - loss 0.31338042 - samples/sec: 861.85 - lr: 0.000004
+2022-06-12 20:44:13,943 epoch 33 - iter 185/376 - loss 0.31266500 - samples/sec: 826.40 - lr: 0.000004
+2022-06-12 20:44:15,270 epoch 33 - iter 222/376 - loss 0.31296769 - samples/sec: 896.02 - lr: 0.000004
+2022-06-12 20:44:16,534 epoch 33 - iter 259/376 - loss 0.31545535 - samples/sec: 940.94 - lr: 0.000004
+2022-06-12 20:44:17,844 epoch 33 - iter 296/376 - loss 0.31475283 - samples/sec: 908.25 - lr: 0.000004
+2022-06-12 20:44:19,205 epoch 33 - iter 333/376 - loss 0.31652355 - samples/sec: 874.14 - lr: 0.000004
+2022-06-12 20:44:20,475 epoch 33 - iter 370/376 - loss 0.31844719 - samples/sec: 936.55 - lr: 0.000004
+2022-06-12 20:44:20,699 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:44:20,699 EPOCH 33 done: loss 0.3181 - lr 0.0000037
+2022-06-12 20:44:28,586 DEV : loss 0.24810579419136047 - f1-score (micro avg)  0.6269
+2022-06-12 20:44:28,693 BAD EPOCHS (no improvement): 4
+2022-06-12 20:44:28,693 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:44:30,021 epoch 34 - iter 37/376 - loss 0.32737704 - samples/sec: 897.02 - lr: 0.000004
+2022-06-12 20:44:31,308 epoch 34 - iter 74/376 - loss 0.31096501 - samples/sec: 924.76 - lr: 0.000004
+2022-06-12 20:44:32,591 epoch 34 - iter 111/376 - loss 0.31032013 - samples/sec: 927.01 - lr: 0.000004
+2022-06-12 20:44:33,956 epoch 34 - iter 148/376 - loss 0.30905946 - samples/sec: 871.94 - lr: 0.000004
+2022-06-12 20:44:35,233 epoch 34 - iter 185/376 - loss 0.31304431 - samples/sec: 931.85 - lr: 0.000004
+2022-06-12 20:44:36,534 epoch 34 - iter 222/376 - loss 0.31238425 - samples/sec: 914.63 - lr: 0.000004
+2022-06-12 20:44:37,880 epoch 34 - iter 259/376 - loss 0.31239858 - samples/sec: 884.05 - lr: 0.000004
+2022-06-12 20:44:39,177 epoch 34 - iter 296/376 - loss 0.31458353 - samples/sec: 917.88 - lr: 0.000004
+2022-06-12 20:44:40,494 epoch 34 - iter 333/376 - loss 0.31458578 - samples/sec: 903.00 - lr: 0.000004
+2022-06-12 20:44:41,842 epoch 34 - iter 370/376 - loss 0.31643839 - samples/sec: 882.90 - lr: 0.000004
+2022-06-12 20:44:42,029 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:44:42,030 EPOCH 34 done: loss 0.3167 - lr 0.0000037
+2022-06-12 20:44:50,842 DEV : loss 0.2479056566953659 - f1-score (micro avg)  0.6302
+2022-06-12 20:44:50,946 BAD EPOCHS (no improvement): 4
+2022-06-12 20:44:50,947 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:44:52,227 epoch 35 - iter 37/376 - loss 0.30330443 - samples/sec: 930.44 - lr: 0.000004
+2022-06-12 20:44:53,574 epoch 35 - iter 74/376 - loss 0.31074326 - samples/sec: 883.23 - lr: 0.000004
+2022-06-12 20:44:54,965 epoch 35 - iter 111/376 - loss 0.31386518 - samples/sec: 854.76 - lr: 0.000004
+2022-06-12 20:44:56,286 epoch 35 - iter 148/376 - loss 0.31202692 - samples/sec: 900.48 - lr: 0.000004
+2022-06-12 20:44:57,366 epoch 35 - iter 185/376 - loss 0.30962297 - samples/sec: 1100.60 - lr: 0.000004
+2022-06-12 20:44:58,459 epoch 35 - iter 222/376 - loss 0.31045740 - samples/sec: 1086.54 - lr: 0.000004
+2022-06-12 20:44:59,567 epoch 35 - iter 259/376 - loss 0.31154099 - samples/sec: 1071.56 - lr: 0.000004
+2022-06-12 20:45:00,678 epoch 35 - iter 296/376 - loss 0.31193260 - samples/sec: 1069.31 - lr: 0.000004
+2022-06-12 20:45:01,788 epoch 35 - iter 333/376 - loss 0.31219026 - samples/sec: 1070.98 - lr: 0.000004
+2022-06-12 20:45:02,888 epoch 35 - iter 370/376 - loss 0.31246623 - samples/sec: 1079.96 - lr: 0.000004
+2022-06-12 20:45:03,060 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:45:03,060 EPOCH 35 done: loss 0.3128 - lr 0.0000036
+2022-06-12 20:45:11,951 DEV : loss 0.24446897208690643 - f1-score (micro avg)  0.6298
+2022-06-12 20:45:12,064 BAD EPOCHS (no improvement): 4
+2022-06-12 20:45:12,064 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:45:13,355 epoch 36 - iter 37/376 - loss 0.32080037 - samples/sec: 923.03 - lr: 0.000004
+2022-06-12 20:45:14,605 epoch 36 - iter 74/376 - loss 0.31249087 - samples/sec: 951.91 - lr: 0.000004
+2022-06-12 20:45:15,983 epoch 36 - iter 111/376 - loss 0.31191667 - samples/sec: 863.46 - lr: 0.000004
+2022-06-12 20:45:17,305 epoch 36 - iter 148/376 - loss 0.30793605 - samples/sec: 900.55 - lr: 0.000004
+2022-06-12 20:45:18,553 epoch 36 - iter 185/376 - loss 0.30888846 - samples/sec: 953.23 - lr: 0.000004
+2022-06-12 20:45:19,653 epoch 36 - iter 222/376 - loss 0.30972437 - samples/sec: 1080.01 - lr: 0.000004
+2022-06-12 20:45:20,823 epoch 36 - iter 259/376 - loss 0.31090408 - samples/sec: 1015.72 - lr: 0.000004
+2022-06-12 20:45:22,066 epoch 36 - iter 296/376 - loss 0.31067018 - samples/sec: 957.18 - lr: 0.000004
+2022-06-12 20:45:23,421 epoch 36 - iter 333/376 - loss 0.31203432 - samples/sec: 877.80 - lr: 0.000004
+2022-06-12 20:45:24,740 epoch 36 - iter 370/376 - loss 0.31145343 - samples/sec: 902.63 - lr: 0.000004
+2022-06-12 20:45:24,942 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:45:24,943 EPOCH 36 done: loss 0.3110 - lr 0.0000036
+2022-06-12 20:45:32,889 DEV : loss 0.243084117770195 - f1-score (micro avg)  0.632
+2022-06-12 20:45:32,992 BAD EPOCHS (no improvement): 4
+2022-06-12 20:45:32,992 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:45:34,328 epoch 37 - iter 37/376 - loss 0.29045123 - samples/sec: 891.87 - lr: 0.000004
+2022-06-12 20:45:35,754 epoch 37 - iter 74/376 - loss 0.29879579 - samples/sec: 833.79 - lr: 0.000004
+2022-06-12 20:45:37,094 epoch 37 - iter 111/376 - loss 0.30128996 - samples/sec: 888.04 - lr: 0.000004
+2022-06-12 20:45:38,449 epoch 37 - iter 148/376 - loss 0.30143863 - samples/sec: 877.34 - lr: 0.000004
+2022-06-12 20:45:39,779 epoch 37 - iter 185/376 - loss 0.30529827 - samples/sec: 894.61 - lr: 0.000004
+2022-06-12 20:45:41,046 epoch 37 - iter 222/376 - loss 0.31091296 - samples/sec: 938.17 - lr: 0.000004
+2022-06-12 20:45:42,305 epoch 37 - iter 259/376 - loss 0.31108058 - samples/sec: 945.00 - lr: 0.000004
+2022-06-12 20:45:43,413 epoch 37 - iter 296/376 - loss 0.31058705 - samples/sec: 1073.75 - lr: 0.000004
+2022-06-12 20:45:44,492 epoch 37 - iter 333/376 - loss 0.31011212 - samples/sec: 1102.70 - lr: 0.000004
+2022-06-12 20:45:45,595 epoch 37 - iter 370/376 - loss 0.31016397 - samples/sec: 1078.09 - lr: 0.000004
+2022-06-12 20:45:45,771 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:45:45,772 EPOCH 37 done: loss 0.3098 - lr 0.0000035
+2022-06-12 20:45:54,830 DEV : loss 0.24197353422641754 - f1-score (micro avg)  0.6334
+2022-06-12 20:45:54,940 BAD EPOCHS (no improvement): 4
+2022-06-12 20:45:54,941 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:45:56,060 epoch 38 - iter 37/376 - loss 0.29797342 - samples/sec: 1065.03 - lr: 0.000003
+2022-06-12 20:45:57,293 epoch 38 - iter 74/376 - loss 0.30554850 - samples/sec: 964.96 - lr: 0.000003
+2022-06-12 20:45:58,585 epoch 38 - iter 111/376 - loss 0.30135656 - samples/sec: 920.68 - lr: 0.000003
+2022-06-12 20:45:59,916 epoch 38 - iter 148/376 - loss 0.30389591 - samples/sec: 893.81 - lr: 0.000003
+2022-06-12 20:46:01,369 epoch 38 - iter 185/376 - loss 0.30674657 - samples/sec: 818.46 - lr: 0.000003
+2022-06-12 20:46:02,744 epoch 38 - iter 222/376 - loss 0.30388423 - samples/sec: 865.57 - lr: 0.000003
+2022-06-12 20:46:04,145 epoch 38 - iter 259/376 - loss 0.30554945 - samples/sec: 849.21 - lr: 0.000003
+2022-06-12 20:46:05,506 epoch 38 - iter 296/376 - loss 0.30739799 - samples/sec: 874.64 - lr: 0.000003
+2022-06-12 20:46:06,862 epoch 38 - iter 333/376 - loss 0.30686082 - samples/sec: 877.17 - lr: 0.000003
+2022-06-12 20:46:08,192 epoch 38 - iter 370/376 - loss 0.30741887 - samples/sec: 893.97 - lr: 0.000003
+2022-06-12 20:46:08,393 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:46:08,393 EPOCH 38 done: loss 0.3074 - lr 0.0000034
+2022-06-12 20:46:17,391 DEV : loss 0.24496901035308838 - f1-score (micro avg)  0.6398
+2022-06-12 20:46:17,490 BAD EPOCHS (no improvement): 4
+2022-06-12 20:46:17,491 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:46:18,529 epoch 39 - iter 37/376 - loss 0.31461858 - samples/sec: 1145.96 - lr: 0.000003
+2022-06-12 20:46:19,599 epoch 39 - iter 74/376 - loss 0.31437802 - samples/sec: 1110.92 - lr: 0.000003
+2022-06-12 20:46:20,667 epoch 39 - iter 111/376 - loss 0.31235244 - samples/sec: 1112.17 - lr: 0.000003
+2022-06-12 20:46:21,824 epoch 39 - iter 148/376 - loss 0.30791159 - samples/sec: 1027.21 - lr: 0.000003
+2022-06-12 20:46:23,157 epoch 39 - iter 185/376 - loss 0.30812861 - samples/sec: 892.82 - lr: 0.000003
+2022-06-12 20:46:24,458 epoch 39 - iter 222/376 - loss 0.30865379 - samples/sec: 914.63 - lr: 0.000003
+2022-06-12 20:46:25,768 epoch 39 - iter 259/376 - loss 0.30705185 - samples/sec: 907.85 - lr: 0.000003
+2022-06-12 20:46:27,055 epoch 39 - iter 296/376 - loss 0.30601256 - samples/sec: 924.97 - lr: 0.000003
+2022-06-12 20:46:28,357 epoch 39 - iter 333/376 - loss 0.30654890 - samples/sec: 913.73 - lr: 0.000003
+2022-06-12 20:46:29,660 epoch 39 - iter 370/376 - loss 0.30690281 - samples/sec: 912.42 - lr: 0.000003
+2022-06-12 20:46:29,869 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:46:29,870 EPOCH 39 done: loss 0.3070 - lr 0.0000034
+2022-06-12 20:46:37,690 DEV : loss 0.24078229069709778 - f1-score (micro avg)  0.6377
+2022-06-12 20:46:37,796 BAD EPOCHS (no improvement): 4
+2022-06-12 20:46:37,797 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:46:38,782 epoch 40 - iter 37/376 - loss 0.31902157 - samples/sec: 1207.99 - lr: 0.000003
+2022-06-12 20:46:39,810 epoch 40 - iter 74/376 - loss 0.31179628 - samples/sec: 1155.34 - lr: 0.000003
+2022-06-12 20:46:41,128 epoch 40 - iter 111/376 - loss 0.30187109 - samples/sec: 903.50 - lr: 0.000003
+2022-06-12 20:46:42,409 epoch 40 - iter 148/376 - loss 0.30226361 - samples/sec: 928.78 - lr: 0.000003
+2022-06-12 20:46:43,709 epoch 40 - iter 185/376 - loss 0.30344816 - samples/sec: 914.59 - lr: 0.000003
+2022-06-12 20:46:45,036 epoch 40 - iter 222/376 - loss 0.30442159 - samples/sec: 896.06 - lr: 0.000003
+2022-06-12 20:46:46,393 epoch 40 - iter 259/376 - loss 0.30526465 - samples/sec: 876.56 - lr: 0.000003
+2022-06-12 20:46:47,656 epoch 40 - iter 296/376 - loss 0.30375340 - samples/sec: 942.16 - lr: 0.000003
+2022-06-12 20:46:48,761 epoch 40 - iter 333/376 - loss 0.30365643 - samples/sec: 1074.99 - lr: 0.000003
+2022-06-12 20:46:49,925 epoch 40 - iter 370/376 - loss 0.30316344 - samples/sec: 1021.53 - lr: 0.000003
+2022-06-12 20:46:50,135 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:46:50,135 EPOCH 40 done: loss 0.3026 - lr 0.0000033
+2022-06-12 20:46:59,137 DEV : loss 0.23813019692897797 - f1-score (micro avg)  0.6349
+2022-06-12 20:46:59,245 BAD EPOCHS (no improvement): 4
+2022-06-12 20:46:59,246 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:47:00,510 epoch 41 - iter 37/376 - loss 0.30741424 - samples/sec: 942.58 - lr: 0.000003
+2022-06-12 20:47:01,868 epoch 41 - iter 74/376 - loss 0.30566069 - samples/sec: 875.73 - lr: 0.000003
+2022-06-12 20:47:03,177 epoch 41 - iter 111/376 - loss 0.30762816 - samples/sec: 908.67 - lr: 0.000003
+2022-06-12 20:47:04,498 epoch 41 - iter 148/376 - loss 0.30462389 - samples/sec: 900.70 - lr: 0.000003
+2022-06-12 20:47:05,722 epoch 41 - iter 185/376 - loss 0.30627430 - samples/sec: 971.87 - lr: 0.000003
+2022-06-12 20:47:07,013 epoch 41 - iter 222/376 - loss 0.30461781 - samples/sec: 920.91 - lr: 0.000003
+2022-06-12 20:47:08,299 epoch 41 - iter 259/376 - loss 0.30255297 - samples/sec: 925.22 - lr: 0.000003
+2022-06-12 20:47:09,582 epoch 41 - iter 296/376 - loss 0.30577712 - samples/sec: 926.69 - lr: 0.000003
+2022-06-12 20:47:10,892 epoch 41 - iter 333/376 - loss 0.30323781 - samples/sec: 907.99 - lr: 0.000003
+2022-06-12 20:47:12,211 epoch 41 - iter 370/376 - loss 0.30295892 - samples/sec: 902.17 - lr: 0.000003
+2022-06-12 20:47:12,425 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:47:12,425 EPOCH 41 done: loss 0.3026 - lr 0.0000033
+2022-06-12 20:47:21,675 DEV : loss 0.23930329084396362 - f1-score (micro avg)  0.6405
+2022-06-12 20:47:21,782 BAD EPOCHS (no improvement): 4
+2022-06-12 20:47:21,782 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:47:23,130 epoch 42 - iter 37/376 - loss 0.29397446 - samples/sec: 884.05 - lr: 0.000003
+2022-06-12 20:47:24,471 epoch 42 - iter 74/376 - loss 0.30012488 - samples/sec: 887.37 - lr: 0.000003
+2022-06-12 20:47:25,805 epoch 42 - iter 111/376 - loss 0.30268237 - samples/sec: 892.42 - lr: 0.000003
+2022-06-12 20:47:27,127 epoch 42 - iter 148/376 - loss 0.30523043 - samples/sec: 899.62 - lr: 0.000003
+2022-06-12 20:47:28,404 epoch 42 - iter 185/376 - loss 0.30571366 - samples/sec: 931.31 - lr: 0.000003
+2022-06-12 20:47:29,708 epoch 42 - iter 222/376 - loss 0.30150452 - samples/sec: 912.29 - lr: 0.000003
+2022-06-12 20:47:31,021 epoch 42 - iter 259/376 - loss 0.29987063 - samples/sec: 906.18 - lr: 0.000003
+2022-06-12 20:47:32,334 epoch 42 - iter 296/376 - loss 0.29869840 - samples/sec: 905.07 - lr: 0.000003
+2022-06-12 20:47:33,625 epoch 42 - iter 333/376 - loss 0.29871519 - samples/sec: 921.35 - lr: 0.000003
+2022-06-12 20:47:34,927 epoch 42 - iter 370/376 - loss 0.30096674 - samples/sec: 913.89 - lr: 0.000003
+2022-06-12 20:47:35,138 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:47:35,138 EPOCH 42 done: loss 0.3009 - lr 0.0000032
+2022-06-12 20:47:43,143 DEV : loss 0.24084410071372986 - f1-score (micro avg)  0.6459
+2022-06-12 20:47:43,255 BAD EPOCHS (no improvement): 4
+2022-06-12 20:47:43,256 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:47:44,614 epoch 43 - iter 37/376 - loss 0.28938976 - samples/sec: 877.56 - lr: 0.000003
+2022-06-12 20:47:46,033 epoch 43 - iter 74/376 - loss 0.28910095 - samples/sec: 839.03 - lr: 0.000003
+2022-06-12 20:47:47,423 epoch 43 - iter 111/376 - loss 0.29310707 - samples/sec: 855.65 - lr: 0.000003
+2022-06-12 20:47:48,716 epoch 43 - iter 148/376 - loss 0.29610459 - samples/sec: 919.37 - lr: 0.000003
+2022-06-12 20:47:50,119 epoch 43 - iter 185/376 - loss 0.29694688 - samples/sec: 847.93 - lr: 0.000003
+2022-06-12 20:47:51,552 epoch 43 - iter 222/376 - loss 0.29876407 - samples/sec: 829.84 - lr: 0.000003
+2022-06-12 20:47:52,936 epoch 43 - iter 259/376 - loss 0.29989860 - samples/sec: 859.82 - lr: 0.000003
+2022-06-12 20:47:54,294 epoch 43 - iter 296/376 - loss 0.29922626 - samples/sec: 875.43 - lr: 0.000003
+2022-06-12 20:47:55,683 epoch 43 - iter 333/376 - loss 0.30031368 - samples/sec: 856.10 - lr: 0.000003
+2022-06-12 20:47:57,025 epoch 43 - iter 370/376 - loss 0.30118744 - samples/sec: 886.65 - lr: 0.000003
+2022-06-12 20:47:57,233 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:47:57,233 EPOCH 43 done: loss 0.3008 - lr 0.0000032
+2022-06-12 20:48:06,468 DEV : loss 0.23804925382137299 - f1-score (micro avg)  0.6469
+2022-06-12 20:48:06,574 BAD EPOCHS (no improvement): 4
+2022-06-12 20:48:06,574 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:48:07,864 epoch 44 - iter 37/376 - loss 0.30348332 - samples/sec: 923.66 - lr: 0.000003
+2022-06-12 20:48:08,974 epoch 44 - iter 74/376 - loss 0.30451515 - samples/sec: 1070.14 - lr: 0.000003
+2022-06-12 20:48:10,103 epoch 44 - iter 111/376 - loss 0.30217512 - samples/sec: 1052.78 - lr: 0.000003
+2022-06-12 20:48:11,219 epoch 44 - iter 148/376 - loss 0.30450230 - samples/sec: 1064.73 - lr: 0.000003
+2022-06-12 20:48:12,365 epoch 44 - iter 185/376 - loss 0.30159187 - samples/sec: 1035.69 - lr: 0.000003
+2022-06-12 20:48:13,432 epoch 44 - iter 222/376 - loss 0.30195801 - samples/sec: 1113.63 - lr: 0.000003
+2022-06-12 20:48:14,526 epoch 44 - iter 259/376 - loss 0.30276680 - samples/sec: 1085.77 - lr: 0.000003
+2022-06-12 20:48:15,786 epoch 44 - iter 296/376 - loss 0.30238959 - samples/sec: 944.17 - lr: 0.000003
+2022-06-12 20:48:17,138 epoch 44 - iter 333/376 - loss 0.30164393 - samples/sec: 879.82 - lr: 0.000003
+2022-06-12 20:48:18,523 epoch 44 - iter 370/376 - loss 0.30045155 - samples/sec: 859.07 - lr: 0.000003
+2022-06-12 20:48:18,734 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:48:18,735 EPOCH 44 done: loss 0.3000 - lr 0.0000031
+2022-06-12 20:48:26,722 DEV : loss 0.2381928265094757 - f1-score (micro avg)  0.6481
+2022-06-12 20:48:26,832 BAD EPOCHS (no improvement): 4
+2022-06-12 20:48:26,832 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:48:28,130 epoch 45 - iter 37/376 - loss 0.30844208 - samples/sec: 918.34 - lr: 0.000003
+2022-06-12 20:48:29,425 epoch 45 - iter 74/376 - loss 0.30370728 - samples/sec: 919.11 - lr: 0.000003
+2022-06-12 20:48:30,741 epoch 45 - iter 111/376 - loss 0.29762967 - samples/sec: 904.64 - lr: 0.000003
+2022-06-12 20:48:32,029 epoch 45 - iter 148/376 - loss 0.29718898 - samples/sec: 923.90 - lr: 0.000003
+2022-06-12 20:48:33,312 epoch 45 - iter 185/376 - loss 0.29517272 - samples/sec: 926.69 - lr: 0.000003
+2022-06-12 20:48:34,534 epoch 45 - iter 222/376 - loss 0.30065554 - samples/sec: 974.06 - lr: 0.000003
+2022-06-12 20:48:35,782 epoch 45 - iter 259/376 - loss 0.29806047 - samples/sec: 952.45 - lr: 0.000003
+2022-06-12 20:48:37,068 epoch 45 - iter 296/376 - loss 0.29929137 - samples/sec: 925.08 - lr: 0.000003
+2022-06-12 20:48:38,351 epoch 45 - iter 333/376 - loss 0.29986831 - samples/sec: 927.13 - lr: 0.000003
+2022-06-12 20:48:39,641 epoch 45 - iter 370/376 - loss 0.29882372 - samples/sec: 922.05 - lr: 0.000003
+2022-06-12 20:48:39,833 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:48:39,833 EPOCH 45 done: loss 0.2986 - lr 0.0000031
+2022-06-12 20:48:48,812 DEV : loss 0.2357197254896164 - f1-score (micro avg)  0.6474
+2022-06-12 20:48:48,922 BAD EPOCHS (no improvement): 4
+2022-06-12 20:48:48,922 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:48:50,056 epoch 46 - iter 37/376 - loss 0.29797542 - samples/sec: 1049.63 - lr: 0.000003
+2022-06-12 20:48:51,275 epoch 46 - iter 74/376 - loss 0.29988098 - samples/sec: 978.18 - lr: 0.000003
+2022-06-12 20:48:52,549 epoch 46 - iter 111/376 - loss 0.30021797 - samples/sec: 934.06 - lr: 0.000003
+2022-06-12 20:48:53,797 epoch 46 - iter 148/376 - loss 0.30082498 - samples/sec: 953.36 - lr: 0.000003
+2022-06-12 20:48:55,219 epoch 46 - iter 185/376 - loss 0.29825068 - samples/sec: 836.44 - lr: 0.000003
+2022-06-12 20:48:56,582 epoch 46 - iter 222/376 - loss 0.29893809 - samples/sec: 873.14 - lr: 0.000003
+2022-06-12 20:48:57,920 epoch 46 - iter 259/376 - loss 0.30147857 - samples/sec: 889.03 - lr: 0.000003
+2022-06-12 20:48:59,356 epoch 46 - iter 296/376 - loss 0.29948625 - samples/sec: 828.39 - lr: 0.000003
+2022-06-12 20:49:00,780 epoch 46 - iter 333/376 - loss 0.29894173 - samples/sec: 836.36 - lr: 0.000003
+2022-06-12 20:49:02,206 epoch 46 - iter 370/376 - loss 0.29694751 - samples/sec: 834.51 - lr: 0.000003
+2022-06-12 20:49:02,412 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:49:02,413 EPOCH 46 done: loss 0.2969 - lr 0.0000030
+2022-06-12 20:49:11,596 DEV : loss 0.23495768010616302 - f1-score (micro avg)  0.6483
+2022-06-12 20:49:11,707 BAD EPOCHS (no improvement): 4
+2022-06-12 20:49:11,707 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:49:12,825 epoch 47 - iter 37/376 - loss 0.30997331 - samples/sec: 1065.96 - lr: 0.000003
+2022-06-12 20:49:14,114 epoch 47 - iter 74/376 - loss 0.30314341 - samples/sec: 923.32 - lr: 0.000003
+2022-06-12 20:49:15,439 epoch 47 - iter 111/376 - loss 0.30107567 - samples/sec: 897.72 - lr: 0.000003
+2022-06-12 20:49:16,697 epoch 47 - iter 148/376 - loss 0.29895271 - samples/sec: 945.40 - lr: 0.000003
+2022-06-12 20:49:17,984 epoch 47 - iter 185/376 - loss 0.29750125 - samples/sec: 923.82 - lr: 0.000003
+2022-06-12 20:49:19,241 epoch 47 - iter 222/376 - loss 0.30050898 - samples/sec: 946.73 - lr: 0.000003
+2022-06-12 20:49:20,536 epoch 47 - iter 259/376 - loss 0.29857970 - samples/sec: 918.16 - lr: 0.000003
+2022-06-12 20:49:21,833 epoch 47 - iter 296/376 - loss 0.29890291 - samples/sec: 917.78 - lr: 0.000003
+2022-06-12 20:49:23,093 epoch 47 - iter 333/376 - loss 0.29903002 - samples/sec: 944.14 - lr: 0.000003
+2022-06-12 20:49:24,408 epoch 47 - iter 370/376 - loss 0.29612376 - samples/sec: 903.74 - lr: 0.000003
+2022-06-12 20:49:24,616 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:49:24,617 EPOCH 47 done: loss 0.2961 - lr 0.0000029
+2022-06-12 20:49:32,537 DEV : loss 0.23403967916965485 - f1-score (micro avg)  0.6485
+2022-06-12 20:49:32,646 BAD EPOCHS (no improvement): 4
+2022-06-12 20:49:32,646 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:49:33,916 epoch 48 - iter 37/376 - loss 0.31295553 - samples/sec: 938.50 - lr: 0.000003
+2022-06-12 20:49:35,015 epoch 48 - iter 74/376 - loss 0.30586317 - samples/sec: 1080.38 - lr: 0.000003
+2022-06-12 20:49:36,109 epoch 48 - iter 111/376 - loss 0.30240965 - samples/sec: 1085.96 - lr: 0.000003
+2022-06-12 20:49:37,122 epoch 48 - iter 148/376 - loss 0.30276420 - samples/sec: 1173.20 - lr: 0.000003
+2022-06-12 20:49:38,203 epoch 48 - iter 185/376 - loss 0.29884869 - samples/sec: 1100.04 - lr: 0.000003
+2022-06-12 20:49:39,294 epoch 48 - iter 222/376 - loss 0.29614808 - samples/sec: 1089.56 - lr: 0.000003
+2022-06-12 20:49:40,527 epoch 48 - iter 259/376 - loss 0.29527908 - samples/sec: 965.16 - lr: 0.000003
+2022-06-12 20:49:41,754 epoch 48 - iter 296/376 - loss 0.29435163 - samples/sec: 968.96 - lr: 0.000003
+2022-06-12 20:49:42,899 epoch 48 - iter 333/376 - loss 0.29433480 - samples/sec: 1037.89 - lr: 0.000003
+2022-06-12 20:49:43,979 epoch 48 - iter 370/376 - loss 0.29461258 - samples/sec: 1099.26 - lr: 0.000003
+2022-06-12 20:49:44,149 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:49:44,150 EPOCH 48 done: loss 0.2953 - lr 0.0000029
+2022-06-12 20:49:53,264 DEV : loss 0.23677556216716766 - f1-score (micro avg)  0.6515
+2022-06-12 20:49:53,374 BAD EPOCHS (no improvement): 4
+2022-06-12 20:49:53,375 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:49:54,514 epoch 49 - iter 37/376 - loss 0.28813542 - samples/sec: 1046.79 - lr: 0.000003
+2022-06-12 20:49:55,772 epoch 49 - iter 74/376 - loss 0.29304827 - samples/sec: 945.21 - lr: 0.000003
+2022-06-12 20:49:57,125 epoch 49 - iter 111/376 - loss 0.28742742 - samples/sec: 879.70 - lr: 0.000003
+2022-06-12 20:49:58,464 epoch 49 - iter 148/376 - loss 0.28904180 - samples/sec: 888.35 - lr: 0.000003
+2022-06-12 20:49:59,834 epoch 49 - iter 185/376 - loss 0.28839261 - samples/sec: 868.20 - lr: 0.000003
+2022-06-12 20:50:01,037 epoch 49 - iter 222/376 - loss 0.28762429 - samples/sec: 988.04 - lr: 0.000003
+2022-06-12 20:50:02,397 epoch 49 - iter 259/376 - loss 0.28963288 - samples/sec: 874.85 - lr: 0.000003
+2022-06-12 20:50:03,707 epoch 49 - iter 296/376 - loss 0.29144537 - samples/sec: 907.99 - lr: 0.000003
+2022-06-12 20:50:05,037 epoch 49 - iter 333/376 - loss 0.29020809 - samples/sec: 894.54 - lr: 0.000003
+2022-06-12 20:50:06,332 epoch 49 - iter 370/376 - loss 0.29308662 - samples/sec: 918.83 - lr: 0.000003
+2022-06-12 20:50:06,525 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:50:06,525 EPOCH 49 done: loss 0.2932 - lr 0.0000028
+2022-06-12 20:50:15,824 DEV : loss 0.2350001037120819 - f1-score (micro avg)  0.65
+2022-06-12 20:50:15,933 BAD EPOCHS (no improvement): 4
+2022-06-12 20:50:15,934 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:50:17,170 epoch 50 - iter 37/376 - loss 0.29547067 - samples/sec: 963.54 - lr: 0.000003
+2022-06-12 20:50:18,451 epoch 50 - iter 74/376 - loss 0.28950485 - samples/sec: 928.48 - lr: 0.000003
+2022-06-12 20:50:19,806 epoch 50 - iter 111/376 - loss 0.28970225 - samples/sec: 877.76 - lr: 0.000003
+2022-06-12 20:50:21,223 epoch 50 - iter 148/376 - loss 0.29109237 - samples/sec: 839.94 - lr: 0.000003
+2022-06-12 20:50:22,586 epoch 50 - iter 185/376 - loss 0.29144902 - samples/sec: 872.55 - lr: 0.000003
+2022-06-12 20:50:23,768 epoch 50 - iter 222/376 - loss 0.29169478 - samples/sec: 1005.75 - lr: 0.000003
+2022-06-12 20:50:25,035 epoch 50 - iter 259/376 - loss 0.29187846 - samples/sec: 938.56 - lr: 0.000003
+2022-06-12 20:50:26,328 epoch 50 - iter 296/376 - loss 0.29071460 - samples/sec: 920.24 - lr: 0.000003
+2022-06-12 20:50:27,616 epoch 50 - iter 333/376 - loss 0.29211421 - samples/sec: 922.95 - lr: 0.000003
+2022-06-12 20:50:28,896 epoch 50 - iter 370/376 - loss 0.29214732 - samples/sec: 929.58 - lr: 0.000003
+2022-06-12 20:50:29,102 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:50:29,103 EPOCH 50 done: loss 0.2923 - lr 0.0000028
+2022-06-12 20:50:36,993 DEV : loss 0.2339586615562439 - f1-score (micro avg)  0.6513
+2022-06-12 20:50:37,112 BAD EPOCHS (no improvement): 4
+2022-06-12 20:50:37,113 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:50:38,373 epoch 51 - iter 37/376 - loss 0.28989262 - samples/sec: 945.20 - lr: 0.000003
+2022-06-12 20:50:39,600 epoch 51 - iter 74/376 - loss 0.29251718 - samples/sec: 968.38 - lr: 0.000003
+2022-06-12 20:50:40,895 epoch 51 - iter 111/376 - loss 0.29101032 - samples/sec: 918.78 - lr: 0.000003
+2022-06-12 20:50:42,170 epoch 51 - iter 148/376 - loss 0.29426328 - samples/sec: 933.10 - lr: 0.000003
+2022-06-12 20:50:43,464 epoch 51 - iter 185/376 - loss 0.28937548 - samples/sec: 918.91 - lr: 0.000003
+2022-06-12 20:50:44,752 epoch 51 - iter 222/376 - loss 0.28976551 - samples/sec: 923.33 - lr: 0.000003
+2022-06-12 20:50:46,020 epoch 51 - iter 259/376 - loss 0.29041098 - samples/sec: 938.56 - lr: 0.000003
+2022-06-12 20:50:47,244 epoch 51 - iter 296/376 - loss 0.29166156 - samples/sec: 971.84 - lr: 0.000003
+2022-06-12 20:50:48,436 epoch 51 - iter 333/376 - loss 0.29265720 - samples/sec: 997.89 - lr: 0.000003
+2022-06-12 20:50:49,717 epoch 51 - iter 370/376 - loss 0.29239019 - samples/sec: 928.34 - lr: 0.000003
+2022-06-12 20:50:49,916 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:50:49,916 EPOCH 51 done: loss 0.2924 - lr 0.0000027
+2022-06-12 20:50:59,286 DEV : loss 0.2347540259361267 - f1-score (micro avg)  0.6514
+2022-06-12 20:50:59,388 BAD EPOCHS (no improvement): 4
+2022-06-12 20:50:59,389 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:51:00,727 epoch 52 - iter 37/376 - loss 0.29795209 - samples/sec: 890.27 - lr: 0.000003
+2022-06-12 20:51:02,052 epoch 52 - iter 74/376 - loss 0.29878387 - samples/sec: 897.58 - lr: 0.000003
+2022-06-12 20:51:03,392 epoch 52 - iter 111/376 - loss 0.29518555 - samples/sec: 887.96 - lr: 0.000003
+2022-06-12 20:51:04,693 epoch 52 - iter 148/376 - loss 0.29321673 - samples/sec: 914.49 - lr: 0.000003
+2022-06-12 20:51:05,991 epoch 52 - iter 185/376 - loss 0.29222324 - samples/sec: 916.92 - lr: 0.000003
+2022-06-12 20:51:07,315 epoch 52 - iter 222/376 - loss 0.29105436 - samples/sec: 898.34 - lr: 0.000003
+2022-06-12 20:51:08,627 epoch 52 - iter 259/376 - loss 0.29069358 - samples/sec: 906.65 - lr: 0.000003
+2022-06-12 20:51:10,043 epoch 52 - iter 296/376 - loss 0.29293073 - samples/sec: 840.38 - lr: 0.000003
+2022-06-12 20:51:11,394 epoch 52 - iter 333/376 - loss 0.29171360 - samples/sec: 880.68 - lr: 0.000003
+2022-06-12 20:51:12,676 epoch 52 - iter 370/376 - loss 0.29176483 - samples/sec: 927.96 - lr: 0.000003
+2022-06-12 20:51:12,878 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:51:12,879 EPOCH 52 done: loss 0.2915 - lr 0.0000027
+2022-06-12 20:51:20,701 DEV : loss 0.23270535469055176 - f1-score (micro avg)  0.653
+2022-06-12 20:51:20,815 BAD EPOCHS (no improvement): 4
+2022-06-12 20:51:20,815 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:51:22,100 epoch 53 - iter 37/376 - loss 0.28654596 - samples/sec: 927.92 - lr: 0.000003
+2022-06-12 20:51:23,374 epoch 53 - iter 74/376 - loss 0.28843865 - samples/sec: 932.87 - lr: 0.000003
+2022-06-12 20:51:24,696 epoch 53 - iter 111/376 - loss 0.28938510 - samples/sec: 899.30 - lr: 0.000003
+2022-06-12 20:51:26,013 epoch 53 - iter 148/376 - loss 0.28937711 - samples/sec: 903.37 - lr: 0.000003
+2022-06-12 20:51:27,081 epoch 53 - iter 185/376 - loss 0.28954454 - samples/sec: 1112.23 - lr: 0.000003
+2022-06-12 20:51:28,191 epoch 53 - iter 222/376 - loss 0.28971510 - samples/sec: 1069.43 - lr: 0.000003
+2022-06-12 20:51:29,309 epoch 53 - iter 259/376 - loss 0.28779751 - samples/sec: 1063.30 - lr: 0.000003
+2022-06-12 20:51:30,585 epoch 53 - iter 296/376 - loss 0.29104066 - samples/sec: 931.68 - lr: 0.000003
+2022-06-12 20:51:31,895 epoch 53 - iter 333/376 - loss 0.29043782 - samples/sec: 908.08 - lr: 0.000003
+2022-06-12 20:51:33,200 epoch 53 - iter 370/376 - loss 0.29134016 - samples/sec: 911.09 - lr: 0.000003
+2022-06-12 20:51:33,405 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:51:33,405 EPOCH 53 done: loss 0.2915 - lr 0.0000026
+2022-06-12 20:51:42,529 DEV : loss 0.23392599821090698 - f1-score (micro avg)  0.6532
+2022-06-12 20:51:42,634 BAD EPOCHS (no improvement): 4
+2022-06-12 20:51:42,634 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:51:43,872 epoch 54 - iter 37/376 - loss 0.29213900 - samples/sec: 962.28 - lr: 0.000003
+2022-06-12 20:51:45,229 epoch 54 - iter 74/376 - loss 0.29305577 - samples/sec: 876.18 - lr: 0.000003
+2022-06-12 20:51:46,579 epoch 54 - iter 111/376 - loss 0.29626413 - samples/sec: 880.90 - lr: 0.000003
+2022-06-12 20:51:47,898 epoch 54 - iter 148/376 - loss 0.29359356 - samples/sec: 901.92 - lr: 0.000003
+2022-06-12 20:51:49,201 epoch 54 - iter 185/376 - loss 0.29562595 - samples/sec: 912.48 - lr: 0.000003
+2022-06-12 20:51:50,491 epoch 54 - iter 222/376 - loss 0.29347377 - samples/sec: 922.08 - lr: 0.000003
+2022-06-12 20:51:51,788 epoch 54 - iter 259/376 - loss 0.29162038 - samples/sec: 917.65 - lr: 0.000003
+2022-06-12 20:51:53,062 epoch 54 - iter 296/376 - loss 0.29221493 - samples/sec: 933.15 - lr: 0.000003
+2022-06-12 20:51:54,335 epoch 54 - iter 333/376 - loss 0.29042629 - samples/sec: 934.57 - lr: 0.000003
+2022-06-12 20:51:55,624 epoch 54 - iter 370/376 - loss 0.29000927 - samples/sec: 922.62 - lr: 0.000003
+2022-06-12 20:51:55,829 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:51:55,830 EPOCH 54 done: loss 0.2905 - lr 0.0000026
+2022-06-12 20:52:04,986 DEV : loss 0.23181426525115967 - f1-score (micro avg)  0.6524
+2022-06-12 20:52:05,100 BAD EPOCHS (no improvement): 4
+2022-06-12 20:52:05,100 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:52:06,397 epoch 55 - iter 37/376 - loss 0.29109258 - samples/sec: 919.06 - lr: 0.000003
+2022-06-12 20:52:07,692 epoch 55 - iter 74/376 - loss 0.28930066 - samples/sec: 918.88 - lr: 0.000003
+2022-06-12 20:52:08,960 epoch 55 - iter 111/376 - loss 0.28966479 - samples/sec: 938.13 - lr: 0.000003
+2022-06-12 20:52:10,267 epoch 55 - iter 148/376 - loss 0.28625006 - samples/sec: 909.99 - lr: 0.000003
+2022-06-12 20:52:11,552 epoch 55 - iter 185/376 - loss 0.28328355 - samples/sec: 925.90 - lr: 0.000003
+2022-06-12 20:52:12,875 epoch 55 - iter 222/376 - loss 0.28486987 - samples/sec: 899.26 - lr: 0.000003
+2022-06-12 20:52:14,208 epoch 55 - iter 259/376 - loss 0.28479389 - samples/sec: 892.25 - lr: 0.000003
+2022-06-12 20:52:15,574 epoch 55 - iter 296/376 - loss 0.28471104 - samples/sec: 871.28 - lr: 0.000003
+2022-06-12 20:52:16,889 epoch 55 - iter 333/376 - loss 0.28687271 - samples/sec: 903.64 - lr: 0.000003
+2022-06-12 20:52:18,175 epoch 55 - iter 370/376 - loss 0.28712569 - samples/sec: 925.20 - lr: 0.000003
+2022-06-12 20:52:18,364 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:52:18,364 EPOCH 55 done: loss 0.2875 - lr 0.0000025
+2022-06-12 20:52:26,309 DEV : loss 0.23262815177440643 - f1-score (micro avg)  0.6545
+2022-06-12 20:52:26,417 BAD EPOCHS (no improvement): 4
+2022-06-12 20:52:26,417 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:52:27,778 epoch 56 - iter 37/376 - loss 0.28916879 - samples/sec: 875.56 - lr: 0.000002
+2022-06-12 20:52:29,070 epoch 56 - iter 74/376 - loss 0.28919331 - samples/sec: 921.17 - lr: 0.000002
+2022-06-12 20:52:30,366 epoch 56 - iter 111/376 - loss 0.28329281 - samples/sec: 918.31 - lr: 0.000002
+2022-06-12 20:52:31,677 epoch 56 - iter 148/376 - loss 0.28200008 - samples/sec: 906.94 - lr: 0.000002
+2022-06-12 20:52:32,980 epoch 56 - iter 185/376 - loss 0.28397238 - samples/sec: 913.45 - lr: 0.000002
+2022-06-12 20:52:34,302 epoch 56 - iter 222/376 - loss 0.28342453 - samples/sec: 900.25 - lr: 0.000002
+2022-06-12 20:52:35,633 epoch 56 - iter 259/376 - loss 0.28270664 - samples/sec: 893.89 - lr: 0.000002
+2022-06-12 20:52:36,957 epoch 56 - iter 296/376 - loss 0.28432007 - samples/sec: 899.28 - lr: 0.000002
+2022-06-12 20:52:38,278 epoch 56 - iter 333/376 - loss 0.28700169 - samples/sec: 900.62 - lr: 0.000002
+2022-06-12 20:52:39,570 epoch 56 - iter 370/376 - loss 0.28712236 - samples/sec: 921.94 - lr: 0.000002
+2022-06-12 20:52:39,775 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:52:39,775 EPOCH 56 done: loss 0.2869 - lr 0.0000024
+2022-06-12 20:52:49,675 DEV : loss 0.23097802698612213 - f1-score (micro avg)  0.6533
+2022-06-12 20:52:49,784 BAD EPOCHS (no improvement): 4
+2022-06-12 20:52:49,784 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:52:51,203 epoch 57 - iter 37/376 - loss 0.28288337 - samples/sec: 840.58 - lr: 0.000002
+2022-06-12 20:52:52,566 epoch 57 - iter 74/376 - loss 0.29128612 - samples/sec: 872.88 - lr: 0.000002
+2022-06-12 20:52:53,892 epoch 57 - iter 111/376 - loss 0.29141431 - samples/sec: 897.32 - lr: 0.000002
+2022-06-12 20:52:55,258 epoch 57 - iter 148/376 - loss 0.29036674 - samples/sec: 871.73 - lr: 0.000002
+2022-06-12 20:52:56,579 epoch 57 - iter 185/376 - loss 0.28951216 - samples/sec: 900.95 - lr: 0.000002
+2022-06-12 20:52:57,918 epoch 57 - iter 222/376 - loss 0.28632583 - samples/sec: 888.91 - lr: 0.000002
+2022-06-12 20:52:59,231 epoch 57 - iter 259/376 - loss 0.28624122 - samples/sec: 906.46 - lr: 0.000002
+2022-06-12 20:53:00,569 epoch 57 - iter 296/376 - loss 0.28692609 - samples/sec: 888.89 - lr: 0.000002
+2022-06-12 20:53:01,928 epoch 57 - iter 333/376 - loss 0.28536004 - samples/sec: 875.76 - lr: 0.000002
+2022-06-12 20:53:03,248 epoch 57 - iter 370/376 - loss 0.28571632 - samples/sec: 901.69 - lr: 0.000002
+2022-06-12 20:53:03,448 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:53:03,449 EPOCH 57 done: loss 0.2862 - lr 0.0000024
+2022-06-12 20:53:12,475 DEV : loss 0.23133917152881622 - f1-score (micro avg)  0.6555
+2022-06-12 20:53:12,581 BAD EPOCHS (no improvement): 4
+2022-06-12 20:53:12,582 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:53:13,920 epoch 58 - iter 37/376 - loss 0.29236758 - samples/sec: 890.67 - lr: 0.000002
+2022-06-12 20:53:15,285 epoch 58 - iter 74/376 - loss 0.29091427 - samples/sec: 871.88 - lr: 0.000002
+2022-06-12 20:53:16,606 epoch 58 - iter 111/376 - loss 0.28791877 - samples/sec: 900.34 - lr: 0.000002
+2022-06-12 20:53:17,860 epoch 58 - iter 148/376 - loss 0.28584745 - samples/sec: 949.63 - lr: 0.000002
+2022-06-12 20:53:19,168 epoch 58 - iter 185/376 - loss 0.28398473 - samples/sec: 909.69 - lr: 0.000002
+2022-06-12 20:53:20,405 epoch 58 - iter 222/376 - loss 0.28319625 - samples/sec: 961.87 - lr: 0.000002
+2022-06-12 20:53:21,654 epoch 58 - iter 259/376 - loss 0.28495542 - samples/sec: 952.50 - lr: 0.000002
+2022-06-12 20:53:22,900 epoch 58 - iter 296/376 - loss 0.28593220 - samples/sec: 954.44 - lr: 0.000002
+2022-06-12 20:53:24,052 epoch 58 - iter 333/376 - loss 0.28685075 - samples/sec: 1031.90 - lr: 0.000002
+2022-06-12 20:53:25,288 epoch 58 - iter 370/376 - loss 0.28546568 - samples/sec: 961.88 - lr: 0.000002
+2022-06-12 20:53:25,491 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:53:25,492 EPOCH 58 done: loss 0.2851 - lr 0.0000023
+2022-06-12 20:53:33,495 DEV : loss 0.2299054116010666 - f1-score (micro avg)  0.6553
+2022-06-12 20:53:33,608 BAD EPOCHS (no improvement): 4
+2022-06-12 20:53:33,609 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:53:34,872 epoch 59 - iter 37/376 - loss 0.29486056 - samples/sec: 943.70 - lr: 0.000002
+2022-06-12 20:53:36,124 epoch 59 - iter 74/376 - loss 0.29136691 - samples/sec: 950.95 - lr: 0.000002
+2022-06-12 20:53:37,387 epoch 59 - iter 111/376 - loss 0.29373774 - samples/sec: 941.60 - lr: 0.000002
+2022-06-12 20:53:38,653 epoch 59 - iter 148/376 - loss 0.29444820 - samples/sec: 939.84 - lr: 0.000002
+2022-06-12 20:53:39,948 epoch 59 - iter 185/376 - loss 0.29223098 - samples/sec: 918.90 - lr: 0.000002
+2022-06-12 20:53:41,095 epoch 59 - iter 222/376 - loss 0.29089337 - samples/sec: 1037.15 - lr: 0.000002
+2022-06-12 20:53:42,201 epoch 59 - iter 259/376 - loss 0.29124874 - samples/sec: 1073.10 - lr: 0.000002
+2022-06-12 20:53:43,485 epoch 59 - iter 296/376 - loss 0.28911995 - samples/sec: 926.83 - lr: 0.000002
+2022-06-12 20:53:44,782 epoch 59 - iter 333/376 - loss 0.28839615 - samples/sec: 917.06 - lr: 0.000002
+2022-06-12 20:53:46,062 epoch 59 - iter 370/376 - loss 0.28800473 - samples/sec: 929.71 - lr: 0.000002
+2022-06-12 20:53:46,270 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:53:46,271 EPOCH 59 done: loss 0.2875 - lr 0.0000023
+2022-06-12 20:53:55,610 DEV : loss 0.2314487099647522 - f1-score (micro avg)  0.6562
+2022-06-12 20:53:55,722 BAD EPOCHS (no improvement): 4
+2022-06-12 20:53:55,722 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:53:56,741 epoch 60 - iter 37/376 - loss 0.29007820 - samples/sec: 1170.41 - lr: 0.000002
+2022-06-12 20:53:57,663 epoch 60 - iter 74/376 - loss 0.28648104 - samples/sec: 1289.21 - lr: 0.000002
+2022-06-12 20:53:58,773 epoch 60 - iter 111/376 - loss 0.29240657 - samples/sec: 1071.41 - lr: 0.000002
+2022-06-12 20:54:00,057 epoch 60 - iter 148/376 - loss 0.28921728 - samples/sec: 926.22 - lr: 0.000002
+2022-06-12 20:54:01,449 epoch 60 - iter 185/376 - loss 0.28896177 - samples/sec: 856.39 - lr: 0.000002
+2022-06-12 20:54:02,733 epoch 60 - iter 222/376 - loss 0.28626725 - samples/sec: 926.68 - lr: 0.000002
+2022-06-12 20:54:04,094 epoch 60 - iter 259/376 - loss 0.28555711 - samples/sec: 874.27 - lr: 0.000002
+2022-06-12 20:54:05,440 epoch 60 - iter 296/376 - loss 0.28482011 - samples/sec: 883.96 - lr: 0.000002
+2022-06-12 20:54:06,684 epoch 60 - iter 333/376 - loss 0.28550089 - samples/sec: 956.09 - lr: 0.000002
+2022-06-12 20:54:07,880 epoch 60 - iter 370/376 - loss 0.28578935 - samples/sec: 993.36 - lr: 0.000002
+2022-06-12 20:54:08,077 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:54:08,077 EPOCH 60 done: loss 0.2856 - lr 0.0000022
+2022-06-12 20:54:17,131 DEV : loss 0.22924451529979706 - f1-score (micro avg)  0.6561
+2022-06-12 20:54:17,239 BAD EPOCHS (no improvement): 4
+2022-06-12 20:54:17,239 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:54:18,214 epoch 61 - iter 37/376 - loss 0.28633983 - samples/sec: 1220.91 - lr: 0.000002
+2022-06-12 20:54:19,449 epoch 61 - iter 74/376 - loss 0.28865945 - samples/sec: 963.64 - lr: 0.000002
+2022-06-12 20:54:20,719 epoch 61 - iter 111/376 - loss 0.28349335 - samples/sec: 936.04 - lr: 0.000002
+2022-06-12 20:54:21,997 epoch 61 - iter 148/376 - loss 0.28716699 - samples/sec: 930.89 - lr: 0.000002
+2022-06-12 20:54:23,229 epoch 61 - iter 185/376 - loss 0.28843334 - samples/sec: 966.25 - lr: 0.000002
+2022-06-12 20:54:24,406 epoch 61 - iter 222/376 - loss 0.28626313 - samples/sec: 1009.49 - lr: 0.000002
+2022-06-12 20:54:25,638 epoch 61 - iter 259/376 - loss 0.28827677 - samples/sec: 964.96 - lr: 0.000002
+2022-06-12 20:54:26,916 epoch 61 - iter 296/376 - loss 0.28745005 - samples/sec: 930.67 - lr: 0.000002
+2022-06-12 20:54:28,130 epoch 61 - iter 333/376 - loss 0.28637492 - samples/sec: 979.00 - lr: 0.000002
+2022-06-12 20:54:29,427 epoch 61 - iter 370/376 - loss 0.28497404 - samples/sec: 916.70 - lr: 0.000002
+2022-06-12 20:54:29,616 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:54:29,616 EPOCH 61 done: loss 0.2855 - lr 0.0000022
+2022-06-12 20:54:37,579 DEV : loss 0.23017989099025726 - f1-score (micro avg)  0.6566
+2022-06-12 20:54:37,687 BAD EPOCHS (no improvement): 4
+2022-06-12 20:54:37,687 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:54:39,004 epoch 62 - iter 37/376 - loss 0.28264103 - samples/sec: 904.16 - lr: 0.000002
+2022-06-12 20:54:40,310 epoch 62 - iter 74/376 - loss 0.28588474 - samples/sec: 911.06 - lr: 0.000002
+2022-06-12 20:54:41,633 epoch 62 - iter 111/376 - loss 0.28079594 - samples/sec: 899.46 - lr: 0.000002
+2022-06-12 20:54:42,964 epoch 62 - iter 148/376 - loss 0.28048004 - samples/sec: 893.70 - lr: 0.000002
+2022-06-12 20:54:44,228 epoch 62 - iter 185/376 - loss 0.28356746 - samples/sec: 941.49 - lr: 0.000002
+2022-06-12 20:54:45,521 epoch 62 - iter 222/376 - loss 0.28323225 - samples/sec: 919.73 - lr: 0.000002
+2022-06-12 20:54:46,813 epoch 62 - iter 259/376 - loss 0.28343526 - samples/sec: 920.96 - lr: 0.000002
+2022-06-12 20:54:48,069 epoch 62 - iter 296/376 - loss 0.28264761 - samples/sec: 946.78 - lr: 0.000002
+2022-06-12 20:54:49,344 epoch 62 - iter 333/376 - loss 0.28159089 - samples/sec: 932.42 - lr: 0.000002
+2022-06-12 20:54:50,614 epoch 62 - iter 370/376 - loss 0.28315894 - samples/sec: 936.61 - lr: 0.000002
+2022-06-12 20:54:50,814 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:54:50,814 EPOCH 62 done: loss 0.2827 - lr 0.0000021
+2022-06-12 20:54:59,845 DEV : loss 0.23039023578166962 - f1-score (micro avg)  0.659
+2022-06-12 20:54:59,954 BAD EPOCHS (no improvement): 4
+2022-06-12 20:54:59,954 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:55:01,201 epoch 63 - iter 37/376 - loss 0.27965768 - samples/sec: 955.18 - lr: 0.000002
+2022-06-12 20:55:02,488 epoch 63 - iter 74/376 - loss 0.28110231 - samples/sec: 924.61 - lr: 0.000002
+2022-06-12 20:55:03,771 epoch 63 - iter 111/376 - loss 0.28542984 - samples/sec: 927.54 - lr: 0.000002
+2022-06-12 20:55:05,037 epoch 63 - iter 148/376 - loss 0.28326665 - samples/sec: 939.94 - lr: 0.000002
+2022-06-12 20:55:06,320 epoch 63 - iter 185/376 - loss 0.28188807 - samples/sec: 926.82 - lr: 0.000002
+2022-06-12 20:55:07,622 epoch 63 - iter 222/376 - loss 0.28343562 - samples/sec: 913.69 - lr: 0.000002
+2022-06-12 20:55:08,890 epoch 63 - iter 259/376 - loss 0.28236901 - samples/sec: 938.77 - lr: 0.000002
+2022-06-12 20:55:10,181 epoch 63 - iter 296/376 - loss 0.28142915 - samples/sec: 921.06 - lr: 0.000002
+2022-06-12 20:55:11,492 epoch 63 - iter 333/376 - loss 0.28053266 - samples/sec: 907.48 - lr: 0.000002
+2022-06-12 20:55:12,748 epoch 63 - iter 370/376 - loss 0.28198913 - samples/sec: 946.22 - lr: 0.000002
+2022-06-12 20:55:12,925 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:55:12,926 EPOCH 63 done: loss 0.2828 - lr 0.0000021
+2022-06-12 20:55:20,837 DEV : loss 0.22931502759456635 - f1-score (micro avg)  0.6561
+2022-06-12 20:55:20,942 BAD EPOCHS (no improvement): 4
+2022-06-12 20:55:20,942 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:55:22,045 epoch 64 - iter 37/376 - loss 0.27893889 - samples/sec: 1079.39 - lr: 0.000002
+2022-06-12 20:55:23,045 epoch 64 - iter 74/376 - loss 0.28131126 - samples/sec: 1188.63 - lr: 0.000002
+2022-06-12 20:55:24,269 epoch 64 - iter 111/376 - loss 0.28578645 - samples/sec: 970.85 - lr: 0.000002
+2022-06-12 20:55:25,537 epoch 64 - iter 148/376 - loss 0.28628390 - samples/sec: 938.44 - lr: 0.000002
+2022-06-12 20:55:26,828 epoch 64 - iter 185/376 - loss 0.28383999 - samples/sec: 921.33 - lr: 0.000002
+2022-06-12 20:55:28,115 epoch 64 - iter 222/376 - loss 0.28322842 - samples/sec: 924.14 - lr: 0.000002
+2022-06-12 20:55:29,405 epoch 64 - iter 259/376 - loss 0.28444243 - samples/sec: 922.54 - lr: 0.000002
+2022-06-12 20:55:30,715 epoch 64 - iter 296/376 - loss 0.28284132 - samples/sec: 907.68 - lr: 0.000002
+2022-06-12 20:55:31,949 epoch 64 - iter 333/376 - loss 0.28307857 - samples/sec: 963.35 - lr: 0.000002
+2022-06-12 20:55:33,219 epoch 64 - iter 370/376 - loss 0.28344130 - samples/sec: 936.88 - lr: 0.000002
+2022-06-12 20:55:33,408 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:55:33,409 EPOCH 64 done: loss 0.2838 - lr 0.0000020
+2022-06-12 20:55:42,593 DEV : loss 0.23027653992176056 - f1-score (micro avg)  0.6584
+2022-06-12 20:55:42,718 BAD EPOCHS (no improvement): 4
+2022-06-12 20:55:42,718 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:55:44,056 epoch 65 - iter 37/376 - loss 0.28666151 - samples/sec: 890.54 - lr: 0.000002
+2022-06-12 20:55:45,364 epoch 65 - iter 74/376 - loss 0.28408948 - samples/sec: 909.43 - lr: 0.000002
+2022-06-12 20:55:46,664 epoch 65 - iter 111/376 - loss 0.28580805 - samples/sec: 914.97 - lr: 0.000002
+2022-06-12 20:55:47,999 epoch 65 - iter 148/376 - loss 0.28336418 - samples/sec: 890.95 - lr: 0.000002
+2022-06-12 20:55:49,294 epoch 65 - iter 185/376 - loss 0.28468306 - samples/sec: 918.99 - lr: 0.000002
+2022-06-12 20:55:50,633 epoch 65 - iter 222/376 - loss 0.28454436 - samples/sec: 888.28 - lr: 0.000002
+2022-06-12 20:55:51,938 epoch 65 - iter 259/376 - loss 0.28303366 - samples/sec: 910.90 - lr: 0.000002
+2022-06-12 20:55:53,220 epoch 65 - iter 296/376 - loss 0.28464913 - samples/sec: 927.99 - lr: 0.000002
+2022-06-12 20:55:54,559 epoch 65 - iter 333/376 - loss 0.28384978 - samples/sec: 888.15 - lr: 0.000002
+2022-06-12 20:55:55,923 epoch 65 - iter 370/376 - loss 0.28330350 - samples/sec: 871.93 - lr: 0.000002
+2022-06-12 20:55:56,124 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:55:56,124 EPOCH 65 done: loss 0.2837 - lr 0.0000019
+2022-06-12 20:56:05,546 DEV : loss 0.22972875833511353 - f1-score (micro avg)  0.6591
+2022-06-12 20:56:05,653 BAD EPOCHS (no improvement): 4
+2022-06-12 20:56:05,653 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:56:06,798 epoch 66 - iter 37/376 - loss 0.27397056 - samples/sec: 1041.57 - lr: 0.000002
+2022-06-12 20:56:07,926 epoch 66 - iter 74/376 - loss 0.28354211 - samples/sec: 1054.39 - lr: 0.000002
+2022-06-12 20:56:09,136 epoch 66 - iter 111/376 - loss 0.28394960 - samples/sec: 983.31 - lr: 0.000002
+2022-06-12 20:56:10,444 epoch 66 - iter 148/376 - loss 0.28573541 - samples/sec: 909.95 - lr: 0.000002
+2022-06-12 20:56:11,777 epoch 66 - iter 185/376 - loss 0.28320544 - samples/sec: 892.32 - lr: 0.000002
+2022-06-12 20:56:13,072 epoch 66 - iter 222/376 - loss 0.28379248 - samples/sec: 918.82 - lr: 0.000002
+2022-06-12 20:56:14,416 epoch 66 - iter 259/376 - loss 0.28340770 - samples/sec: 885.24 - lr: 0.000002
+2022-06-12 20:56:15,726 epoch 66 - iter 296/376 - loss 0.28333608 - samples/sec: 908.28 - lr: 0.000002
+2022-06-12 20:56:17,039 epoch 66 - iter 333/376 - loss 0.28223371 - samples/sec: 906.30 - lr: 0.000002
+2022-06-12 20:56:18,324 epoch 66 - iter 370/376 - loss 0.28215913 - samples/sec: 925.85 - lr: 0.000002
+2022-06-12 20:56:18,537 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:56:18,537 EPOCH 66 done: loss 0.2818 - lr 0.0000019
+2022-06-12 20:56:26,615 DEV : loss 0.22912977635860443 - f1-score (micro avg)  0.658
+2022-06-12 20:56:26,723 BAD EPOCHS (no improvement): 4
+2022-06-12 20:56:26,724 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:56:28,093 epoch 67 - iter 37/376 - loss 0.29184053 - samples/sec: 870.24 - lr: 0.000002
+2022-06-12 20:56:29,395 epoch 67 - iter 74/376 - loss 0.28507077 - samples/sec: 913.66 - lr: 0.000002
+2022-06-12 20:56:30,703 epoch 67 - iter 111/376 - loss 0.28107421 - samples/sec: 909.56 - lr: 0.000002
+2022-06-12 20:56:32,024 epoch 67 - iter 148/376 - loss 0.28121931 - samples/sec: 900.57 - lr: 0.000002
+2022-06-12 20:56:33,331 epoch 67 - iter 185/376 - loss 0.28209891 - samples/sec: 910.56 - lr: 0.000002
+2022-06-12 20:56:34,616 epoch 67 - iter 222/376 - loss 0.28111731 - samples/sec: 925.65 - lr: 0.000002
+2022-06-12 20:56:35,891 epoch 67 - iter 259/376 - loss 0.28193566 - samples/sec: 932.83 - lr: 0.000002
+2022-06-12 20:56:37,215 epoch 67 - iter 296/376 - loss 0.28130890 - samples/sec: 898.40 - lr: 0.000002
+2022-06-12 20:56:38,549 epoch 67 - iter 333/376 - loss 0.28053954 - samples/sec: 891.84 - lr: 0.000002
+2022-06-12 20:56:39,858 epoch 67 - iter 370/376 - loss 0.28024952 - samples/sec: 909.25 - lr: 0.000002
+2022-06-12 20:56:40,064 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:56:40,064 EPOCH 67 done: loss 0.2810 - lr 0.0000018
+2022-06-12 20:56:48,976 DEV : loss 0.2282748818397522 - f1-score (micro avg)  0.6585
+2022-06-12 20:56:49,083 BAD EPOCHS (no improvement): 4
+2022-06-12 20:56:49,084 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:56:50,077 epoch 68 - iter 37/376 - loss 0.27788525 - samples/sec: 1199.18 - lr: 0.000002
+2022-06-12 20:56:51,177 epoch 68 - iter 74/376 - loss 0.28050926 - samples/sec: 1079.22 - lr: 0.000002
+2022-06-12 20:56:52,392 epoch 68 - iter 111/376 - loss 0.28448118 - samples/sec: 978.32 - lr: 0.000002
+2022-06-12 20:56:53,699 epoch 68 - iter 148/376 - loss 0.28287234 - samples/sec: 910.26 - lr: 0.000002
+2022-06-12 20:56:54,782 epoch 68 - iter 185/376 - loss 0.28308632 - samples/sec: 1097.43 - lr: 0.000002
+2022-06-12 20:56:55,893 epoch 68 - iter 222/376 - loss 0.27908110 - samples/sec: 1068.12 - lr: 0.000002
+2022-06-12 20:56:57,168 epoch 68 - iter 259/376 - loss 0.27820661 - samples/sec: 932.89 - lr: 0.000002
+2022-06-12 20:56:58,484 epoch 68 - iter 296/376 - loss 0.28082542 - samples/sec: 903.87 - lr: 0.000002
+2022-06-12 20:56:59,800 epoch 68 - iter 333/376 - loss 0.28023763 - samples/sec: 904.21 - lr: 0.000002
+2022-06-12 20:57:01,153 epoch 68 - iter 370/376 - loss 0.27940081 - samples/sec: 879.18 - lr: 0.000002
+2022-06-12 20:57:01,363 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:57:01,363 EPOCH 68 done: loss 0.2792 - lr 0.0000018
+2022-06-12 20:57:10,753 DEV : loss 0.22809486091136932 - f1-score (micro avg)  0.6594
+2022-06-12 20:57:10,862 BAD EPOCHS (no improvement): 4
+2022-06-12 20:57:10,862 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:57:12,220 epoch 69 - iter 37/376 - loss 0.26514528 - samples/sec: 878.89 - lr: 0.000002
+2022-06-12 20:57:13,584 epoch 69 - iter 74/376 - loss 0.26912961 - samples/sec: 872.43 - lr: 0.000002
+2022-06-12 20:57:14,920 epoch 69 - iter 111/376 - loss 0.27735600 - samples/sec: 890.45 - lr: 0.000002
+2022-06-12 20:57:16,145 epoch 69 - iter 148/376 - loss 0.27800778 - samples/sec: 971.32 - lr: 0.000002
+2022-06-12 20:57:17,454 epoch 69 - iter 185/376 - loss 0.27932997 - samples/sec: 908.58 - lr: 0.000002
+2022-06-12 20:57:18,715 epoch 69 - iter 222/376 - loss 0.27707012 - samples/sec: 942.92 - lr: 0.000002
+2022-06-12 20:57:19,938 epoch 69 - iter 259/376 - loss 0.27657244 - samples/sec: 972.06 - lr: 0.000002
+2022-06-12 20:57:21,209 epoch 69 - iter 296/376 - loss 0.27857787 - samples/sec: 935.74 - lr: 0.000002
+2022-06-12 20:57:22,403 epoch 69 - iter 333/376 - loss 0.27995181 - samples/sec: 995.65 - lr: 0.000002
+2022-06-12 20:57:23,679 epoch 69 - iter 370/376 - loss 0.28161224 - samples/sec: 931.59 - lr: 0.000002
+2022-06-12 20:57:23,876 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:57:23,876 EPOCH 69 done: loss 0.2823 - lr 0.0000017
+2022-06-12 20:57:31,832 DEV : loss 0.22899863123893738 - f1-score (micro avg)  0.6605
+2022-06-12 20:57:31,941 BAD EPOCHS (no improvement): 4
+2022-06-12 20:57:31,942 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:57:33,220 epoch 70 - iter 37/376 - loss 0.27143911 - samples/sec: 932.41 - lr: 0.000002
+2022-06-12 20:57:34,534 epoch 70 - iter 74/376 - loss 0.28174716 - samples/sec: 905.14 - lr: 0.000002
+2022-06-12 20:57:35,752 epoch 70 - iter 111/376 - loss 0.28466341 - samples/sec: 976.41 - lr: 0.000002
+2022-06-12 20:57:36,856 epoch 70 - iter 148/376 - loss 0.28636224 - samples/sec: 1075.60 - lr: 0.000002
+2022-06-12 20:57:37,917 epoch 70 - iter 185/376 - loss 0.28608387 - samples/sec: 1119.68 - lr: 0.000002
+2022-06-12 20:57:39,129 epoch 70 - iter 222/376 - loss 0.28452457 - samples/sec: 980.53 - lr: 0.000002
+2022-06-12 20:57:40,341 epoch 70 - iter 259/376 - loss 0.28404922 - samples/sec: 981.18 - lr: 0.000002
+2022-06-12 20:57:41,332 epoch 70 - iter 296/376 - loss 0.28274476 - samples/sec: 1199.14 - lr: 0.000002
+2022-06-12 20:57:42,402 epoch 70 - iter 333/376 - loss 0.28238820 - samples/sec: 1109.47 - lr: 0.000002
+2022-06-12 20:57:43,578 epoch 70 - iter 370/376 - loss 0.28207919 - samples/sec: 1010.16 - lr: 0.000002
+2022-06-12 20:57:43,797 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:57:43,797 EPOCH 70 done: loss 0.2821 - lr 0.0000017
+2022-06-12 20:57:53,132 DEV : loss 0.22781525552272797 - f1-score (micro avg)  0.6593
+2022-06-12 20:57:53,244 BAD EPOCHS (no improvement): 4
+2022-06-12 20:57:53,244 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:57:54,587 epoch 71 - iter 37/376 - loss 0.27925849 - samples/sec: 887.56 - lr: 0.000002
+2022-06-12 20:57:55,909 epoch 71 - iter 74/376 - loss 0.27994240 - samples/sec: 900.41 - lr: 0.000002
+2022-06-12 20:57:57,185 epoch 71 - iter 111/376 - loss 0.27804518 - samples/sec: 932.52 - lr: 0.000002
+2022-06-12 20:57:58,452 epoch 71 - iter 148/376 - loss 0.27524226 - samples/sec: 938.61 - lr: 0.000002
+2022-06-12 20:57:59,769 epoch 71 - iter 185/376 - loss 0.27349184 - samples/sec: 902.57 - lr: 0.000002
+2022-06-12 20:58:01,130 epoch 71 - iter 222/376 - loss 0.27369766 - samples/sec: 874.21 - lr: 0.000002
+2022-06-12 20:58:02,416 epoch 71 - iter 259/376 - loss 0.27669571 - samples/sec: 924.71 - lr: 0.000002
+2022-06-12 20:58:03,565 epoch 71 - iter 296/376 - loss 0.27760229 - samples/sec: 1034.72 - lr: 0.000002
+2022-06-12 20:58:04,640 epoch 71 - iter 333/376 - loss 0.27919718 - samples/sec: 1104.54 - lr: 0.000002
+2022-06-12 20:58:05,745 epoch 71 - iter 370/376 - loss 0.27770499 - samples/sec: 1074.56 - lr: 0.000002
+2022-06-12 20:58:05,923 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:58:05,924 EPOCH 71 done: loss 0.2783 - lr 0.0000016
+2022-06-12 20:58:15,132 DEV : loss 0.22891496121883392 - f1-score (micro avg)  0.6614
+2022-06-12 20:58:15,232 BAD EPOCHS (no improvement): 4
+2022-06-12 20:58:15,233 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:58:16,369 epoch 72 - iter 37/376 - loss 0.28880705 - samples/sec: 1047.62 - lr: 0.000002
+2022-06-12 20:58:17,655 epoch 72 - iter 74/376 - loss 0.27882957 - samples/sec: 924.14 - lr: 0.000002
+2022-06-12 20:58:18,981 epoch 72 - iter 111/376 - loss 0.28297488 - samples/sec: 897.79 - lr: 0.000002
+2022-06-12 20:58:20,244 epoch 72 - iter 148/376 - loss 0.28014337 - samples/sec: 941.42 - lr: 0.000002
+2022-06-12 20:58:21,474 epoch 72 - iter 185/376 - loss 0.28087158 - samples/sec: 967.14 - lr: 0.000002
+2022-06-12 20:58:22,763 epoch 72 - iter 222/376 - loss 0.28342105 - samples/sec: 922.11 - lr: 0.000002
+2022-06-12 20:58:24,008 epoch 72 - iter 259/376 - loss 0.28003363 - samples/sec: 955.26 - lr: 0.000002
+2022-06-12 20:58:25,139 epoch 72 - iter 296/376 - loss 0.27795366 - samples/sec: 1050.18 - lr: 0.000002
+2022-06-12 20:58:26,368 epoch 72 - iter 333/376 - loss 0.27680988 - samples/sec: 967.34 - lr: 0.000002
+2022-06-12 20:58:27,640 epoch 72 - iter 370/376 - loss 0.27745372 - samples/sec: 934.81 - lr: 0.000002
+2022-06-12 20:58:27,845 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:58:27,846 EPOCH 72 done: loss 0.2776 - lr 0.0000016
+2022-06-12 20:58:35,818 DEV : loss 0.22728265821933746 - f1-score (micro avg)  0.6601
+2022-06-12 20:58:35,925 BAD EPOCHS (no improvement): 4
+2022-06-12 20:58:35,925 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:58:37,080 epoch 73 - iter 37/376 - loss 0.29092076 - samples/sec: 1030.88 - lr: 0.000002
+2022-06-12 20:58:38,209 epoch 73 - iter 74/376 - loss 0.28615737 - samples/sec: 1051.82 - lr: 0.000002
+2022-06-12 20:58:39,505 epoch 73 - iter 111/376 - loss 0.28773500 - samples/sec: 917.75 - lr: 0.000002
+2022-06-12 20:58:40,914 epoch 73 - iter 148/376 - loss 0.28442075 - samples/sec: 843.83 - lr: 0.000002
+2022-06-12 20:58:42,324 epoch 73 - iter 185/376 - loss 0.28582966 - samples/sec: 843.46 - lr: 0.000002
+2022-06-12 20:58:43,738 epoch 73 - iter 222/376 - loss 0.28741492 - samples/sec: 841.35 - lr: 0.000002
+2022-06-12 20:58:45,131 epoch 73 - iter 259/376 - loss 0.28453092 - samples/sec: 853.97 - lr: 0.000002
+2022-06-12 20:58:46,510 epoch 73 - iter 296/376 - loss 0.28042466 - samples/sec: 862.73 - lr: 0.000002
+2022-06-12 20:58:47,885 epoch 73 - iter 333/376 - loss 0.27964215 - samples/sec: 864.64 - lr: 0.000002
+2022-06-12 20:58:49,268 epoch 73 - iter 370/376 - loss 0.27895182 - samples/sec: 860.08 - lr: 0.000002
+2022-06-12 20:58:49,486 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:58:49,487 EPOCH 73 done: loss 0.2787 - lr 0.0000015
+2022-06-12 20:58:58,612 DEV : loss 0.22717571258544922 - f1-score (micro avg)  0.6618
+2022-06-12 20:58:58,722 BAD EPOCHS (no improvement): 4
+2022-06-12 20:58:58,723 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:58:59,867 epoch 74 - iter 37/376 - loss 0.28006997 - samples/sec: 1040.52 - lr: 0.000001
+2022-06-12 20:59:00,807 epoch 74 - iter 74/376 - loss 0.28367917 - samples/sec: 1264.35 - lr: 0.000001
+2022-06-12 20:59:01,886 epoch 74 - iter 111/376 - loss 0.28157953 - samples/sec: 1101.35 - lr: 0.000001
+2022-06-12 20:59:03,000 epoch 74 - iter 148/376 - loss 0.28212212 - samples/sec: 1066.17 - lr: 0.000001
+2022-06-12 20:59:04,096 epoch 74 - iter 185/376 - loss 0.28343432 - samples/sec: 1083.66 - lr: 0.000001
+2022-06-12 20:59:05,363 epoch 74 - iter 222/376 - loss 0.28303438 - samples/sec: 938.67 - lr: 0.000001
+2022-06-12 20:59:06,681 epoch 74 - iter 259/376 - loss 0.27964742 - samples/sec: 902.85 - lr: 0.000001
+2022-06-12 20:59:08,012 epoch 74 - iter 296/376 - loss 0.28021283 - samples/sec: 894.29 - lr: 0.000001
+2022-06-12 20:59:09,377 epoch 74 - iter 333/376 - loss 0.28098725 - samples/sec: 871.96 - lr: 0.000001
+2022-06-12 20:59:10,725 epoch 74 - iter 370/376 - loss 0.27872053 - samples/sec: 882.57 - lr: 0.000001
+2022-06-12 20:59:10,945 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:59:10,946 EPOCH 74 done: loss 0.2780 - lr 0.0000014
+2022-06-12 20:59:18,920 DEV : loss 0.2281254231929779 - f1-score (micro avg)  0.6603
+2022-06-12 20:59:19,030 BAD EPOCHS (no improvement): 4
+2022-06-12 20:59:19,030 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:59:20,220 epoch 75 - iter 37/376 - loss 0.27001398 - samples/sec: 1001.69 - lr: 0.000001
+2022-06-12 20:59:21,500 epoch 75 - iter 74/376 - loss 0.26916063 - samples/sec: 930.06 - lr: 0.000001
+2022-06-12 20:59:22,637 epoch 75 - iter 111/376 - loss 0.27182491 - samples/sec: 1045.71 - lr: 0.000001
+2022-06-12 20:59:23,698 epoch 75 - iter 148/376 - loss 0.27471570 - samples/sec: 1121.33 - lr: 0.000001
+2022-06-12 20:59:24,788 epoch 75 - iter 185/376 - loss 0.27759926 - samples/sec: 1091.30 - lr: 0.000001
+2022-06-12 20:59:25,796 epoch 75 - iter 222/376 - loss 0.28022122 - samples/sec: 1177.95 - lr: 0.000001
+2022-06-12 20:59:26,906 epoch 75 - iter 259/376 - loss 0.28096554 - samples/sec: 1070.20 - lr: 0.000001
+2022-06-12 20:59:28,164 epoch 75 - iter 296/376 - loss 0.28020471 - samples/sec: 945.17 - lr: 0.000001
+2022-06-12 20:59:29,413 epoch 75 - iter 333/376 - loss 0.28068432 - samples/sec: 951.95 - lr: 0.000001
+2022-06-12 20:59:30,665 epoch 75 - iter 370/376 - loss 0.27958927 - samples/sec: 950.16 - lr: 0.000001
+2022-06-12 20:59:30,843 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:59:30,843 EPOCH 75 done: loss 0.2794 - lr 0.0000014
+2022-06-12 20:59:40,055 DEV : loss 0.22726571559906006 - f1-score (micro avg)  0.661
+2022-06-12 20:59:40,164 BAD EPOCHS (no improvement): 4
+2022-06-12 20:59:40,165 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:59:41,120 epoch 76 - iter 37/376 - loss 0.28730280 - samples/sec: 1246.55 - lr: 0.000001
+2022-06-12 20:59:42,175 epoch 76 - iter 74/376 - loss 0.28061408 - samples/sec: 1127.71 - lr: 0.000001
+2022-06-12 20:59:43,347 epoch 76 - iter 111/376 - loss 0.27398535 - samples/sec: 1015.65 - lr: 0.000001
+2022-06-12 20:59:44,715 epoch 76 - iter 148/376 - loss 0.27293777 - samples/sec: 869.88 - lr: 0.000001
+2022-06-12 20:59:46,083 epoch 76 - iter 185/376 - loss 0.27755905 - samples/sec: 870.19 - lr: 0.000001
+2022-06-12 20:59:47,431 epoch 76 - iter 222/376 - loss 0.27641783 - samples/sec: 882.43 - lr: 0.000001
+2022-06-12 20:59:48,769 epoch 76 - iter 259/376 - loss 0.27668281 - samples/sec: 889.58 - lr: 0.000001
+2022-06-12 20:59:50,151 epoch 76 - iter 296/376 - loss 0.27607508 - samples/sec: 861.78 - lr: 0.000001
+2022-06-12 20:59:51,584 epoch 76 - iter 333/376 - loss 0.27484480 - samples/sec: 830.37 - lr: 0.000001
+2022-06-12 20:59:52,959 epoch 76 - iter 370/376 - loss 0.27754540 - samples/sec: 865.35 - lr: 0.000001
+2022-06-12 20:59:53,198 ----------------------------------------------------------------------------------------------------
+2022-06-12 20:59:53,198 EPOCH 76 done: loss 0.2779 - lr 0.0000013
+2022-06-12 21:00:02,372 DEV : loss 0.2276635766029358 - f1-score (micro avg)  0.6605
+2022-06-12 21:00:02,480 BAD EPOCHS (no improvement): 4
+2022-06-12 21:00:02,481 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:00:03,720 epoch 77 - iter 37/376 - loss 0.27939358 - samples/sec: 960.79 - lr: 0.000001
+2022-06-12 21:00:05,033 epoch 77 - iter 74/376 - loss 0.27316079 - samples/sec: 906.11 - lr: 0.000001
+2022-06-12 21:00:06,376 epoch 77 - iter 111/376 - loss 0.27181676 - samples/sec: 885.33 - lr: 0.000001
+2022-06-12 21:00:07,697 epoch 77 - iter 148/376 - loss 0.27629142 - samples/sec: 900.61 - lr: 0.000001
+2022-06-12 21:00:08,987 epoch 77 - iter 185/376 - loss 0.27550597 - samples/sec: 921.90 - lr: 0.000001
+2022-06-12 21:00:10,345 epoch 77 - iter 222/376 - loss 0.27488845 - samples/sec: 875.92 - lr: 0.000001
+2022-06-12 21:00:11,721 epoch 77 - iter 259/376 - loss 0.27383517 - samples/sec: 864.39 - lr: 0.000001
+2022-06-12 21:00:12,986 epoch 77 - iter 296/376 - loss 0.27382512 - samples/sec: 940.63 - lr: 0.000001
+2022-06-12 21:00:14,216 epoch 77 - iter 333/376 - loss 0.27440693 - samples/sec: 966.29 - lr: 0.000001
+2022-06-12 21:00:15,491 epoch 77 - iter 370/376 - loss 0.27552337 - samples/sec: 933.45 - lr: 0.000001
+2022-06-12 21:00:15,696 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:00:15,697 EPOCH 77 done: loss 0.2762 - lr 0.0000013
+2022-06-12 21:00:23,877 DEV : loss 0.2288416475057602 - f1-score (micro avg)  0.6612
+2022-06-12 21:00:23,978 BAD EPOCHS (no improvement): 4
+2022-06-12 21:00:23,978 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:00:25,392 epoch 78 - iter 37/376 - loss 0.27357335 - samples/sec: 842.89 - lr: 0.000001
+2022-06-12 21:00:26,692 epoch 78 - iter 74/376 - loss 0.27941412 - samples/sec: 915.33 - lr: 0.000001
+2022-06-12 21:00:27,959 epoch 78 - iter 111/376 - loss 0.27798177 - samples/sec: 939.32 - lr: 0.000001
+2022-06-12 21:00:29,233 epoch 78 - iter 148/376 - loss 0.27686358 - samples/sec: 933.65 - lr: 0.000001
+2022-06-12 21:00:30,491 epoch 78 - iter 185/376 - loss 0.27953367 - samples/sec: 945.79 - lr: 0.000001
+2022-06-12 21:00:31,768 epoch 78 - iter 222/376 - loss 0.27908557 - samples/sec: 931.20 - lr: 0.000001
+2022-06-12 21:00:33,063 epoch 78 - iter 259/376 - loss 0.27600586 - samples/sec: 918.27 - lr: 0.000001
+2022-06-12 21:00:34,324 epoch 78 - iter 296/376 - loss 0.27691885 - samples/sec: 944.44 - lr: 0.000001
+2022-06-12 21:00:35,635 epoch 78 - iter 333/376 - loss 0.27810622 - samples/sec: 907.22 - lr: 0.000001
+2022-06-12 21:00:36,907 epoch 78 - iter 370/376 - loss 0.27746531 - samples/sec: 935.42 - lr: 0.000001
+2022-06-12 21:00:37,112 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:00:37,113 EPOCH 78 done: loss 0.2781 - lr 0.0000012
+2022-06-12 21:00:46,405 DEV : loss 0.2280692160129547 - f1-score (micro avg)  0.6611
+2022-06-12 21:00:46,513 BAD EPOCHS (no improvement): 4
+2022-06-12 21:00:46,513 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:00:47,795 epoch 79 - iter 37/376 - loss 0.28431001 - samples/sec: 929.61 - lr: 0.000001
+2022-06-12 21:00:49,105 epoch 79 - iter 74/376 - loss 0.27072217 - samples/sec: 907.82 - lr: 0.000001
+2022-06-12 21:00:50,361 epoch 79 - iter 111/376 - loss 0.27214027 - samples/sec: 946.50 - lr: 0.000001
+2022-06-12 21:00:51,598 epoch 79 - iter 148/376 - loss 0.27401040 - samples/sec: 960.78 - lr: 0.000001
+2022-06-12 21:00:52,799 epoch 79 - iter 185/376 - loss 0.27613121 - samples/sec: 989.95 - lr: 0.000001
+2022-06-12 21:00:54,021 epoch 79 - iter 222/376 - loss 0.27640036 - samples/sec: 972.55 - lr: 0.000001
+2022-06-12 21:00:55,305 epoch 79 - iter 259/376 - loss 0.27542338 - samples/sec: 925.63 - lr: 0.000001
+2022-06-12 21:00:56,596 epoch 79 - iter 296/376 - loss 0.27856268 - samples/sec: 922.00 - lr: 0.000001
+2022-06-12 21:00:57,907 epoch 79 - iter 333/376 - loss 0.27881928 - samples/sec: 907.36 - lr: 0.000001
+2022-06-12 21:00:59,211 epoch 79 - iter 370/376 - loss 0.27886722 - samples/sec: 912.52 - lr: 0.000001
+2022-06-12 21:00:59,424 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:00:59,424 EPOCH 79 done: loss 0.2783 - lr 0.0000012
+2022-06-12 21:01:08,783 DEV : loss 0.22663326561450958 - f1-score (micro avg)  0.6613
+2022-06-12 21:01:08,884 BAD EPOCHS (no improvement): 4
+2022-06-12 21:01:08,884 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:01:10,208 epoch 80 - iter 37/376 - loss 0.27148905 - samples/sec: 900.41 - lr: 0.000001
+2022-06-12 21:01:11,520 epoch 80 - iter 74/376 - loss 0.27840290 - samples/sec: 906.18 - lr: 0.000001
+2022-06-12 21:01:12,715 epoch 80 - iter 111/376 - loss 0.27843269 - samples/sec: 995.47 - lr: 0.000001
+2022-06-12 21:01:13,816 epoch 80 - iter 148/376 - loss 0.27565580 - samples/sec: 1078.30 - lr: 0.000001
+2022-06-12 21:01:14,904 epoch 80 - iter 185/376 - loss 0.27369211 - samples/sec: 1091.30 - lr: 0.000001
+2022-06-12 21:01:16,186 epoch 80 - iter 222/376 - loss 0.27765912 - samples/sec: 927.47 - lr: 0.000001
+2022-06-12 21:01:17,476 epoch 80 - iter 259/376 - loss 0.27994781 - samples/sec: 922.66 - lr: 0.000001
+2022-06-12 21:01:18,712 epoch 80 - iter 296/376 - loss 0.27792235 - samples/sec: 962.55 - lr: 0.000001
+2022-06-12 21:01:19,970 epoch 80 - iter 333/376 - loss 0.27837156 - samples/sec: 945.71 - lr: 0.000001
+2022-06-12 21:01:21,225 epoch 80 - iter 370/376 - loss 0.27684869 - samples/sec: 948.59 - lr: 0.000001
+2022-06-12 21:01:21,424 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:01:21,425 EPOCH 80 done: loss 0.2776 - lr 0.0000011
+2022-06-12 21:01:29,353 DEV : loss 0.22681498527526855 - f1-score (micro avg)  0.6621
+2022-06-12 21:01:29,461 BAD EPOCHS (no improvement): 4
+2022-06-12 21:01:29,462 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:01:30,623 epoch 81 - iter 37/376 - loss 0.27519665 - samples/sec: 1024.89 - lr: 0.000001
+2022-06-12 21:01:31,706 epoch 81 - iter 74/376 - loss 0.27843042 - samples/sec: 1096.60 - lr: 0.000001
+2022-06-12 21:01:32,805 epoch 81 - iter 111/376 - loss 0.27439444 - samples/sec: 1080.88 - lr: 0.000001
+2022-06-12 21:01:33,912 epoch 81 - iter 148/376 - loss 0.27139524 - samples/sec: 1072.27 - lr: 0.000001
+2022-06-12 21:01:35,208 epoch 81 - iter 185/376 - loss 0.27104334 - samples/sec: 918.46 - lr: 0.000001
+2022-06-12 21:01:36,540 epoch 81 - iter 222/376 - loss 0.26981170 - samples/sec: 892.72 - lr: 0.000001
+2022-06-12 21:01:37,832 epoch 81 - iter 259/376 - loss 0.27131800 - samples/sec: 920.65 - lr: 0.000001
+2022-06-12 21:01:39,141 epoch 81 - iter 296/376 - loss 0.27089950 - samples/sec: 908.76 - lr: 0.000001
+2022-06-12 21:01:40,341 epoch 81 - iter 333/376 - loss 0.27355722 - samples/sec: 990.51 - lr: 0.000001
+2022-06-12 21:01:41,691 epoch 81 - iter 370/376 - loss 0.27510168 - samples/sec: 881.42 - lr: 0.000001
+2022-06-12 21:01:41,905 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:01:41,905 EPOCH 81 done: loss 0.2747 - lr 0.0000011
+2022-06-12 21:01:51,080 DEV : loss 0.2269759476184845 - f1-score (micro avg)  0.6631
+2022-06-12 21:01:51,182 BAD EPOCHS (no improvement): 4
+2022-06-12 21:01:51,182 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:01:52,451 epoch 82 - iter 37/376 - loss 0.27410472 - samples/sec: 939.82 - lr: 0.000001
+2022-06-12 21:01:53,738 epoch 82 - iter 74/376 - loss 0.26707230 - samples/sec: 924.52 - lr: 0.000001
+2022-06-12 21:01:54,972 epoch 82 - iter 111/376 - loss 0.26957746 - samples/sec: 963.96 - lr: 0.000001
+2022-06-12 21:01:56,186 epoch 82 - iter 148/376 - loss 0.26962506 - samples/sec: 978.80 - lr: 0.000001
+2022-06-12 21:01:57,458 epoch 82 - iter 185/376 - loss 0.27143513 - samples/sec: 935.45 - lr: 0.000001
+2022-06-12 21:01:58,738 epoch 82 - iter 222/376 - loss 0.27264856 - samples/sec: 929.71 - lr: 0.000001
+2022-06-12 21:02:00,005 epoch 82 - iter 259/376 - loss 0.27441250 - samples/sec: 938.78 - lr: 0.000001
+2022-06-12 21:02:01,261 epoch 82 - iter 296/376 - loss 0.27289326 - samples/sec: 947.31 - lr: 0.000001
+2022-06-12 21:02:02,463 epoch 82 - iter 333/376 - loss 0.27466413 - samples/sec: 988.40 - lr: 0.000001
+2022-06-12 21:02:03,656 epoch 82 - iter 370/376 - loss 0.27413812 - samples/sec: 996.45 - lr: 0.000001
+2022-06-12 21:02:03,810 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:02:03,811 EPOCH 82 done: loss 0.2747 - lr 0.0000010
+2022-06-12 21:02:11,808 DEV : loss 0.22643566131591797 - f1-score (micro avg)  0.6625
+2022-06-12 21:02:11,916 BAD EPOCHS (no improvement): 4
+2022-06-12 21:02:11,916 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:02:13,273 epoch 83 - iter 37/376 - loss 0.25705916 - samples/sec: 877.77 - lr: 0.000001
+2022-06-12 21:02:14,650 epoch 83 - iter 74/376 - loss 0.25830576 - samples/sec: 864.07 - lr: 0.000001
+2022-06-12 21:02:16,017 epoch 83 - iter 111/376 - loss 0.26344716 - samples/sec: 869.54 - lr: 0.000001
+2022-06-12 21:02:17,425 epoch 83 - iter 148/376 - loss 0.27142590 - samples/sec: 845.30 - lr: 0.000001
+2022-06-12 21:02:18,736 epoch 83 - iter 185/376 - loss 0.27253495 - samples/sec: 907.39 - lr: 0.000001
+2022-06-12 21:02:20,058 epoch 83 - iter 222/376 - loss 0.27340060 - samples/sec: 899.46 - lr: 0.000001
+2022-06-12 21:02:21,406 epoch 83 - iter 259/376 - loss 0.27446554 - samples/sec: 883.09 - lr: 0.000001
+2022-06-12 21:02:22,725 epoch 83 - iter 296/376 - loss 0.27473303 - samples/sec: 901.70 - lr: 0.000001
+2022-06-12 21:02:24,032 epoch 83 - iter 333/376 - loss 0.27641110 - samples/sec: 910.63 - lr: 0.000001
+2022-06-12 21:02:25,315 epoch 83 - iter 370/376 - loss 0.27698069 - samples/sec: 927.42 - lr: 0.000001
+2022-06-12 21:02:25,511 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:02:25,511 EPOCH 83 done: loss 0.2767 - lr 0.0000010
+2022-06-12 21:02:34,701 DEV : loss 0.2265617549419403 - f1-score (micro avg)  0.6621
+2022-06-12 21:02:34,837 BAD EPOCHS (no improvement): 4
+2022-06-12 21:02:34,837 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:02:36,129 epoch 84 - iter 37/376 - loss 0.27540052 - samples/sec: 923.14 - lr: 0.000001
+2022-06-12 21:02:37,458 epoch 84 - iter 74/376 - loss 0.27648882 - samples/sec: 895.57 - lr: 0.000001
+2022-06-12 21:02:38,824 epoch 84 - iter 111/376 - loss 0.27878163 - samples/sec: 870.74 - lr: 0.000001
+2022-06-12 21:02:40,201 epoch 84 - iter 148/376 - loss 0.27981616 - samples/sec: 864.73 - lr: 0.000001
+2022-06-12 21:02:41,551 epoch 84 - iter 185/376 - loss 0.27866914 - samples/sec: 881.73 - lr: 0.000001
+2022-06-12 21:02:43,063 epoch 84 - iter 222/376 - loss 0.27887610 - samples/sec: 786.85 - lr: 0.000001
+2022-06-12 21:02:44,408 epoch 84 - iter 259/376 - loss 0.27661973 - samples/sec: 884.13 - lr: 0.000001
+2022-06-12 21:02:45,675 epoch 84 - iter 296/376 - loss 0.27588056 - samples/sec: 938.38 - lr: 0.000001
+2022-06-12 21:02:47,022 epoch 84 - iter 333/376 - loss 0.27569458 - samples/sec: 883.01 - lr: 0.000001
+2022-06-12 21:02:48,315 epoch 84 - iter 370/376 - loss 0.27647274 - samples/sec: 919.89 - lr: 0.000001
+2022-06-12 21:02:48,480 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:02:48,481 EPOCH 84 done: loss 0.2759 - lr 0.0000009
+2022-06-12 21:02:57,616 DEV : loss 0.2269349992275238 - f1-score (micro avg)  0.662
+2022-06-12 21:02:57,727 BAD EPOCHS (no improvement): 4
+2022-06-12 21:02:57,727 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:02:59,103 epoch 85 - iter 37/376 - loss 0.27882587 - samples/sec: 866.03 - lr: 0.000001
+2022-06-12 21:03:00,395 epoch 85 - iter 74/376 - loss 0.27394201 - samples/sec: 920.62 - lr: 0.000001
+2022-06-12 21:03:01,736 epoch 85 - iter 111/376 - loss 0.27459848 - samples/sec: 887.30 - lr: 0.000001
+2022-06-12 21:03:03,012 epoch 85 - iter 148/376 - loss 0.27303975 - samples/sec: 932.56 - lr: 0.000001
+2022-06-12 21:03:04,177 epoch 85 - iter 185/376 - loss 0.27624869 - samples/sec: 1019.55 - lr: 0.000001
+2022-06-12 21:03:05,527 epoch 85 - iter 222/376 - loss 0.27582700 - samples/sec: 881.66 - lr: 0.000001
+2022-06-12 21:03:06,799 epoch 85 - iter 259/376 - loss 0.27575787 - samples/sec: 934.93 - lr: 0.000001
+2022-06-12 21:03:08,094 epoch 85 - iter 296/376 - loss 0.27492723 - samples/sec: 918.97 - lr: 0.000001
+2022-06-12 21:03:09,310 epoch 85 - iter 333/376 - loss 0.27366375 - samples/sec: 977.85 - lr: 0.000001
+2022-06-12 21:03:10,521 epoch 85 - iter 370/376 - loss 0.27394796 - samples/sec: 982.60 - lr: 0.000001
+2022-06-12 21:03:10,709 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:03:10,710 EPOCH 85 done: loss 0.2740 - lr 0.0000008
+2022-06-12 21:03:18,862 DEV : loss 0.2262614518404007 - f1-score (micro avg)  0.6635
+2022-06-12 21:03:18,969 BAD EPOCHS (no improvement): 4
+2022-06-12 21:03:18,969 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:03:20,097 epoch 86 - iter 37/376 - loss 0.26806598 - samples/sec: 1055.05 - lr: 0.000001
+2022-06-12 21:03:21,231 epoch 86 - iter 74/376 - loss 0.27627975 - samples/sec: 1047.66 - lr: 0.000001
+2022-06-12 21:03:22,326 epoch 86 - iter 111/376 - loss 0.27574934 - samples/sec: 1086.07 - lr: 0.000001
+2022-06-12 21:03:23,369 epoch 86 - iter 148/376 - loss 0.27420578 - samples/sec: 1139.79 - lr: 0.000001
+2022-06-12 21:03:24,419 epoch 86 - iter 185/376 - loss 0.27331944 - samples/sec: 1132.33 - lr: 0.000001
+2022-06-12 21:03:25,498 epoch 86 - iter 222/376 - loss 0.27163601 - samples/sec: 1102.18 - lr: 0.000001
+2022-06-12 21:03:26,788 epoch 86 - iter 259/376 - loss 0.27171717 - samples/sec: 922.32 - lr: 0.000001
+2022-06-12 21:03:28,091 epoch 86 - iter 296/376 - loss 0.27259270 - samples/sec: 913.25 - lr: 0.000001
+2022-06-12 21:03:29,406 epoch 86 - iter 333/376 - loss 0.27432181 - samples/sec: 904.12 - lr: 0.000001
+2022-06-12 21:03:30,782 epoch 86 - iter 370/376 - loss 0.27571953 - samples/sec: 864.86 - lr: 0.000001
+2022-06-12 21:03:31,007 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:03:31,008 EPOCH 86 done: loss 0.2755 - lr 0.0000008
+2022-06-12 21:03:40,177 DEV : loss 0.22582390904426575 - f1-score (micro avg)  0.6642
+2022-06-12 21:03:40,283 BAD EPOCHS (no improvement): 4
+2022-06-12 21:03:40,284 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:03:41,416 epoch 87 - iter 37/376 - loss 0.26173785 - samples/sec: 1051.32 - lr: 0.000001
+2022-06-12 21:03:42,808 epoch 87 - iter 74/376 - loss 0.27529189 - samples/sec: 854.45 - lr: 0.000001
+2022-06-12 21:03:44,073 epoch 87 - iter 111/376 - loss 0.27651154 - samples/sec: 940.78 - lr: 0.000001
+2022-06-12 21:03:45,443 epoch 87 - iter 148/376 - loss 0.27670025 - samples/sec: 867.88 - lr: 0.000001
+2022-06-12 21:03:46,724 epoch 87 - iter 185/376 - loss 0.27724186 - samples/sec: 928.85 - lr: 0.000001
+2022-06-12 21:03:48,027 epoch 87 - iter 222/376 - loss 0.27537352 - samples/sec: 912.94 - lr: 0.000001
+2022-06-12 21:03:49,303 epoch 87 - iter 259/376 - loss 0.27578041 - samples/sec: 931.78 - lr: 0.000001
+2022-06-12 21:03:50,592 epoch 87 - iter 296/376 - loss 0.27487814 - samples/sec: 923.67 - lr: 0.000001
+2022-06-12 21:03:51,859 epoch 87 - iter 333/376 - loss 0.27601340 - samples/sec: 939.20 - lr: 0.000001
+2022-06-12 21:03:53,147 epoch 87 - iter 370/376 - loss 0.27648081 - samples/sec: 923.69 - lr: 0.000001
+2022-06-12 21:03:53,330 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:03:53,330 EPOCH 87 done: loss 0.2767 - lr 0.0000007
+2022-06-12 21:04:02,960 DEV : loss 0.2264881134033203 - f1-score (micro avg)  0.6625
+2022-06-12 21:04:03,069 BAD EPOCHS (no improvement): 4
+2022-06-12 21:04:03,070 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:04:04,185 epoch 88 - iter 37/376 - loss 0.26262094 - samples/sec: 1067.36 - lr: 0.000001
+2022-06-12 21:04:05,427 epoch 88 - iter 74/376 - loss 0.26908330 - samples/sec: 957.82 - lr: 0.000001
+2022-06-12 21:04:06,769 epoch 88 - iter 111/376 - loss 0.26638511 - samples/sec: 886.12 - lr: 0.000001
+2022-06-12 21:04:08,155 epoch 88 - iter 148/376 - loss 0.26875279 - samples/sec: 858.78 - lr: 0.000001
+2022-06-12 21:04:09,476 epoch 88 - iter 185/376 - loss 0.27065280 - samples/sec: 900.32 - lr: 0.000001
+2022-06-12 21:04:10,756 epoch 88 - iter 222/376 - loss 0.27361460 - samples/sec: 930.48 - lr: 0.000001
+2022-06-12 21:04:12,055 epoch 88 - iter 259/376 - loss 0.27463579 - samples/sec: 915.17 - lr: 0.000001
+2022-06-12 21:04:13,371 epoch 88 - iter 296/376 - loss 0.27317052 - samples/sec: 904.07 - lr: 0.000001
+2022-06-12 21:04:14,685 epoch 88 - iter 333/376 - loss 0.27413663 - samples/sec: 907.02 - lr: 0.000001
+2022-06-12 21:04:15,988 epoch 88 - iter 370/376 - loss 0.27604536 - samples/sec: 912.71 - lr: 0.000001
+2022-06-12 21:04:16,201 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:04:16,201 EPOCH 88 done: loss 0.2762 - lr 0.0000007
+2022-06-12 21:04:24,234 DEV : loss 0.22657260298728943 - f1-score (micro avg)  0.6624
+2022-06-12 21:04:24,341 BAD EPOCHS (no improvement): 4
+2022-06-12 21:04:24,341 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:04:25,632 epoch 89 - iter 37/376 - loss 0.25660194 - samples/sec: 923.25 - lr: 0.000001
+2022-06-12 21:04:26,912 epoch 89 - iter 74/376 - loss 0.25979959 - samples/sec: 929.45 - lr: 0.000001
+2022-06-12 21:04:28,211 epoch 89 - iter 111/376 - loss 0.26259043 - samples/sec: 916.85 - lr: 0.000001
+2022-06-12 21:04:29,487 epoch 89 - iter 148/376 - loss 0.26755611 - samples/sec: 932.54 - lr: 0.000001
+2022-06-12 21:04:30,801 epoch 89 - iter 185/376 - loss 0.27211404 - samples/sec: 905.27 - lr: 0.000001
+2022-06-12 21:04:32,107 epoch 89 - iter 222/376 - loss 0.27278746 - samples/sec: 911.60 - lr: 0.000001
+2022-06-12 21:04:33,404 epoch 89 - iter 259/376 - loss 0.27371193 - samples/sec: 916.92 - lr: 0.000001
+2022-06-12 21:04:34,631 epoch 89 - iter 296/376 - loss 0.27385463 - samples/sec: 970.29 - lr: 0.000001
+2022-06-12 21:04:35,907 epoch 89 - iter 333/376 - loss 0.27441949 - samples/sec: 931.83 - lr: 0.000001
+2022-06-12 21:04:37,237 epoch 89 - iter 370/376 - loss 0.27467238 - samples/sec: 894.51 - lr: 0.000001
+2022-06-12 21:04:37,448 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:04:37,448 EPOCH 89 done: loss 0.2745 - lr 0.0000006
+2022-06-12 21:04:47,081 DEV : loss 0.22647377848625183 - f1-score (micro avg)  0.663
+2022-06-12 21:04:47,190 BAD EPOCHS (no improvement): 4
+2022-06-12 21:04:47,190 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:04:48,355 epoch 90 - iter 37/376 - loss 0.28286164 - samples/sec: 1022.15 - lr: 0.000001
+2022-06-12 21:04:49,520 epoch 90 - iter 74/376 - loss 0.27067210 - samples/sec: 1018.81 - lr: 0.000001
+2022-06-12 21:04:50,671 epoch 90 - iter 111/376 - loss 0.27343138 - samples/sec: 1031.87 - lr: 0.000001
+2022-06-12 21:04:51,804 epoch 90 - iter 148/376 - loss 0.27677143 - samples/sec: 1047.96 - lr: 0.000001
+2022-06-12 21:04:52,928 epoch 90 - iter 185/376 - loss 0.27741603 - samples/sec: 1056.97 - lr: 0.000001
+2022-06-12 21:04:54,043 epoch 90 - iter 222/376 - loss 0.27803501 - samples/sec: 1064.26 - lr: 0.000001
+2022-06-12 21:04:55,150 epoch 90 - iter 259/376 - loss 0.27659209 - samples/sec: 1073.39 - lr: 0.000001
+2022-06-12 21:04:56,387 epoch 90 - iter 296/376 - loss 0.27587819 - samples/sec: 960.90 - lr: 0.000001
+2022-06-12 21:04:57,751 epoch 90 - iter 333/376 - loss 0.27419862 - samples/sec: 872.01 - lr: 0.000001
+2022-06-12 21:04:59,049 epoch 90 - iter 370/376 - loss 0.27450812 - samples/sec: 915.94 - lr: 0.000001
+2022-06-12 21:04:59,255 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:04:59,256 EPOCH 90 done: loss 0.2744 - lr 0.0000006
+2022-06-12 21:05:07,578 DEV : loss 0.2255827933549881 - f1-score (micro avg)  0.663
+2022-06-12 21:05:07,690 BAD EPOCHS (no improvement): 4
+2022-06-12 21:05:07,691 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:05:08,965 epoch 91 - iter 37/376 - loss 0.28169641 - samples/sec: 935.39 - lr: 0.000001
+2022-06-12 21:05:10,240 epoch 91 - iter 74/376 - loss 0.27338432 - samples/sec: 932.62 - lr: 0.000001
+2022-06-12 21:05:11,540 epoch 91 - iter 111/376 - loss 0.28067551 - samples/sec: 915.05 - lr: 0.000001
+2022-06-12 21:05:12,835 epoch 91 - iter 148/376 - loss 0.28023226 - samples/sec: 918.94 - lr: 0.000001
+2022-06-12 21:05:14,139 epoch 91 - iter 185/376 - loss 0.27817648 - samples/sec: 912.60 - lr: 0.000001
+2022-06-12 21:05:15,423 epoch 91 - iter 222/376 - loss 0.27680638 - samples/sec: 926.35 - lr: 0.000001
+2022-06-12 21:05:16,728 epoch 91 - iter 259/376 - loss 0.27648514 - samples/sec: 911.82 - lr: 0.000001
+2022-06-12 21:05:18,066 epoch 91 - iter 296/376 - loss 0.27545688 - samples/sec: 889.22 - lr: 0.000001
+2022-06-12 21:05:19,396 epoch 91 - iter 333/376 - loss 0.27382861 - samples/sec: 894.81 - lr: 0.000001
+2022-06-12 21:05:20,714 epoch 91 - iter 370/376 - loss 0.27222773 - samples/sec: 902.42 - lr: 0.000001
+2022-06-12 21:05:20,908 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:05:20,908 EPOCH 91 done: loss 0.2730 - lr 0.0000005
+2022-06-12 21:05:30,222 DEV : loss 0.22574882209300995 - f1-score (micro avg)  0.6623
+2022-06-12 21:05:30,322 BAD EPOCHS (no improvement): 4
+2022-06-12 21:05:30,323 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:05:31,658 epoch 92 - iter 37/376 - loss 0.28051543 - samples/sec: 892.62 - lr: 0.000001
+2022-06-12 21:05:32,788 epoch 92 - iter 74/376 - loss 0.27857966 - samples/sec: 1051.87 - lr: 0.000000
+2022-06-12 21:05:33,990 epoch 92 - iter 111/376 - loss 0.27584703 - samples/sec: 988.58 - lr: 0.000000
+2022-06-12 21:05:35,373 epoch 92 - iter 148/376 - loss 0.27000181 - samples/sec: 860.43 - lr: 0.000000
+2022-06-12 21:05:36,741 epoch 92 - iter 185/376 - loss 0.27039243 - samples/sec: 869.65 - lr: 0.000000
+2022-06-12 21:05:38,069 epoch 92 - iter 222/376 - loss 0.27050587 - samples/sec: 896.18 - lr: 0.000000
+2022-06-12 21:05:39,466 epoch 92 - iter 259/376 - loss 0.27157418 - samples/sec: 851.88 - lr: 0.000000
+2022-06-12 21:05:40,799 epoch 92 - iter 296/376 - loss 0.27233297 - samples/sec: 892.46 - lr: 0.000000
+2022-06-12 21:05:42,090 epoch 92 - iter 333/376 - loss 0.27224698 - samples/sec: 921.46 - lr: 0.000000
+2022-06-12 21:05:43,387 epoch 92 - iter 370/376 - loss 0.27457392 - samples/sec: 917.43 - lr: 0.000000
+2022-06-12 21:05:43,588 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:05:43,588 EPOCH 92 done: loss 0.2742 - lr 0.0000005
+2022-06-12 21:05:52,936 DEV : loss 0.2253248542547226 - f1-score (micro avg)  0.6622
+2022-06-12 21:05:53,046 BAD EPOCHS (no improvement): 4
+2022-06-12 21:05:53,046 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:05:54,293 epoch 93 - iter 37/376 - loss 0.29104557 - samples/sec: 955.53 - lr: 0.000000
+2022-06-12 21:05:55,387 epoch 93 - iter 74/376 - loss 0.28909977 - samples/sec: 1086.12 - lr: 0.000000
+2022-06-12 21:05:56,698 epoch 93 - iter 111/376 - loss 0.27900731 - samples/sec: 907.35 - lr: 0.000000
+2022-06-12 21:05:58,056 epoch 93 - iter 148/376 - loss 0.27769506 - samples/sec: 875.52 - lr: 0.000000
+2022-06-12 21:05:59,387 epoch 93 - iter 185/376 - loss 0.27890198 - samples/sec: 894.33 - lr: 0.000000
+2022-06-12 21:06:00,713 epoch 93 - iter 222/376 - loss 0.27523932 - samples/sec: 896.83 - lr: 0.000000
+2022-06-12 21:06:02,059 epoch 93 - iter 259/376 - loss 0.27450372 - samples/sec: 884.00 - lr: 0.000000
+2022-06-12 21:06:03,436 epoch 93 - iter 296/376 - loss 0.27460868 - samples/sec: 864.51 - lr: 0.000000
+2022-06-12 21:06:04,725 epoch 93 - iter 333/376 - loss 0.27323353 - samples/sec: 922.54 - lr: 0.000000
+2022-06-12 21:06:06,066 epoch 93 - iter 370/376 - loss 0.27298209 - samples/sec: 886.94 - lr: 0.000000
+2022-06-12 21:06:06,276 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:06:06,276 EPOCH 93 done: loss 0.2737 - lr 0.0000004
+2022-06-12 21:06:14,458 DEV : loss 0.22527876496315002 - f1-score (micro avg)  0.6628
+2022-06-12 21:06:14,565 BAD EPOCHS (no improvement): 4
+2022-06-12 21:06:14,565 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:06:15,909 epoch 94 - iter 37/376 - loss 0.26015254 - samples/sec: 886.44 - lr: 0.000000
+2022-06-12 21:06:17,168 epoch 94 - iter 74/376 - loss 0.26466508 - samples/sec: 945.53 - lr: 0.000000
+2022-06-12 21:06:18,459 epoch 94 - iter 111/376 - loss 0.27036353 - samples/sec: 921.59 - lr: 0.000000
+2022-06-12 21:06:19,694 epoch 94 - iter 148/376 - loss 0.27386365 - samples/sec: 962.34 - lr: 0.000000
+2022-06-12 21:06:20,936 epoch 94 - iter 185/376 - loss 0.27229543 - samples/sec: 958.06 - lr: 0.000000
+2022-06-12 21:06:22,209 epoch 94 - iter 222/376 - loss 0.27535277 - samples/sec: 934.50 - lr: 0.000000
+2022-06-12 21:06:23,506 epoch 94 - iter 259/376 - loss 0.27673110 - samples/sec: 916.98 - lr: 0.000000
+2022-06-12 21:06:24,817 epoch 94 - iter 296/376 - loss 0.27353480 - samples/sec: 907.44 - lr: 0.000000
+2022-06-12 21:06:25,933 epoch 94 - iter 333/376 - loss 0.27500059 - samples/sec: 1065.00 - lr: 0.000000
+2022-06-12 21:06:27,068 epoch 94 - iter 370/376 - loss 0.27471052 - samples/sec: 1046.66 - lr: 0.000000
+2022-06-12 21:06:27,260 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:06:27,261 EPOCH 94 done: loss 0.2749 - lr 0.0000003
+2022-06-12 21:06:36,576 DEV : loss 0.2253003567457199 - f1-score (micro avg)  0.6632
+2022-06-12 21:06:36,675 BAD EPOCHS (no improvement): 4
+2022-06-12 21:06:36,675 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:06:37,766 epoch 95 - iter 37/376 - loss 0.27096940 - samples/sec: 1090.77 - lr: 0.000000
+2022-06-12 21:06:38,877 epoch 95 - iter 74/376 - loss 0.27079816 - samples/sec: 1069.11 - lr: 0.000000
+2022-06-12 21:06:40,132 epoch 95 - iter 111/376 - loss 0.27145261 - samples/sec: 947.37 - lr: 0.000000
+2022-06-12 21:06:41,433 epoch 95 - iter 148/376 - loss 0.27317063 - samples/sec: 914.74 - lr: 0.000000
+2022-06-12 21:06:42,822 epoch 95 - iter 185/376 - loss 0.27391195 - samples/sec: 856.43 - lr: 0.000000
+2022-06-12 21:06:44,102 epoch 95 - iter 222/376 - loss 0.27485468 - samples/sec: 929.14 - lr: 0.000000
+2022-06-12 21:06:45,411 epoch 95 - iter 259/376 - loss 0.27404239 - samples/sec: 909.55 - lr: 0.000000
+2022-06-12 21:06:46,683 epoch 95 - iter 296/376 - loss 0.27445898 - samples/sec: 935.06 - lr: 0.000000
+2022-06-12 21:06:47,998 epoch 95 - iter 333/376 - loss 0.27255804 - samples/sec: 904.63 - lr: 0.000000
+2022-06-12 21:06:49,300 epoch 95 - iter 370/376 - loss 0.27237045 - samples/sec: 914.03 - lr: 0.000000
+2022-06-12 21:06:49,505 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:06:49,505 EPOCH 95 done: loss 0.2721 - lr 0.0000003
+2022-06-12 21:06:58,859 DEV : loss 0.2252512276172638 - f1-score (micro avg)  0.6633
+2022-06-12 21:06:58,997 BAD EPOCHS (no improvement): 4
+2022-06-12 21:06:58,998 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:07:00,221 epoch 96 - iter 37/376 - loss 0.26582077 - samples/sec: 973.73 - lr: 0.000000
+2022-06-12 21:07:01,525 epoch 96 - iter 74/376 - loss 0.27010470 - samples/sec: 911.62 - lr: 0.000000
+2022-06-12 21:07:02,839 epoch 96 - iter 111/376 - loss 0.27077633 - samples/sec: 905.60 - lr: 0.000000
+2022-06-12 21:07:04,123 epoch 96 - iter 148/376 - loss 0.26838187 - samples/sec: 926.33 - lr: 0.000000
+2022-06-12 21:07:05,408 epoch 96 - iter 185/376 - loss 0.27088941 - samples/sec: 926.00 - lr: 0.000000
+2022-06-12 21:07:06,674 epoch 96 - iter 222/376 - loss 0.27066016 - samples/sec: 939.32 - lr: 0.000000
+2022-06-12 21:07:07,959 epoch 96 - iter 259/376 - loss 0.27237943 - samples/sec: 925.84 - lr: 0.000000
+2022-06-12 21:07:09,261 epoch 96 - iter 296/376 - loss 0.27359132 - samples/sec: 913.15 - lr: 0.000000
+2022-06-12 21:07:10,554 epoch 96 - iter 333/376 - loss 0.27340589 - samples/sec: 920.34 - lr: 0.000000
+2022-06-12 21:07:11,865 epoch 96 - iter 370/376 - loss 0.27406965 - samples/sec: 906.90 - lr: 0.000000
+2022-06-12 21:07:12,074 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:07:12,074 EPOCH 96 done: loss 0.2733 - lr 0.0000002
+2022-06-12 21:07:20,169 DEV : loss 0.22587716579437256 - f1-score (micro avg)  0.6636
+2022-06-12 21:07:20,277 BAD EPOCHS (no improvement): 4
+2022-06-12 21:07:20,278 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:07:21,637 epoch 97 - iter 37/376 - loss 0.25572690 - samples/sec: 877.20 - lr: 0.000000
+2022-06-12 21:07:22,944 epoch 97 - iter 74/376 - loss 0.26549074 - samples/sec: 910.08 - lr: 0.000000
+2022-06-12 21:07:24,279 epoch 97 - iter 111/376 - loss 0.26811686 - samples/sec: 891.40 - lr: 0.000000
+2022-06-12 21:07:25,575 epoch 97 - iter 148/376 - loss 0.26997621 - samples/sec: 917.53 - lr: 0.000000
+2022-06-12 21:07:26,837 epoch 97 - iter 185/376 - loss 0.26889930 - samples/sec: 942.75 - lr: 0.000000
+2022-06-12 21:07:28,106 epoch 97 - iter 222/376 - loss 0.27157298 - samples/sec: 936.79 - lr: 0.000000
+2022-06-12 21:07:29,386 epoch 97 - iter 259/376 - loss 0.27455555 - samples/sec: 929.00 - lr: 0.000000
+2022-06-12 21:07:30,664 epoch 97 - iter 296/376 - loss 0.27313826 - samples/sec: 931.27 - lr: 0.000000
+2022-06-12 21:07:31,963 epoch 97 - iter 333/376 - loss 0.27423342 - samples/sec: 915.44 - lr: 0.000000
+2022-06-12 21:07:33,256 epoch 97 - iter 370/376 - loss 0.27411319 - samples/sec: 920.42 - lr: 0.000000
+2022-06-12 21:07:33,481 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:07:33,481 EPOCH 97 done: loss 0.2745 - lr 0.0000002
+2022-06-12 21:07:42,788 DEV : loss 0.22547440230846405 - f1-score (micro avg)  0.663
+2022-06-12 21:07:42,894 BAD EPOCHS (no improvement): 4
+2022-06-12 21:07:42,894 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:07:44,201 epoch 98 - iter 37/376 - loss 0.26193663 - samples/sec: 911.93 - lr: 0.000000
+2022-06-12 21:07:45,547 epoch 98 - iter 74/376 - loss 0.26915899 - samples/sec: 883.44 - lr: 0.000000
+2022-06-12 21:07:46,860 epoch 98 - iter 111/376 - loss 0.27430565 - samples/sec: 906.11 - lr: 0.000000
+2022-06-12 21:07:48,195 epoch 98 - iter 148/376 - loss 0.26928154 - samples/sec: 891.09 - lr: 0.000000
+2022-06-12 21:07:49,492 epoch 98 - iter 185/376 - loss 0.27015092 - samples/sec: 916.36 - lr: 0.000000
+2022-06-12 21:07:50,788 epoch 98 - iter 222/376 - loss 0.27116553 - samples/sec: 918.56 - lr: 0.000000
+2022-06-12 21:07:52,117 epoch 98 - iter 259/376 - loss 0.27164018 - samples/sec: 894.74 - lr: 0.000000
+2022-06-12 21:07:53,448 epoch 98 - iter 296/376 - loss 0.27138479 - samples/sec: 893.22 - lr: 0.000000
+2022-06-12 21:07:54,756 epoch 98 - iter 333/376 - loss 0.27321422 - samples/sec: 910.44 - lr: 0.000000
+2022-06-12 21:07:56,096 epoch 98 - iter 370/376 - loss 0.27429706 - samples/sec: 887.57 - lr: 0.000000
+2022-06-12 21:07:56,306 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:07:56,306 EPOCH 98 done: loss 0.2745 - lr 0.0000001
+2022-06-12 21:08:05,562 DEV : loss 0.22571800649166107 - f1-score (micro avg)  0.663
+2022-06-12 21:08:05,661 BAD EPOCHS (no improvement): 4
+2022-06-12 21:08:05,662 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:08:07,019 epoch 99 - iter 37/376 - loss 0.27509200 - samples/sec: 877.86 - lr: 0.000000
+2022-06-12 21:08:08,360 epoch 99 - iter 74/376 - loss 0.27941641 - samples/sec: 887.36 - lr: 0.000000
+2022-06-12 21:08:09,665 epoch 99 - iter 111/376 - loss 0.27735338 - samples/sec: 911.50 - lr: 0.000000
+2022-06-12 21:08:10,955 epoch 99 - iter 148/376 - loss 0.27954991 - samples/sec: 922.14 - lr: 0.000000
+2022-06-12 21:08:12,230 epoch 99 - iter 185/376 - loss 0.27878804 - samples/sec: 932.89 - lr: 0.000000
+2022-06-12 21:08:13,539 epoch 99 - iter 222/376 - loss 0.27714675 - samples/sec: 908.98 - lr: 0.000000
+2022-06-12 21:08:14,825 epoch 99 - iter 259/376 - loss 0.27688870 - samples/sec: 924.19 - lr: 0.000000
+2022-06-12 21:08:16,074 epoch 99 - iter 296/376 - loss 0.27462100 - samples/sec: 952.94 - lr: 0.000000
+2022-06-12 21:08:17,287 epoch 99 - iter 333/376 - loss 0.27549701 - samples/sec: 980.29 - lr: 0.000000
+2022-06-12 21:08:18,607 epoch 99 - iter 370/376 - loss 0.27691942 - samples/sec: 901.28 - lr: 0.000000
+2022-06-12 21:08:18,807 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:08:18,807 EPOCH 99 done: loss 0.2770 - lr 0.0000001
+2022-06-12 21:08:26,922 DEV : loss 0.22560875117778778 - f1-score (micro avg)  0.663
+2022-06-12 21:08:27,033 BAD EPOCHS (no improvement): 4
+2022-06-12 21:08:27,034 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:08:28,153 epoch 100 - iter 37/376 - loss 0.25675835 - samples/sec: 1065.19 - lr: 0.000000
+2022-06-12 21:08:29,290 epoch 100 - iter 74/376 - loss 0.25830355 - samples/sec: 1046.64 - lr: 0.000000
+2022-06-12 21:08:30,440 epoch 100 - iter 111/376 - loss 0.26469345 - samples/sec: 1034.33 - lr: 0.000000
+2022-06-12 21:08:31,537 epoch 100 - iter 148/376 - loss 0.26721371 - samples/sec: 1083.87 - lr: 0.000000
+2022-06-12 21:08:32,688 epoch 100 - iter 185/376 - loss 0.26887371 - samples/sec: 1033.52 - lr: 0.000000
+2022-06-12 21:08:34,032 epoch 100 - iter 222/376 - loss 0.26988039 - samples/sec: 885.20 - lr: 0.000000
+2022-06-12 21:08:35,363 epoch 100 - iter 259/376 - loss 0.27073962 - samples/sec: 894.81 - lr: 0.000000
+2022-06-12 21:08:36,629 epoch 100 - iter 296/376 - loss 0.27255146 - samples/sec: 939.35 - lr: 0.000000
+2022-06-12 21:08:37,917 epoch 100 - iter 333/376 - loss 0.27323143 - samples/sec: 923.76 - lr: 0.000000
+2022-06-12 21:08:39,232 epoch 100 - iter 370/376 - loss 0.27255732 - samples/sec: 904.79 - lr: 0.000000
+2022-06-12 21:08:39,458 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:08:39,459 EPOCH 100 done: loss 0.2729 - lr 0.0000000
+2022-06-12 21:08:48,680 DEV : loss 0.22566728293895721 - f1-score (micro avg)  0.663
+2022-06-12 21:08:48,794 BAD EPOCHS (no improvement): 4
+2022-06-12 21:08:50,258 ----------------------------------------------------------------------------------------------------
+2022-06-12 21:08:50,259 Testing using last state of model ...
+2022-06-12 21:09:59,805 0.634	0.6571	0.6453	0.4877
+2022-06-12 21:09:59,805 
+Results:
+- F-score (micro) 0.6453
+- F-score (macro) 0.6513
+- Accuracy 0.4877
+
+By class:
+              precision    recall  f1-score   support
+
+        MISC     0.6126    0.6520    0.6317      1523
+         ORG     0.6049    0.6434    0.6236      1349
+        PERS     0.7338    0.6861    0.7092       892
+         LOC     0.6255    0.6573    0.6410       747
+
+   micro avg     0.6340    0.6571    0.6453      4511
+   macro avg     0.6442    0.6597    0.6513      4511
+weighted avg     0.6364    0.6571    0.6461      4511
+ samples avg     0.4877    0.4877    0.4877      4511
+
+2022-06-12 21:09:59,805 ----------------------------------------------------------------------------------------------------

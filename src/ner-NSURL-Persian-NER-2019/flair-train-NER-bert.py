@@ -61,4 +61,5 @@ trainer.fine_tune(data_folder + 'model',
                   mini_batch_chunk_size=1,  # remove this parameter to speed up computation if you have a big GPU7
                   embeddings_storage_mode='cpu',
                   max_epochs=100,
+                  checkpoint=True,
                   )
