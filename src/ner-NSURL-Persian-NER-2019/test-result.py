@@ -2,18 +2,18 @@ from flair.data import Sentence
 from flair.models import SequenceTagger
 from flair.data import Corpus
 from flair.datasets import ColumnCorpus
-
+from pathlib import Path
 # define columns
 columns = {0: 'text', 1: 'ner'}
 data_folder = "./data/ner-NSURL-Persian-NER-2019/"
-res_text = "./result/ner-NSURL-Persian-NER-2019/res(12).txt"
+res_text = "./result/ner-NSURL-Persian-NER-2019/res-peyma.txt"
 corpus: Corpus = ColumnCorpus(data_folder, columns,
                               train_file='train.txt',
-                              test_file='test.txt',
+                              test_file='test_predictions_clean.txt',
                               dev_file='valid.txt')
 # load the model you trained
-model = SequenceTagger.load(data_folder + 'model2/final-model.pt')
-
+print(Path(data_folder + 'model/final-model.pt').exists())
+model = SequenceTagger.load(data_folder + 'model/final-model.pt')
 # create example sentence
 sentence = Sentence(' من  نیویورک رو دوست دارم')
 
