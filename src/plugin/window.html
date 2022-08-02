@@ -4,18 +4,39 @@
     <script src="popup.js"></script>
 </head>
 <body>
-<div class="header"><img class="image-header" alt="logo" src="images/image2.png"></div>
+<div class="header">
+    <img class="image-header" alt="logo" src="images/image2.png">
+    <div>
+        <label class="switch">
+            <input type="checkbox" id="selection" onclick="changeSelection()">
+            <span class="slider"></span>
+        </label> <span id="statusText" class="statusText">NER</span>
+    </div>
+
+
+</div>
+</div>
 <div id="text" class="flex-container-wrap">
     <div class="Error">Waiting for input...</div>
 </div>
-<div style="text-align: center " class="flex-container">
-    <div class="PER chip"> Person</div>
+<div class="flex-container button-container" id="nerButtons">
+    <div class="PER chip">Person</div>
     <div class="ORG chip">Organisation</div>
     <div class="TIM chip">Time</div>
     <div class="LOC chip">Location</div>
     <div class="DAT chip">Date</div>
     <div class="PCT chip">Percent</div>
     <div class="MON chip">Money</div>
+</div>
+
+<div class="flex-container button-container visuallyhidden hidden" id="posButtons">
+    <div class="ADJ chip">ADJ</div>
+    <div class="V chip">VERB</div>
+    <div class="DELM chip">DELM</div>
+    <div class="N chip">NOUN</div>
+    <div class="P chip">PREPOSITION</div>
+    <div class="ADV chip">ADV</div>
+    <div class="CON chip">CON</div>
 </div>
 
 
