@@ -1,7 +1,15 @@
+body {
+    margin: 0;
+    width: min-content;
+    height: min-content;
+    color: #000;
+    cursor: default;
+
+}
 
 .chip {
     font-family: 'Helvetica', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     border-radius: 5px;
     padding: 10px;
@@ -48,17 +56,20 @@ img {
 
 .flex-container {
     display: flex;
-    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 
 }
 
 .button-container {
     text-align: center;
     transition: all 1s linear;
-    width: 480px;
+    width: 380px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .Error {
@@ -73,24 +84,32 @@ img {
     transition: all 0.5s linear;
     display: flex;
     flex-wrap: wrap;
-    background-color: RGB(227, 222, 222, 0.5);
+    /*background-color: RGB(227, 222, 222, 0.5);*/
     font-family: "Arabic Typesetting", serif;
     font-size: 20px;
     font-weight: bold;
-    border-radius: 5px;
     padding: 10px;
     direction: rtl;
     text-align: right;
     align-items: flex-start;
     align-content: space-between;
-    /*border-bottom: black;*/
-    /*border-bottom-style: solid;*/
-    /*border-bottom-width: 1px;*/
-    /*border-top: black;*/
-    /*border-top-style: solid;*/
-    /*border-top-width: 1px;*/
+    height: 150px;
+    scroll-behavior: auto;
+    overflow: auto;
     margin-bottom: 5px;
-    background-image: url("images/gray.png");
+    /*background-image: url("images/gray.png");*/
+}
+
+.flex-container-wrap::-webkit-scrollbar {
+    width: 5px;
+}
+
+.flex-container-wrap::-webkit-scrollbar-thumb {
+    background: linear-gradient(black, black);
+}
+
+.flex-container-wrap::-webkit-scrollbar-track {
+    background: linear-gradient(ghostwhite, white);
 }
 
 .PER, .ADJ {
@@ -142,52 +161,78 @@ img {
     opacity: 0;
 }
 
-.switch input {
-    display: none;
-}
 
-.switch {
-    display: inline-block;
-    width: 60px; /*=w*/
-    height: 30px; /*=h*/
-    margin: 4px;
-    transform: translateY(50%);
+.switch-button {
+    background: rgba(15, 76, 129);
+    background: linear-gradient(white, darkgray);
+    font-family: 'Brush Script MT', cursive;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 70px;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: black;
     position: relative;
+    padding-right: 60px;
 }
 
-.slider {
+.switch-button:before {
+    content: "NER";
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
     right: 0;
-    border-radius: 30px;
-    box-shadow: 0 0 0 2px darkred, 0 0 4px darkred;
-    cursor: pointer;
-    border: 4px solid transparent;
-    overflow: hidden;
-    transition: 2s;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    pointer-events: none;
 }
 
-.slider:before {
+.switch-button-checkbox {
+    cursor: pointer;
     position: absolute;
-    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: darkred;
-    border-radius: 30px;
-    transform: translateX(-30px); /*translateX(-(w-h))*/
-    transition: 2s;
+    opacity: 0;
+    z-index: 2;
 }
 
-input:checked + .slider:before {
-    transform: translateX(30px); /*translateX(w-h)*/
-    background-color: limeGreen;
+.switch-button-checkbox:checked + .switch-button-label:before {
+    transform: translateX(61px);
+    transition: transform 2s;
 }
 
-input:checked + .slider {
-    box-shadow: 0 0 0 2px limeGreen, 0 0 8px limeGreen;
+.switch-button-checkbox + .switch-button-label {
+    position: relative;
+    padding: 15px 0;
+    display: block;
+    user-select: none;
+    pointer-events: none;
 }
+
+.switch-button-checkbox + .switch-button-label:before {
+    content: "";
+    background: linear-gradient(white, green);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 35px;
+    transform: translateX(0);
+    transition: transform 2s;
+}
+
+.switch-button-checkbox + .switch-button-label .switch-button-label-span {
+    position: relative;
+}
+
 
 .lds-roller {
     display: block;

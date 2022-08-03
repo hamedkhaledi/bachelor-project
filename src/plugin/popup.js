@@ -10,16 +10,12 @@ window.onload = function () {
         globalThis.textPos = item.textPOS;
         chrome.storage.sync.get(['text'], function (item) {
             globalThis.textNer = item.text;
-            console.log('text : ', globalThis.textNer);
             let elements = document.getElementsByClassName("chip");
-            const textSpan = document.getElementById("statusText");
             for (let i = 0; i < elements.length; i++) {
                 elements[i].addEventListener("click", changeStyle);
             }
             let checkBox = document.getElementById("selection");
             checkBox.addEventListener("click", changeSelection);
-            textSpan.style.color = "limeGreen";
-            textSpan.innerHTML = "NER";
             checkBox.checked = true;
             outHtml();
         });
@@ -56,7 +52,6 @@ function changeStyle(event) {
 
 function changeSelection(event) {
     const checkBox = document.getElementById("selection");
-    const textSpan = document.getElementById("statusText");
     const nerButtons = document.getElementById("nerButtons");
     const posButtons = document.getElementById("posButtons");
     const textBox = document.getElementById("text");
@@ -64,7 +59,6 @@ function changeSelection(event) {
     if (checkBox.checked === true) {
         textBox.classList.add('visuallyhidden');
         posButtons.classList.add('visuallyhidden');
-        textSpan.classList.add('visuallyhidden');
         setTimeout(function () {
             posButtons.classList.add('hidden');
             nerButtons.classList.remove('hidden');
@@ -74,39 +68,27 @@ function changeSelection(event) {
             // });
             globalThis.textPos = document.getElementById("text").innerHTML;
             outHtml();
-            textSpan.style.color = "limeGreen";
-            textSpan.innerHTML = "NER";
             checkBox.disabled = false;
             nerButtons.classList.remove('visuallyhidden');
             textBox.classList.remove('visuallyhidden');
-            textSpan.classList.remove('visuallyhidden');
-        }, 1000);
+       }, 1000);
     } else {
         textBox.classList.add('visuallyhidden');
         nerButtons.classList.add('visuallyhidden');
-        textSpan.classList.add('visuallyhidden');
         setTimeout(function () {
             nerButtons.classList.add('hidden');
             posButtons.classList.remove('hidden');
-            // chrome.storage.sync.set({
-            //     'text': document.getElementById("text").innerHTML, function() {
-            //     }
-            // });
             globalThis.textNer = document.getElementById("text").innerHTML;
             outHtml();
             checkBox.disabled = false;
-            textSpan.style.color = "darkRed";
-            textSpan.innerHTML = "POS";
             posButtons.classList.remove('visuallyhidden');
             textBox.classList.remove('visuallyhidden');
-            textSpan.classList.remove('visuallyhidden');
         }, 1000);
     }
 }
 
 function outHtml() {
     let checkBox = document.getElementById("selection");
-    console.log(textNer)
     if (checkBox.checked === true) {
         if (globalThis.textNer === "loading") {
             document.getElementById("text").innerHTML = "<div class=\"lds-roller\"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>"
@@ -130,7 +112,6 @@ chrome.storage.onChanged.addListener(function (changes, namespace) {
     for (let [key, {oldValue, newValue}] of Object.entries(changes)) {
         if ((key === "text" && oldValue !== newValue)) {
             globalThis.textNer = newValue;
-            console.log("Ner : ", globalThis.textNer)
             outHtml();
         }
         if ((key === "textPOS" && oldValue !== newValue)) {

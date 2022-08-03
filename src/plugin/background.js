@@ -8,7 +8,7 @@ chrome.contextMenus.create(menuItem);
 function textToHtml(data, text) {
     let html_div = "";
     let last_index = 0;
-    // console.log(data)
+    console.log(data)
     for (const elem of data) {
         if (last_index < parseInt(elem['start'])) {
             html_div += text.slice(last_index, parseInt(elem['start']))
@@ -17,7 +17,7 @@ function textToHtml(data, text) {
         last_index = parseInt(elem['end']);
     }
     html_div += text.slice(last_index, text.length);
-    // console.log(html_div);
+    console.log(html_div);
     return html_div;
 }
 
