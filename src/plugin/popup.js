@@ -6,9 +6,9 @@
 var textNer = undefined;
 var textPos = undefined;
 window.onload = function () {
-    chrome.storage.sync.get(['textPOS'], function (item) {
+    chrome.storage.local.get(['textPOS'], function (item) {
         globalThis.textPos = item.textPOS;
-        chrome.storage.sync.get(['text'], function (item) {
+        chrome.storage.local.get(['text'], function (item) {
             globalThis.textNer = item.text;
             let elements = document.getElementsByClassName("chip");
             for (let i = 0; i < elements.length; i++) {
@@ -62,10 +62,6 @@ function changeSelection(event) {
         setTimeout(function () {
             posButtons.classList.add('hidden');
             nerButtons.classList.remove('hidden');
-            // chrome.storage.sync.set({
-            //     'textPOS': document.getElementById("text").innerHTML, function() {
-            //     }
-            // });
             globalThis.textPos = document.getElementById("text").innerHTML;
             outHtml();
             checkBox.disabled = false;

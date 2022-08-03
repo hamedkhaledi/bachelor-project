@@ -23,9 +23,9 @@ function textToHtml(data, text) {
 
 chrome.contextMenus.onClicked.addListener(function (clickData) {
     if (String(clickData.menuItemId === Title) && clickData.selectionText) {
-        chrome.storage.sync.set({'text': "loading"}, function () {
+        chrome.storage.local.set({'text': "loading"}, function () {
         });
-        chrome.storage.sync.set({'textPOS': "loading"}, function () {
+        chrome.storage.local.set({'textPOS': "loading"}, function () {
         });
         let currentText = String(clickData.selectionText);
         let inputData = [
@@ -45,20 +45,20 @@ chrome.contextMenus.onClicked.addListener(function (clickData) {
         fetch("http://127.0.0.1:8000/nerTest", request).then(res => {
             return res.json();
         }).then(data => {
-            chrome.storage.sync.set({'text': textToHtml(data['result'][0], currentText)}, function () {
+            chrome.storage.local.set({'text': textToHtml(data['result'][0], currentText)}, function () {
             });
         }).catch((error) => {
-            chrome.storage.sync.set({'text': "Error"}, function () {
+            chrome.storage.local.set({'text': "Error"}, function () {
             });
         });
 
         fetch("http://127.0.0.1:8000/posTest", request).then(res => {
             return res.json();
         }).then(data => {
-            chrome.storage.sync.set({'textPOS': textToHtml(data['result'][0], currentText)}, function () {
+            chrome.storage.local.set({'textPOS': textToHtml(data['result'][0], currentText)}, function () {
             });
         }).catch((error) => {
-            chrome.storage.sync.set({'textPOS': "Error"}, function () {
+            chrome.storage.local.set({'textPOS': "Error"}, function () {
             });
         });
     }
