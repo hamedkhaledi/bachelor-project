@@ -8,11 +8,13 @@
     margin: 2px;
     cursor: pointer;
     opacity: 0.6;
+    transition: all 1s linear;
 }
 
 .statusText {
     font-size: 15px;
     font-weight: bold;
+    transition: all 1s linear;
 }
 
 .chip:hover {
@@ -26,7 +28,7 @@ img {
 
 .image-header {
     width: auto;
-    height: 80px;
+    height: 100px;
 }
 
 .header {
@@ -68,6 +70,7 @@ img {
 }
 
 .flex-container-wrap {
+    transition: all 0.5s linear;
     display: flex;
     flex-wrap: wrap;
     background-color: RGB(227, 222, 222, 0.5);
@@ -80,12 +83,12 @@ img {
     text-align: right;
     align-items: flex-start;
     align-content: space-between;
-    border-bottom: black;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-top: black;
-    border-top-style: solid;
-    border-top-width: 1px;
+    /*border-bottom: black;*/
+    /*border-bottom-style: solid;*/
+    /*border-bottom-width: 1px;*/
+    /*border-top: black;*/
+    /*border-top-style: solid;*/
+    /*border-top-width: 1px;*/
     margin-bottom: 5px;
     background-image: url("images/gray.png");
 }
@@ -116,6 +119,11 @@ img {
 
 .MON, .CON {
     background-color: mediumpurple;
+}
+
+
+.PER_W, .ADJ_W, .ORG_W, .V_W, .LOC_W, .N_W, .DAT_W, .P_W, .TIM_W, .DELM_W, .PCT_W, .ADV_W, .MON_W, .CON_W {
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .NER {
@@ -158,7 +166,7 @@ img {
     cursor: pointer;
     border: 4px solid transparent;
     overflow: hidden;
-    transition: 0.2s;
+    transition: 2s;
 }
 
 .slider:before {
@@ -169,7 +177,7 @@ img {
     background-color: darkred;
     border-radius: 30px;
     transform: translateX(-30px); /*translateX(-(w-h))*/
-    transition: 0.2s;
+    transition: 2s;
 }
 
 input:checked + .slider:before {
