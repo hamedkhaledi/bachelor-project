@@ -1,0 +1,23 @@
+
+###
+POST http://127.0.0.1:8000/posTest
+Content-Type: application/json
+Client-Id:hamed
+Client-Password:123
+
+[
+  {
+    "lang": "fa",
+    "text": "آخرین مقام برجسته ژاپنی که پس از انقلاب 57 تاکنون به ایران سفر کرده است شینتارو آبه است."
+  },
+  {
+    "lang": "fa",
+    "text": "آخرین مقام برجسته ژاپنی که پس از انقلاب 57 تاکنون به ایران سفر کرده است شینتارو آبه است."
+  }
+]
+
+###
+GET http://127.0.0.1:8000/ner/6
+Accept: application/json
+Client-Id:hamed
+Client-Password:123

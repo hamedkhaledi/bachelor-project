@@ -1,13 +1,28 @@
+body {
+    margin: 0;
+    width: min-content;
+    height: min-content;
+    color: #000;
+    cursor: default;
+
+}
 
 .chip {
     font-family: 'Helvetica', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     border-radius: 5px;
     padding: 10px;
     margin: 2px;
     cursor: pointer;
     opacity: 0.6;
+    transition: all 1s linear;
+}
+
+.statusText {
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 1s linear;
 }
 
 .chip:hover {
@@ -21,7 +36,7 @@ img {
 
 .image-header {
     width: auto;
-    height: 80px;
+    height: 100px;
 }
 
 .header {
@@ -30,12 +45,31 @@ img {
     font-weight: bold;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+.collapse {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .flex-container {
     display: flex;
-    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.button-container {
+    text-align: center;
+    transition: all 1s linear;
+    width: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .Error {
@@ -47,54 +81,68 @@ img {
 }
 
 .flex-container-wrap {
+    transition: all 0.5s linear;
     display: flex;
     flex-wrap: wrap;
-    background-color: RGB(227, 222, 222, 0.5);
+    /*background-color: RGB(227, 222, 222, 0.5);*/
     font-family: "Arabic Typesetting", serif;
     font-size: 20px;
     font-weight: bold;
-    border-radius: 5px;
     padding: 10px;
     direction: rtl;
     text-align: right;
     align-items: flex-start;
     align-content: space-between;
-    border-bottom: black;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-top: black;
-    border-top-style: solid;
-    border-top-width: 1px;
+    height: 150px;
+    scroll-behavior: auto;
+    overflow: auto;
     margin-bottom: 5px;
-    background-image: url("images/gray.png");
+    /*background-image: url("images/gray.png");*/
 }
 
-.PER {
+.flex-container-wrap::-webkit-scrollbar {
+    width: 5px;
+}
+
+.flex-container-wrap::-webkit-scrollbar-thumb {
+    background: linear-gradient(black, black);
+}
+
+.flex-container-wrap::-webkit-scrollbar-track {
+    background: linear-gradient(ghostwhite, white);
+}
+
+.PER, .ADJ {
     background-color: #aadb51;
 }
 
-.ORG {
+.ORG, .V {
     background-color: #ffe05d;
 }
 
-.LOC {
+.LOC, .N {
     background-color: lightpink;
 }
 
-.DAT {
+.DAT, .P {
     background-color: lightblue;
 }
 
-.TIM {
+.TIM, .DELM {
     background-color: crimson;
 }
 
-.PCT {
+.PCT, .ADV {
     background-color: lightsalmon;
 }
 
-.MON {
+.MON, .CON {
     background-color: mediumpurple;
+}
+
+
+.PER_W, .ADJ_W, .ORG_W, .V_W, .LOC_W, .N_W, .DAT_W, .P_W, .TIM_W, .DELM_W, .PCT_W, .ADV_W, .MON_W, .CON_W {
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .NER {
@@ -104,6 +152,87 @@ img {
     padding-left: 5px;
     margin-left: 5px;
 }
+
+.hidden {
+    display: none;
+}
+
+.visuallyhidden {
+    opacity: 0;
+}
+
+
+.switch-button {
+    background: rgba(15, 76, 129);
+    background: linear-gradient(white, darkgray);
+    font-family: 'Brush Script MT', cursive;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 70px;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: black;
+    position: relative;
+    padding-right: 60px;
+}
+
+.switch-button:before {
+    content: "NER";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.switch-button-checkbox {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 2;
+}
+
+.switch-button-checkbox:checked + .switch-button-label:before {
+    transform: translateX(61px);
+    transition: transform 2s;
+}
+
+.switch-button-checkbox + .switch-button-label {
+    position: relative;
+    padding: 15px 0;
+    display: block;
+    user-select: none;
+    pointer-events: none;
+}
+
+.switch-button-checkbox + .switch-button-label:before {
+    content: "";
+    background: linear-gradient(white, green);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 35px;
+    transform: translateX(0);
+    transition: transform 2s;
+}
+
+.switch-button-checkbox + .switch-button-label .switch-button-label-span {
+    position: relative;
+}
+
 
 .lds-roller {
     display: block;
