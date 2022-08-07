@@ -5,6 +5,7 @@ from flair.models import SequenceTagger
 from flair.trainers import ModelTrainer
 from flair.data import Sentence
 from flair.models import SequenceTagger
+from flair.visual.training_curves import Plotter
 
 import torch
 import gc

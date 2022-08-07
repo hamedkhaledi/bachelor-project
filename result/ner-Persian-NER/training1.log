@@ -1,0 +1,381 @@
+2022-07-23 16:56:29,341 ----------------------------------------------------------------------------------------------------
+2022-07-23 16:56:29,343 Model: "SequenceTagger(
+  (embeddings): TransformerWordEmbeddings(
+    (model): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(100000, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (1): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (2): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (3): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (4): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (5): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (6): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (7): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (8): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (9): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (10): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (11): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+  )
+  (word_dropout): WordDropout(p=0.05)
+  (locked_dropout): LockedDropout(p=0.5)
+  (linear): Linear(in_features=768, out_features=12, bias=True)
+  (beta): 1.0
+  (weights): None
+  (weight_tensor) None
+)"
+2022-07-23 16:56:29,343 ----------------------------------------------------------------------------------------------------
+2022-07-23 16:56:29,343 Corpus: "Corpus: 781277 train + 97660 dev + 97659 test sentences"
+2022-07-23 16:56:29,344 ----------------------------------------------------------------------------------------------------
+2022-07-23 16:56:29,344 Parameters:
+2022-07-23 16:56:29,344  - learning_rate: "5e-06"
+2022-07-23 16:56:29,344  - mini_batch_size: "8"
+2022-07-23 16:56:29,344  - patience: "3"
+2022-07-23 16:56:29,344  - anneal_factor: "0.5"
+2022-07-23 16:56:29,344  - max_epochs: "10"
+2022-07-23 16:56:29,344  - shuffle: "True"
+2022-07-23 16:56:29,344  - train_with_dev: "False"
+2022-07-23 16:56:29,344  - batch_growth_annealing: "False"
+2022-07-23 16:56:29,344 ----------------------------------------------------------------------------------------------------
+2022-07-23 16:56:29,344 Model training base path: "data/ner-Persian-NER/model-resume"
+2022-07-23 16:56:29,344 ----------------------------------------------------------------------------------------------------
+2022-07-23 16:56:29,344 Device: cuda:0
+2022-07-23 16:56:29,344 ----------------------------------------------------------------------------------------------------
+2022-07-23 16:56:29,344 Embeddings storage mode: cpu
+2022-07-23 16:56:29,979 ----------------------------------------------------------------------------------------------------
+2022-07-23 17:24:29,185 epoch 8 - iter 9766/97660 - loss 0.10428319 - samples/sec: 46.55 - lr: 0.000002
+2022-07-23 17:53:34,822 epoch 8 - iter 19532/97660 - loss 0.10448506 - samples/sec: 44.78 - lr: 0.000002
+2022-07-23 18:23:01,334 epoch 8 - iter 29298/97660 - loss 0.10479897 - samples/sec: 44.25 - lr: 0.000002
+2022-07-23 18:54:17,755 epoch 8 - iter 39064/97660 - loss 0.10480996 - samples/sec: 41.66 - lr: 0.000001
+2022-07-23 19:24:37,185 epoch 8 - iter 48830/97660 - loss 0.10462886 - samples/sec: 42.96 - lr: 0.000001
+2022-07-23 19:54:55,805 epoch 8 - iter 58596/97660 - loss 0.10446487 - samples/sec: 42.98 - lr: 0.000001
+2022-07-23 20:25:25,973 epoch 8 - iter 68362/97660 - loss 0.10447143 - samples/sec: 42.71 - lr: 0.000001
+2022-07-23 20:56:56,293 epoch 8 - iter 78128/97660 - loss 0.10445150 - samples/sec: 41.35 - lr: 0.000001
+2022-07-23 21:27:28,648 epoch 8 - iter 87894/97660 - loss 0.10439982 - samples/sec: 42.66 - lr: 0.000001
+2022-07-23 21:58:04,123 epoch 8 - iter 97660/97660 - loss 0.10430169 - samples/sec: 42.59 - lr: 0.000001
+2022-07-23 21:58:04,124 ----------------------------------------------------------------------------------------------------
+2022-07-23 21:58:04,124 EPOCH 8 done: loss 0.1043 - lr 0.0000011
+2022-07-23 23:47:15,450 DEV : loss 0.17567528784275055 - f1-score (micro avg)  0.7707
+2022-07-23 23:47:20,761 BAD EPOCHS (no improvement): 4
+2022-07-23 23:47:23,446 ----------------------------------------------------------------------------------------------------
+2022-07-24 00:16:28,090 epoch 9 - iter 9766/97660 - loss 0.09963987 - samples/sec: 44.80 - lr: 0.000001
+2022-07-24 00:46:06,166 epoch 9 - iter 19532/97660 - loss 0.09963312 - samples/sec: 43.96 - lr: 0.000001
+2022-07-24 01:16:42,555 epoch 9 - iter 29298/97660 - loss 0.09957814 - samples/sec: 42.56 - lr: 0.000001
+2022-07-24 01:47:51,154 epoch 9 - iter 39064/97660 - loss 0.09963489 - samples/sec: 41.83 - lr: 0.000001
+2022-07-24 02:20:59,121 epoch 9 - iter 48830/97660 - loss 0.09961934 - samples/sec: 39.32 - lr: 0.000001
+2022-07-24 02:52:56,790 epoch 9 - iter 58596/97660 - loss 0.09942792 - samples/sec: 40.76 - lr: 0.000001
+2022-07-24 03:24:55,682 epoch 9 - iter 68362/97660 - loss 0.09934555 - samples/sec: 40.73 - lr: 0.000001
+2022-07-24 03:57:12,419 epoch 9 - iter 78128/97660 - loss 0.09924533 - samples/sec: 40.36 - lr: 0.000001
+2022-07-24 04:31:06,096 epoch 9 - iter 87894/97660 - loss 0.09928297 - samples/sec: 38.43 - lr: 0.000001
+2022-07-24 05:03:47,058 epoch 9 - iter 97660/97660 - loss 0.09918239 - samples/sec: 39.86 - lr: 0.000001
+2022-07-24 05:03:47,059 ----------------------------------------------------------------------------------------------------
+2022-07-24 05:03:47,059 EPOCH 9 done: loss 0.0992 - lr 0.0000006
+2022-07-24 06:50:38,154 DEV : loss 0.17400285601615906 - f1-score (micro avg)  0.7837
+2022-07-24 06:50:43,473 BAD EPOCHS (no improvement): 4
+2022-07-24 06:50:47,864 ----------------------------------------------------------------------------------------------------
+2022-07-24 07:23:48,829 epoch 10 - iter 9766/97660 - loss 0.09610647 - samples/sec: 39.46 - lr: 0.000001
+2022-07-24 07:57:18,670 epoch 10 - iter 19532/97660 - loss 0.09615429 - samples/sec: 38.89 - lr: 0.000000
+2022-07-24 08:30:41,869 epoch 10 - iter 29298/97660 - loss 0.09619312 - samples/sec: 39.02 - lr: 0.000000
+2022-07-24 09:05:12,143 epoch 10 - iter 39064/97660 - loss 0.09607100 - samples/sec: 37.75 - lr: 0.000000
+2022-07-24 09:38:19,272 epoch 10 - iter 48830/97660 - loss 0.09597631 - samples/sec: 39.33 - lr: 0.000000
+2022-07-24 10:11:37,667 epoch 10 - iter 58596/97660 - loss 0.09592719 - samples/sec: 39.11 - lr: 0.000000
+2022-07-24 10:44:50,154 epoch 10 - iter 68362/97660 - loss 0.09584624 - samples/sec: 39.23 - lr: 0.000000
+2022-07-24 11:19:37,740 epoch 10 - iter 78128/97660 - loss 0.09578971 - samples/sec: 37.44 - lr: 0.000000
+2022-07-24 11:52:49,782 epoch 10 - iter 87894/97660 - loss 0.09576995 - samples/sec: 39.24 - lr: 0.000000
+2022-07-24 12:25:50,757 epoch 10 - iter 97660/97660 - loss 0.09573595 - samples/sec: 39.46 - lr: 0.000000
+2022-07-24 12:25:50,758 ----------------------------------------------------------------------------------------------------
+2022-07-24 12:25:50,758 EPOCH 10 done: loss 0.0957 - lr 0.0000000
+2022-07-24 14:11:24,367 DEV : loss 0.18291015923023224 - f1-score (micro avg)  0.7787
+2022-07-24 14:11:29,692 BAD EPOCHS (no improvement): 4
+2022-07-24 14:11:36,867 ----------------------------------------------------------------------------------------------------
+2022-07-24 14:11:36,869 Testing using last state of model ...

@@ -8,7 +8,7 @@ from flair.models import SequenceTagger
 from flair.embeddings import TransformerWordEmbeddings
 from torch.optim.lr_scheduler import OneCycleLR
 from flair.visual.training_curves import Plotter
-
+import os
 import torch
 import gc
 torch.cuda.empty_cache()
@@ -16,7 +16,7 @@ gc.collect()
 
 # define columns
 columns = {0: 'text', 1: 'ner'}
-data_folder = "./data/ner-NSURL-Persian-NER-2019/"
+data_folder = "./data/ner-Persian-NER/"
 corpus: Corpus = ColumnCorpus(data_folder, columns,
                               train_file='train.txt',
                               test_file='test.txt',
@@ -28,9 +28,9 @@ label_type = 'ner'
 # 3. make the label dictionary from the corpus
 label_dict = corpus.make_label_dictionary(label_type=label_type)
 label_dict.add_unk = True
-label_dict.remove_item('در')
 print(label_dict)
 print(label_dict.add_unk)
+
 
 
 # 4. initialize fine-tuneable transformer embeddings WITH document context
@@ -43,29 +43,23 @@ embeddings = TransformerWordEmbeddings(model='HooshvareLab/bert-base-parsbert-un
                                        )
 
 # 5. initialize bare-bones sequence tagger (no CRF, no RNN, no reprojection)
-tagger = SequenceTagger(hidden_size=1024,
+tagger = SequenceTagger(hidden_size=512,
                         embeddings=embeddings,
                         tag_dictionary=label_dict,
                         tag_type='ner',
                         use_crf=False,
-                        use_rnn=True,
+                        use_rnn=False,
                         reproject_embeddings=False,
                         )
 
 # 6. initialize trainer
 trainer = ModelTrainer(tagger, corpus)
 
-# 7. run fine-tuning
-trainer.fine_tune(data_folder + 'model3',
-                  learning_rate=5.0e-6,
-                  mini_batch_size=4,
-                  # mini_batch_chunk_size=1,  # remove this parameter to speed up computation if you have a big GPU7
-                  embeddings_storage_mode='cpu',
-                  max_epochs=100,
-                  checkpoint=True,
-                  train_with_dev = True,
-                  )
+# 7. continue training at later point. Load previously trained model checkpoint, then resume
+trained_model = SequenceTagger.load(data_folder + 'model/checkpoint.pt')
 
-os.system('cp ./data/ner-NSURL-Persian-NER-2019/model/training.log ./result/ner-NSURL-Persian-NER-2019/training13.log') 
-plotter = Plotter()
-plotter.plot_training_curves(data_folder + "model3/loss.tsv")
+# resume training best model, but this time until epoch 25
+trainer.resume(trained_model,
+               base_path=data_folder + 'model-resume',
+               max_epochs=10,
+               )

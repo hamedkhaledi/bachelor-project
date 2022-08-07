@@ -1,0 +1,21 @@
+
+Results:
+- F-score (micro) 0.7605
+- F-score (macro) 0.7319
+- Accuracy 0.6175
+
+By class:
+              precision    recall  f1-score   support
+
+         DAT     0.8526    0.7882    0.8191     84622
+         LOC     0.7842    0.6929    0.7357     71741
+         PER     0.7480    0.7139    0.7306     37427
+         ORG     0.7528    0.7104    0.7310     33226
+         EVE     0.6494    0.6372    0.6432      9080
+
+   micro avg     0.7928    0.7307    0.7605    236096
+   macro avg     0.7574    0.7085    0.7319    236096
+weighted avg     0.7934    0.7307    0.7606    236096
+ samples avg     0.6175    0.6175    0.6175    236096
+
+Loss: 0.1931658536195755'
