@@ -1,4 +1,4 @@
-const Title = "ParsNer"
+const Title = "Pars Ner"
 const menuItem = {
     "id": Title, "title": Title, "contexts": ["selection"]
 };

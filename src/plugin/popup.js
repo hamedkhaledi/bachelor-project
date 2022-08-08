@@ -21,24 +21,6 @@ window.onload = function () {
         });
     });
 }
-const colors = {
-    "PER": "#aadb51",
-    "ADJ": "#aadb51",
-    "ORG": "#ffe05d",
-    "V": "#ffe05d",
-    "LOC": "lightpink",
-    "N": "lightpink",
-    "DAT": "lightblue",
-    "P": "lightblue",
-    "TIM": "crimson",
-    "DELM": "crimson",
-    "PCT": "lightsalmon",
-    "ADV": "lightsalmon",
-    "MON": "mediumpurple",
-    "CON": "mediumpurple",
-
-}
-
 
 function changeStyle(event) {
     let className = event.target.classList[1]
@@ -67,7 +49,7 @@ function changeSelection(event) {
             checkBox.disabled = false;
             nerButtons.classList.remove('visuallyhidden');
             textBox.classList.remove('visuallyhidden');
-       }, 1000);
+        }, 1000);
     } else {
         textBox.classList.add('visuallyhidden');
         nerButtons.classList.add('visuallyhidden');

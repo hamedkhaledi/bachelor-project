@@ -140,8 +140,21 @@ img {
     background-color: mediumpurple;
 }
 
+.NUM {
+    background-color: darkkhaki;
+}
 
-.PER_W, .ADJ_W, .ORG_W, .V_W, .LOC_W, .N_W, .DAT_W, .P_W, .TIM_W, .DELM_W, .PCT_W, .ADV_W, .MON_W, .CON_W {
+.PRO {
+    background-color: steelblue;
+}
+
+.CLITIC {
+    background-color: seagreen;
+}
+
+.PER_W, .ADJ_W, .ORG_W, .V_W, .LOC_W, .N_W,
+.DAT_W, .P_W, .TIM_W, .DELM_W, .PCT_W, .ADV_W,
+.MON_W, .CON_W, .NUM_W, PRO_W, CLITIC_W {
     background-color: rgba(0, 0, 0, 0);
 }
 
