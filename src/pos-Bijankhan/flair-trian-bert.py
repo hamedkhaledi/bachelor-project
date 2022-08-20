@@ -17,7 +17,7 @@ gc.collect()
 # define columns
 columns = {0: 'text', 1: 'pos'}
 data_folder = "./data/pos-Bijankhan/"
-res_text = "./result/pos-Bijankhan/res1.txt"
+res_text = "./result/pos-Bijankhan/res3.txt"
 corpus: Corpus = ColumnCorpus(data_folder, columns,
                               train_file='train.txt',
                               test_file='test.txt',
@@ -31,7 +31,7 @@ label_dict = corpus.make_label_dictionary(label_type=label_type)
 
 
 # 4. initialize fine-tuneable transformer embeddings WITH document context
-embeddings = TransformerWordEmbeddings(model='HooshvareLab/bert-base-parsbert-uncased',
+embeddings = TransformerWordEmbeddings(model='xlm-roberta-base',
                                        layers="-1",
                                        subtoken_pooling="first",
                                        fine_tune=True,
@@ -42,7 +42,7 @@ embeddings = TransformerWordEmbeddings(model='HooshvareLab/bert-base-parsbert-un
 
 
 # 5. initialize bare-bones sequence tagger (no CRF, no RNN, no reprojection)
-tagger = SequenceTagger(hidden_size=1024,
+tagger = SequenceTagger(hidden_size=512,
                         embeddings=embeddings,
                         tag_dictionary=label_dict,
                         tag_type='pos',
@@ -55,19 +55,21 @@ tagger = SequenceTagger(hidden_size=1024,
 trainer = ModelTrainer(tagger, corpus)
 
 # 7. run fine-tuning
-trainer.fine_tune(data_folder + 'model',
+trainer.fine_tune(data_folder + 'model2',
                   learning_rate=5.0e-6,
-                  mini_batch_size=16,
+                  mini_batch_size=8,
                   # mini_batch_chunk_size=1,  # remove this parameter to speed up computation if you have a big GPU7
                   embeddings_storage_mode='gpu',
-                  max_epochs=15,
+                  max_epochs=35,
+                  train_with_dev = True,
                   # checkpoint=True,
                   )
 
-os.system('cp ./data/pos-Bijankhan/model/training.log ./result/pos-Bijankhan/training1.log') 
+os.system('cp ./data/pos-Bijankhan/model2/training.log ./result/pos-Bijankhan/training3.log') 
 plotter = Plotter()
-plotter.plot_training_curves(data_folder + "model/loss.tsv")
+plotter.plot_training_curves(data_folder + "model2/loss.tsv")
 
+model = SequenceTagger.load(data_folder + 'model2/final-model.pt')
 result = model.evaluate(corpus.test, gold_label_type = "pos", mini_batch_size=4, out_path=f"predictions.txt")
 print(result)
 with open(res_text, "w") as file1:

@@ -20,7 +20,7 @@ gc.collect()
 # define columns
 columns = {0: 'text', 1: 'pos'}
 data_folder = "./data/pos-Uppsala/"
-res_text = "./result/pos-Uppsala/res1.txt"
+res_text = "./result/pos-Uppsala/res2.txt"
 corpus: Corpus = ColumnCorpus(data_folder, columns,
                               train_file='train.txt',
                               test_file='test.txt',
@@ -42,25 +42,8 @@ embeddings = TransformerWordEmbeddings(model='HooshvareLab/bert-fa-zwnj-base',
                                        local_files_only=True
                                        )
 
-
-# embedding_types = [
-#     WordEmbeddings('fa'),
-#     FlairEmbeddings('fa-forward'),
-#     FlairEmbeddings('fa-backward')
-# ]
-# embeddings = StackedEmbeddings(embeddings=embedding_types)
-
-
-# repair value for max_subtokens_sequence_length and stride
-# embeddings.max_subtokens_sequence_length = 512
-
-# if allow_long_sentences parameter is True then stride should be 512 // 2 else just set to 0 (maintain the original class behavior)
-# embeddings.stride = 512 // 2 #or 0
-
-
-
 # 5. initialize bare-bones sequence tagger (no CRF, no RNN, no reprojection)
-tagger = SequenceTagger(hidden_size=512,
+tagger = SequenceTagger(hidden_size=1024,
                         embeddings=embeddings,
                         tag_dictionary=label_dict,
                         tag_type='pos',
@@ -72,34 +55,24 @@ tagger = SequenceTagger(hidden_size=512,
 # 6. initialize trainer
 trainer = ModelTrainer(tagger, corpus)
 
-# 7. run fine-tuning
-# trainer.train(data_folder + 'model2',
-#                   # learning_rate=5.0e-6,
-#                   mini_batch_size=8,
-#                   # mini_batch_chunk_size=1,  # remove this parameter to speed up computation if you have a big GPU7
-#                   embeddings_storage_mode='cpu',
-#                   max_epochs=25,
-#                   # checkpoint=True,
-#                   train_with_dev = True,
-#                   )
 
 
-trainer.fine_tune(data_folder + 'model',
+trainer.fine_tune(data_folder + 'model2',
                   # learning_rate=5.0e-6,
                   mini_batch_size=8,
                   # mini_batch_chunk_size=1,  # remove this parameter to speed up computation if you have a big GPU7
                   embeddings_storage_mode='gpu',
-                  max_epochs=50,
-                  train_with_dev = True,
+                  max_epochs=25,
+                  train_with_dev = False,
                   # checkpoint=True,
                   )
 
-# os.system('cp ./data/pos-Uppsala/model/training.log ./result/pos-Uppsala/training1.log') 
+os.system('cp ./data/pos-Uppsala/model2/training.log ./result/pos-Uppsala/training2.log') 
 plotter = Plotter()
-plotter.plot_training_curves(data_folder + "model/loss.tsv")
+plotter.plot_training_curves(data_folder + "model2/loss.tsv")
 
 
-model = SequenceTagger.load(data_folder + 'model/final-model.pt')
+model = SequenceTagger.load(data_folder + 'model2/final-model.pt')
 result = model.evaluate(corpus.test, gold_label_type = "pos", mini_batch_size=4, out_path=f"predictions.txt")
 print(result)
 with open(res_text, "w") as file1:

@@ -9,7 +9,7 @@ from flair.visual.training_curves import Plotter
 # define columns
 columns = {0: 'text', 1: 'pos'}
 data_folder = "./data/pos-Bijankhan/"
-res_text = "./result/pos-Bijankhan/res1.txt"
+res_text = "./result/pos-Bijankhan/res2.txt"
 corpus: Corpus = ColumnCorpus(data_folder, columns,
                               train_file='train.txt',
                               test_file='test.txt',
@@ -23,8 +23,8 @@ label_type = 'pos'
 label_dict = corpus.make_label_dictionary(label_type=label_type)
 
 # load the model you trained
-print(Path(data_folder + 'model/final-model.pt').exists())
-model = SequenceTagger.load(data_folder + 'model/final-model.pt')
+print(Path(data_folder + 'model2/final-model.pt').exists())
+model = SequenceTagger.load(data_folder + 'model2/final-model.pt')
 # create example sentence
 sentence = Sentence(' من  نیویورک رو دوست دارم')
 
@@ -38,6 +38,6 @@ print(result)
 with open(res_text, "w") as file1:
     file1.write(str(result))
     
-os.system('cp ./data/pos-Bijankhan/model/training.log ./result/ner-NSURL-Persian-NER-2019/training1.log') 
+os.system('cp ./data/pos-Bijankhan/model2/training.log ./result/pos-Bijankhan/training1.log') 
 plotter = Plotter()
-plotter.plot_training_curves(data_folder + "model/loss.tsv")
+plotter.plot_training_curves(data_folder + "model2/loss.tsv")
