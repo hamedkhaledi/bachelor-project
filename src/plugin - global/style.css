@@ -8,7 +8,7 @@ body {
 }
 
 .chip {
-    font-family: 'Helvetica', cursive;
+    font-family: 'Helvetica', sans-serif;
     font-size: 14px;
     font-weight: bold;
     border-radius: 5px;
@@ -152,13 +152,9 @@ img {
     background-color: seagreen;
 }
 
-.DET {
-    background-color: deeppink;
-}
-
 .PER_W, .ADJ_W, .ORG_W, .V_W, .LOC_W, .N_W,
 .DAT_W, .P_W, .TIM_W, .DELM_W, .PCT_W, .ADV_W,
-.MON_W, .CON_W, .NUM_W, PRO_W, CLITIC_W, .DET_W {
+.MON_W, .CON_W, .NUM_W, PRO_W, CLITIC_W {
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -180,6 +176,7 @@ img {
 
 
 .switch-button {
+    background: rgba(15, 76, 129);
     background: linear-gradient(white, darkgray);
     font-family: 'Brush Script MT', cursive;
     border-radius: 20px;
